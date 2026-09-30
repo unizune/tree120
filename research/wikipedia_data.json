@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 1,
+    "name": "가막살나무",
+    "scientificName": "Viburnum dilatatum Thunb.",
+    "koTitle": "가막살나무",
+    "enTitle": "Viburnum dilatatum",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%80%EB%A7%89%EC%82%B4%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Viburnum_dilatatum"
+  },
+  {
+    "id": 2,
+    "name": "가시나무",
+    "scientificName": "Quercus myrsinifolia Blume",
+    "koTitle": "가시나무",
+    "enTitle": "Quercus myrsinifolia",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%8B%9C%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_myrsinifolia"
+  },
+  {
+    "id": 3,
+    "name": "갈참나무",
+    "scientificName": "Quercus aliena Blume",
+    "koTitle": "갈참나무",
+    "enTitle": "Quercus aliena",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%88%EC%B0%B8%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_aliena"
+  },
+  {
+    "id": 4,
+    "name": "감나무",
+    "scientificName": "Diospyros kaki L. f.",
+    "koTitle": "감나무",
+    "enTitle": "Diospyros kaki",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%90%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Diospyros_kaki"
+  },
+  {
+    "id": 5,
+    "name": "감탕나무",
+    "scientificName": "Ilex integra Thunb.",
+    "koTitle": "감탕나무",
+    "enTitle": "Ilex integra",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%90%ED%83%95%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_integra"
+  },
+  {
+    "id": 6,
+    "name": "개나리",
+    "scientificName": "Forsythia koreana (Rehder) Nakai",
+    "koTitle": "개나리",
+    "enTitle": "Forsythia koreana",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%9C%EB%82%98%EB%A6%AC",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Forsythia_koreana"
+  },
+  {
+    "id": 7,
+    "name": "개비자나무",
+    "scientificName": "Cephalotaxus harringtonii (Knight ex J.Forbes) K.Koch",
+    "koTitle": "개비자나무",
+    "enTitle": "Cephalotaxus koreana",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%9C%EB%B9%84%EC%9E%90%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cephalotaxus_koreana"
+  },
+  {
+    "id": 8,
+    "name": "개오동",
+    "scientificName": "Catalpa ovata G. Don",
+    "koTitle": "개오동",
+    "enTitle": "Catalpa ovata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%98%A4%EB%8F%99",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Catalpa_ovata"
+  },
+  {
+    "id": 9,
+    "name": "계수나무",
+    "scientificName": "Cercidiphyllum japonicum Siebold & Zucc. ex J.J.Hoffm. & J.H.Schult.bis",
+    "koTitle": "계수나무",
+    "enTitle": "Cercidiphyllum japonicum",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B3%84%EC%88%98%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cercidiphyllum_japonicum"
+  },
+  {
+    "id": 10,
+    "name": "골담초",
+    "scientificName": "Caragana sinica (Buc'hoz) Rehder",
+    "koTitle": "골담초",
+    "enTitle": "Caragana sinica",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B3%A8%EB%8B%B4%EC%B4%88",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Caragana_sinica"
+  },
+  {
+    "id": 11,
+    "name": "곰솔",
+    "scientificName": "Pinus thunbergii Parl.",
+    "koTitle": "곰솔",
+    "enTitle": "Pinus thunbergii",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B3%B0%EC%86%94",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_thunbergii"
+  },
+  {
+    "id": 12,
+    "name": "광나무",
+    "scientificName": "Ligustrum japonicum Thunb.",
+    "koTitle": "광나무",
+    "enTitle": "Ligustrum japonicum",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B4%91%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ligustrum_japonicum"
+  },
+  {
+    "id": 13,
+    "name": "구상나무",
+    "scientificName": "Abies koreana E.H.Wilson",
+    "koTitle": "구상나무",
+    "enTitle": "Abies koreana",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B5%AC%EC%83%81%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Abies_koreana"
+  },
+  {
+    "id": 14,
+    "name": "금목서",
+    "scientificName": "Osmanthus fragrans Lour.",
+    "koTitle": "금목서",
+    "enTitle": "Osmanthus fragrans",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B8%88%EB%AA%A9%EC%84%9C",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Osmanthus_fragrans"
+  },
+  {
+    "id": 15,
+    "name": "금송",
+    "scientificName": "Sciadopitys verticillata (Thunb.) Siebold & Zucc.",
+    "koTitle": "금송",
+    "enTitle": "Sciadopitys verticillata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B8%88%EC%86%A1",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sciadopitys_verticillata"
+  },
+  {
+    "id": 16,
+    "name": "금식나무",
+    "scientificName": "Aucuba japonica Thunb.",
+    "koTitle": "식나무",
+    "enTitle": "Aucuba japonica",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%8B%9D%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Aucuba_japonica"
+  },
+  {
+    "id": 17,
+    "name": "꽝꽝나무",
+    "scientificName": "Ilex crenata Thunb.",
+    "koTitle": "꽝꽝나무",
+    "enTitle": "Ilex crenata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%BD%9D%EA%BD%9D%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_crenata"
+  },
+  {
+    "id": 18,
+    "name": "낙상홍",
+    "scientificName": "Ilex serrata Thunb.",
+    "koTitle": "낙상홍",
+    "enTitle": "Ilex serrata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%82%99%EC%83%81%ED%99%8D",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_serrata"
+  },
+  {
+    "id": 19,
+    "name": "남천",
+    "scientificName": "Nandina domestica Thunb.",
+    "koTitle": "남천",
+    "enTitle": "Nandina",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%82%A8%EC%B2%9C",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Nandina"
+  },
+  {
+    "id": 20,
+    "name": "노각나무",
+    "scientificName": "Stewartia pseudocamellia Maxim.",
+    "koTitle": "노각나무",
+    "enTitle": "Stewartia pseudocamellia",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%85%B8%EA%B0%81%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Stewartia_pseudocamellia"
+  },
+  {
+    "id": 21,
+    "name": "노랑말채나무",
+    "scientificName": "Cornus alba L.",
+    "koTitle": "흰말채나무",
+    "enTitle": "Cornus alba",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9D%B0%EB%A7%90%EC%B1%84%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_alba"
+  },
+  {
+    "id": 22,
+    "name": "녹나무",
+    "scientificName": "Cinnamomum camphora (L.) J.Presl",
+    "koTitle": "녹나무",
+    "enTitle": "Camphora officinarum",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%85%B9%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Camphora_officinarum"
+  },
+  {
+    "id": 23,
+    "name": "눈향나무",
+    "scientificName": "Juniperus chinensis L.",
+    "koTitle": "향나무",
+    "enTitle": "Juniperus chinensis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%96%A5%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Juniperus_chinensis"
+  },
+  {
+    "id": 24,
+    "name": "느티나무",
+    "scientificName": "Zelkova serrata (Thunb.) Makino",
+    "koTitle": "느티나무",
+    "enTitle": "Zelkova serrata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8A%90%ED%8B%B0%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Zelkova_serrata"
+  },
+  {
+    "id": 25,
+    "name": "능소화",
+    "scientificName": "Campsis grandiflora (Thunb.) K.Schum.",
+    "koTitle": "능소화",
+    "enTitle": "Campsis grandiflora",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8A%A5%EC%86%8C%ED%99%94",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Campsis_grandiflora"
+  },
+  {
+    "id": 26,
+    "name": "단풍나무",
+    "scientificName": "Acer palmatum Thunb.",
+    "koTitle": "단풍나무",
+    "enTitle": "Acer palmatum",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%92%8D%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_palmatum"
+  },
+  {
+    "id": 27,
+    "name": "담쟁이덩굴",
+    "scientificName": "Parthenocissus tricuspidata (Siebold & Zucc.) Planch.",
+    "koTitle": "담쟁이덩굴",
+    "enTitle": "Parthenocissus tricuspidata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8B%B4%EC%9F%81%EC%9D%B4%EB%8D%A9%EA%B5%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Parthenocissus_tricuspidata"
+  },
+  {
+    "id": 28,
+    "name": "당매자나무",
+    "scientificName": "Berberis poiretii C.K.Schneid.",
+    "koTitle": "매자나무속",
+    "enTitle": "Berberis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A7%A4%EC%9E%90%EB%82%98%EB%AC%B4%EC%86%8D",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Berberis"
+  },
+  {
+    "id": 29,
+    "name": "대추나무",
+    "scientificName": "Ziziphus jujuba Mill.",
+    "koTitle": "대추나무",
+    "enTitle": "Jujube",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8C%80%EC%B6%94%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Jujube"
+  },
+  {
+    "id": 30,
+    "name": "독일가문비",
+    "scientificName": "Picea jezoensis (Siebold & Zucc.) Carriere",
+    "koTitle": "가문비나무",
+    "enTitle": "Picea abies",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%80%EB%AC%B8%EB%B9%84%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Picea_abies"
+  },
+  {
+    "id": 31,
+    "name": "돈나무",
+    "scientificName": "Pittosporum tobira (Thunb.) W.T.Aiton",
+    "koTitle": "돈나무",
+    "enTitle": "Pittosporum tobira",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8F%88%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pittosporum_tobira"
+  },
+  {
+    "id": 32,
+    "name": "동백나무",
+    "scientificName": "Camellia japonica L.",
+    "koTitle": "동백나무",
+    "enTitle": "Camellia japonica",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8F%99%EB%B0%B1%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Camellia_japonica"
+  },
+  {
+    "id": 33,
+    "name": "등",
+    "scientificName": "Wisteria floribunda (Willd.) DC.",
+    "koTitle": "등",
+    "enTitle": "Wisteria floribunda",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%93%B1",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Wisteria_floribunda"
+  },
+  {
+    "id": 34,
+    "name": "때죽나무",
+    "scientificName": "Styrax japonicus Siebold & Zucc.",
+    "koTitle": "때죽나무",
+    "enTitle": "Styrax japonicus",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%95%8C%EC%A3%BD%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Styrax_japonicus"
+  },
+  {
+    "id": 35,
+    "name": "떡갈나무",
+    "scientificName": "Quercus dentata Thunb.",
+    "koTitle": "떡갈나무",
+    "enTitle": "Quercus dentata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%96%A1%EA%B0%88%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_dentata"
+  },
+  {
+    "id": 36,
+    "name": "마가목",
+    "scientificName": "Sorbus commixta Hedl.",
+    "koTitle": "마가목",
+    "enTitle": "Sorbus commixta",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A7%88%EA%B0%80%EB%AA%A9",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sorbus_commixta"
+  },
+  {
+    "id": 37,
+    "name": "말채나무",
+    "scientificName": "Cornus walteri Wangerin",
+    "koTitle": "말채나무",
+    "enTitle": "Cornus walteri",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A7%90%EC%B1%84%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_walteri"
+  },
+  {
+    "id": 38,
+    "name": "매화나무",
+    "scientificName": "Prunus mume Siebold & Zucc.",
+    "koTitle": "매실나무",
+    "enTitle": "Prunus mume",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A7%A4%EC%8B%A4%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_mume"
+  },
+  {
+    "id": 39,
+    "name": "먼나무",
+    "scientificName": "Ilex rotunda Thunb.",
+    "koTitle": "먼나무",
+    "enTitle": "Ilex rotunda",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A8%BC%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_rotunda"
+  },
+  {
+    "id": 40,
+    "name": "메타세쿼이아",
+    "scientificName": "Metasequoia glyptostroboides Hu & W.C. Cheng",
+    "koTitle": "메타세쿼이아",
+    "enTitle": "Metasequoia glyptostroboides",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A9%94%ED%83%80%EC%84%B8%EC%BF%BC%EC%9D%B4%EC%95%84",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Metasequoia_glyptostroboides"
+  },
+  {
+    "id": 41,
+    "name": "모감주나무",
+    "scientificName": "Koelreuteria paniculata Laxm.",
+    "koTitle": "모감주나무",
+    "enTitle": "Koelreuteria paniculata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%AA%A8%EA%B0%90%EC%A3%BC%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Koelreuteria_paniculata"
+  },
+  {
+    "id": 42,
+    "name": "모과나무",
+    "scientificName": "Pseudocydonia sinensis (Thouin) C. K. Schneid.",
+    "koTitle": "모과나무",
+    "enTitle": "Pseudocydonia sinensis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%AA%A8%EA%B3%BC%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pseudocydonia_sinensis"
+  },
+  {
+    "id": 43,
+    "name": "무궁화",
+    "scientificName": "Hibiscus syriacus L.",
+    "koTitle": "무궁화",
+    "enTitle": "Hibiscus syriacus",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%AC%B4%EA%B6%81%ED%99%94",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Hibiscus_syriacus"
+  },
+  {
+    "id": 44,
+    "name": "물푸레나무",
+    "scientificName": "Fraxinus chinensis subsp. rhynchophylla (Hance) A.E.Murray",
+    "koTitle": "물푸레나무",
+    "enTitle": "Fraxinus chinensis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%AC%BC%ED%91%B8%EB%A0%88%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Fraxinus_chinensis"
+  },
+  {
+    "id": 45,
+    "name": "미선나무",
+    "scientificName": "Abeliophyllum distichum Nakai",
+    "koTitle": "미선나무",
+    "enTitle": "Abeliophyllum distichum",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%AF%B8%EC%84%A0%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Abeliophyllum_distichum"
+  },
+  {
+    "id": 46,
+    "name": "박태기나무",
+    "scientificName": "Cercis chinensis Bunge",
+    "koTitle": "박태기나무",
+    "enTitle": "Cercis chinensis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%95%ED%83%9C%EA%B8%B0%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cercis_chinensis"
+  },
+  {
+    "id": 47,
+    "name": "반송",
+    "scientificName": "Pinus densiflora Siebold & Zucc.",
+    "koTitle": "반송",
+    "enTitle": "Pinus densiflora",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%98%EC%86%A1",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_densiflora"
+  },
+  {
+    "id": 48,
+    "name": "배롱나무",
+    "scientificName": "Lagerstroemia indica L.",
+    "koTitle": "배롱나무",
+    "enTitle": "Lagerstroemia indica",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EB%A1%B1%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Lagerstroemia_indica"
+  },
+  {
+    "id": 49,
+    "name": "백당나무",
+    "scientificName": "Viburnum sargentii Koehne",
+    "koTitle": "백당나무",
+    "enTitle": "Viburnum sargentii",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%B1%EB%8B%B9%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Viburnum_sargentii"
+  },
+  {
+    "id": 50,
+    "name": "백목련",
+    "scientificName": "Magnolia denudata Desr.",
+    "koTitle": "백목련",
+    "enTitle": "Magnolia denudata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%B1%EB%AA%A9%EB%A0%A8",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Magnolia_denudata"
+  },
+  {
+    "id": 51,
+    "name": "백송",
+    "scientificName": "Pinus bungeana Zucc. ex Endl.",
+    "koTitle": "백송",
+    "enTitle": "Pinus bungeana",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%B1%EC%86%A1",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_bungeana"
+  },
+  {
+    "id": 52,
+    "name": "버드나무",
+    "scientificName": "Salix pierotii Miq.",
+    "koTitle": "버드나무",
+    "enTitle": "Salix pierotii",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B2%84%EB%93%9C%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Salix_pierotii"
+  },
+  {
+    "id": 53,
+    "name": "벽오동",
+    "scientificName": "Firmiana simplex (L.) W.F.Wight",
+    "koTitle": "벽오동",
+    "enTitle": "Firmiana simplex",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B2%BD%EC%98%A4%EB%8F%99",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Firmiana_simplex"
+  },
+  {
+    "id": 54,
+    "name": "병꽃나무",
+    "scientificName": "Weigela subsessilis (Nakai) L.H.Bailey",
+    "koTitle": "병꽃나무",
+    "enTitle": "Weigela subsessilis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B3%91%EA%BD%83%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Weigela_subsessilis"
+  },
+  {
+    "id": 55,
+    "name": "보리수나무",
+    "scientificName": "Elaeagnus umbellata Thunb.",
+    "koTitle": "보리수나무",
+    "enTitle": "Elaeagnus umbellata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B3%B4%EB%A6%AC%EC%88%98%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Elaeagnus_umbellata"
+  },
+  {
+    "id": 56,
+    "name": "복사나무",
+    "scientificName": "Prunus persica(L.) Batsch",
+    "koTitle": "복숭아",
+    "enTitle": "Peach",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B3%B5%EC%88%AD%EC%95%84",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Peach"
+  },
+  {
+    "id": 57,
+    "name": "복자기",
+    "scientificName": "Acer triflorum Kom.",
+    "koTitle": "복자기",
+    "enTitle": "Acer triflorum",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B3%B5%EC%9E%90%EA%B8%B0",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_triflorum"
+  },
+  {
+    "id": 58,
+    "name": "붉가시나무",
+    "scientificName": "Quercus acuta Thunb.",
+    "koTitle": "붉가시나무",
+    "enTitle": "Quercus acuta",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B6%89%EA%B0%80%EC%8B%9C%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_acuta"
+  },
+  {
+    "id": 59,
+    "name": "사철나무",
+    "scientificName": "Euonymus japonicus Thunb.",
+    "koTitle": "사철나무",
+    "enTitle": "Euonymus japonicus",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%AC%EC%B2%A0%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Euonymus_japonicus"
+  },
+  {
+    "id": 60,
+    "name": "산딸나무",
+    "scientificName": "Cornus kousa F.Buerger ex Hance",
+    "koTitle": "산딸나무",
+    "enTitle": "Cornus kousa",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B0%EB%94%B8%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_kousa"
+  },
+  {
+    "id": 61,
+    "name": "산벚나무",
+    "scientificName": "Prunus sargentii Rehder",
+    "koTitle": "산벚나무",
+    "enTitle": "Prunus sargentii",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B0%EB%B2%9A%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_sargentii"
+  },
+  {
+    "id": 62,
+    "name": "산사나무",
+    "scientificName": "Crataegus pinnatifida Bunge",
+    "koTitle": "산사나무",
+    "enTitle": "Crataegus pinnatifida",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%82%AC%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Crataegus_pinnatifida"
+  },
+  {
+    "id": 63,
+    "name": "산수유",
+    "scientificName": "Cornus officinalis Siebold & Zucc.",
+    "koTitle": "산수유",
+    "enTitle": "Cornus officinalis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%88%98%EC%9C%A0",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_officinalis"
+  },
+  {
+    "id": 64,
+    "name": "산철쭉",
+    "scientificName": "Rhododendron yedoense f. poukhanense(Lev.) Sugimoto ex T.Yamaz.",
+    "koTitle": "산철쭉",
+    "enTitle": "Rhododendron yedoense",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%B2%A0%EC%AD%89",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rhododendron_yedoense"
+  },
+  {
+    "id": 65,
+    "name": "살구나무",
+    "scientificName": "Prunus armeniaca L.",
+    "koTitle": "살구나무",
+    "enTitle": "Prunus armeniaca",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B4%EA%B5%AC%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_armeniaca"
+  },
+  {
+    "id": 66,
+    "name": "상수리나무",
+    "scientificName": "Quercus acutissima Carruth.",
+    "koTitle": "상수리나무",
+    "enTitle": "Quercus acutissima",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%83%81%EC%88%98%EB%A6%AC%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_acutissima"
+  },
+  {
+    "id": 67,
+    "name": "생강나무",
+    "scientificName": "Lindera obtusiloba Blume",
+    "koTitle": "생강나무",
+    "enTitle": "Lindera obtusiloba",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%83%9D%EA%B0%95%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Lindera_obtusiloba"
+  },
+  {
+    "id": 68,
+    "name": "서어나무",
+    "scientificName": "Carpinus laxiflora (Siebold & Zucc.) Blume",
+    "koTitle": "서어나무",
+    "enTitle": "Carpinus laxiflora",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%96%B4%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Carpinus_laxiflora"
+  },
+  {
+    "id": 69,
+    "name": "석류나무",
+    "scientificName": "Punica granatum L",
+    "koTitle": "석류나무",
+    "enTitle": "Pomegranate",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%84%9D%EB%A5%98%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pomegranate"
+  },
+  {
+    "id": 70,
+    "name": "소나무",
+    "scientificName": "Pinus densiflora Siebold & Zucc.",
+    "koTitle": "소나무",
+    "enTitle": "Pinus densiflora",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%86%8C%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_densiflora"
+  },
+  {
+    "id": 71,
+    "name": "수국",
+    "scientificName": "Hydrangea macrophylla (Thunb.) Ser.",
+    "koTitle": "수국",
+    "enTitle": "Hydrangea macrophylla",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%88%98%EA%B5%AD",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Hydrangea_macrophylla"
+  },
+  {
+    "id": 72,
+    "name": "수수꽃다리",
+    "scientificName": "Syringa oblata subsp. dilatata (Nakai) P.S.Green & M.C.Chang",
+    "koTitle": "수수꽃다리",
+    "enTitle": "Syringa oblata subsp. dilatata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%88%98%EC%88%98%EA%BD%83%EB%8B%A4%EB%A6%AC",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Syringa_oblata_subsp._dilatata"
+  },
+  {
+    "id": 73,
+    "name": "쉬땅나무",
+    "scientificName": "Sorbaria sorbifolia var. stellipila Maxim.",
+    "koTitle": "쉬땅나무",
+    "enTitle": "Sorbaria sorbifolia",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%89%AC%EB%95%85%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sorbaria_sorbifolia"
+  },
+  {
+    "id": 74,
+    "name": "스트로브잣나무",
+    "scientificName": "Pinus strobus L.",
+    "koTitle": "스트로브잣나무",
+    "enTitle": "Pinus strobus",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%8A%B8%EB%A1%9C%EB%B8%8C%EC%9E%A3%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_strobus"
+  },
+  {
+    "id": 75,
+    "name": "신갈나무",
+    "scientificName": "Quercus mongolica Fisch. ex Ledeb.",
+    "koTitle": "신갈나무",
+    "enTitle": "Quercus mongolica",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%8B%A0%EA%B0%88%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_mongolica"
+  },
+  {
+    "id": 76,
+    "name": "신나무",
+    "scientificName": "Acer tataricum subsp. ginnala (Maxim.) Wesm.",
+    "koTitle": "신나무",
+    "enTitle": "Acer tataricum subsp. ginnala",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%8B%A0%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_tataricum_subsp._ginnala"
+  },
+  {
+    "id": 77,
+    "name": "아까시나무",
+    "scientificName": "Robinia pseudoacacia L.",
+    "koTitle": "아까시나무",
+    "enTitle": "Robinia pseudoacacia",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%95%84%EA%B9%8C%EC%8B%9C%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Robinia_pseudoacacia"
+  },
+  {
+    "id": 78,
+    "name": "앵도나무",
+    "scientificName": "Prunus tomentosa Thunb.",
+    "koTitle": "앵두나무",
+    "enTitle": "Prunus tomentosa",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%95%B5%EB%91%90%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_tomentosa"
+  },
+  {
+    "id": 79,
+    "name": "오동나무",
+    "scientificName": "Paulownia tomentosa Steud.",
+    "koTitle": "오동나무",
+    "enTitle": "Paulownia coreana",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%98%A4%EB%8F%99%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Paulownia_coreana"
+  },
+  {
+    "id": 80,
+    "name": "왕벚나무",
+    "scientificName": "Prunus yedoensis Matsum.",
+    "koTitle": "왕벚나무",
+    "enTitle": "Prunus × yedoensis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%99%95%EB%B2%9A%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_%C3%97_yedoensis"
+  },
+  {
+    "id": 81,
+    "name": "은행나무",
+    "scientificName": "Ginkgo biloba L.",
+    "koTitle": "은행나무",
+    "enTitle": "Ginkgo biloba",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ginkgo_biloba"
+  },
+  {
+    "id": 82,
+    "name": "이팝나무",
+    "scientificName": "Chionanthus retusus Lindl.& Paxton",
+    "koTitle": "이팝나무",
+    "enTitle": "Chionanthus retusus",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9D%B4%ED%8C%9D%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Chionanthus_retusus"
+  },
+  {
+    "id": 83,
+    "name": "인동덩굴",
+    "scientificName": "Lonicera japonica Thunb.",
+    "koTitle": "인동덩굴",
+    "enTitle": "Lonicera japonica",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9D%B8%EB%8F%99%EB%8D%A9%EA%B5%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Lonicera_japonica"
+  },
+  {
+    "id": 84,
+    "name": "일본목련",
+    "scientificName": "Magnolia obovata Thunb.",
+    "koTitle": "일본목련",
+    "enTitle": "Magnolia obovata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9D%BC%EB%B3%B8%EB%AA%A9%EB%A0%A8",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Magnolia_obovata"
+  },
+  {
+    "id": 85,
+    "name": "자귀나무",
+    "scientificName": "Albizia julibrissin Durazz.",
+    "koTitle": "자귀나무",
+    "enTitle": "Albizia julibrissin",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9E%90%EA%B7%80%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Albizia_julibrissin"
+  },
+  {
+    "id": 86,
+    "name": "자작나무",
+    "scientificName": "Betula pendula Roth",
+    "koTitle": "자작나무",
+    "enTitle": "Betula platyphylla",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9E%91%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Betula_platyphylla"
+  },
+  {
+    "id": 87,
+    "name": "작살나무",
+    "scientificName": "Callicarpa japonica Thunb.",
+    "koTitle": "작살나무",
+    "enTitle": "Callicarpa japonica",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9E%91%EC%82%B4%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Callicarpa_japonica"
+  },
+  {
+    "id": 88,
+    "name": "잣나무",
+    "scientificName": "Pinus koraiensis Siebold & Zucc.",
+    "koTitle": "잣나무",
+    "enTitle": "Pinus koraiensis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9E%A3%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_koraiensis"
+  },
+  {
+    "id": 89,
+    "name": "전나무",
+    "scientificName": "Abies holophylla Maxim.",
+    "koTitle": "전나무",
+    "enTitle": "Abies holophylla",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A0%84%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Abies_holophylla"
+  },
+  {
+    "id": 90,
+    "name": "조릿대",
+    "scientificName": "Sasa borealis (Hack.) Makino & Shibata",
+    "koTitle": "조릿대속",
+    "enTitle": "Sasamorpha",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A1%B0%EB%A6%BF%EB%8C%80%EC%86%8D",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sasamorpha"
+  },
+  {
+    "id": 91,
+    "name": "졸참나무",
+    "scientificName": "Quercus serrata Murray",
+    "koTitle": "졸참나무",
+    "enTitle": "Quercus serrata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A1%B8%EC%B0%B8%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_serrata"
+  },
+  {
+    "id": 92,
+    "name": "주목",
+    "scientificName": "Taxus cuspidata Siebold & Zucc.",
+    "koTitle": "주목",
+    "enTitle": "Taxus cuspidata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A3%BC%EB%AA%A9",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Taxus_cuspidata"
+  },
+  {
+    "id": 93,
+    "name": "중국단풍",
+    "scientificName": "Acer buergerianum Miq.",
+    "koTitle": "중국단풍",
+    "enTitle": "Acer buergerianum",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A4%91%EA%B5%AD%EB%8B%A8%ED%92%8D",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_buergerianum"
+  },
+  {
+    "id": 94,
+    "name": "쥐똥나무",
+    "scientificName": "Ligustrum obtusifolium Siebold & Zucc.",
+    "koTitle": "쥐똥나무",
+    "enTitle": "Ligustrum obtusifolium",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A5%90%EB%98%A5%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ligustrum_obtusifolium"
+  },
+  {
+    "id": 95,
+    "name": "진달래",
+    "scientificName": "Rhododendron mucronulatum Turcz.",
+    "koTitle": "진달래",
+    "enTitle": "Rhododendron mucronulatum",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A7%84%EB%8B%AC%EB%9E%98",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rhododendron_mucronulatum"
+  },
+  {
+    "id": 96,
+    "name": "쪽동백나무",
+    "scientificName": "Styrax obassia Siebold & Zucc.",
+    "koTitle": "쪽동백나무",
+    "enTitle": "Styrax obassia",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%AA%BD%EB%8F%99%EB%B0%B1%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Styrax_obassia"
+  },
+  {
+    "id": 97,
+    "name": "참느릅나무",
+    "scientificName": "Ulmus parvifolia Jacq.",
+    "koTitle": "참느릅나무",
+    "enTitle": "Ulmus parvifolia",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%B0%B8%EB%8A%90%EB%A6%85%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ulmus_parvifolia"
+  },
+  {
+    "id": 98,
+    "name": "철쭉",
+    "scientificName": "Rhododendron schlippenbachii Maxim.",
+    "koTitle": "철쭉",
+    "enTitle": "Rhododendron schlippenbachii",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%B2%A0%EC%AD%89",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rhododendron_schlippenbachii"
+  },
+  {
+    "id": 99,
+    "name": "측백나무",
+    "scientificName": "Platycladus orientalis (L.) Franco",
+    "koTitle": "측백나무",
+    "enTitle": "Platycladus",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%B8%A1%EB%B0%B1%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Platycladus"
+  },
+  {
+    "id": 100,
+    "name": "층층나무",
+    "scientificName": "Cornus controversa Hemsl.",
+    "koTitle": "층층나무",
+    "enTitle": "Cornus controversa",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%B8%B5%EC%B8%B5%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_controversa"
+  },
+  {
+    "id": 101,
+    "name": "칠엽수",
+    "scientificName": "Aesculus turbinata Blume",
+    "koTitle": "칠엽수",
+    "enTitle": "Aesculus turbinata",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%B9%A0%EC%97%BD%EC%88%98",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Aesculus_turbinata"
+  },
+  {
+    "id": 102,
+    "name": "태산목",
+    "scientificName": "Magnolia grandiflora L.",
+    "koTitle": "태산목",
+    "enTitle": "Magnolia grandiflora",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%83%9C%EC%82%B0%EB%AA%A9",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Magnolia_grandiflora"
+  },
+  {
+    "id": 103,
+    "name": "탱자나무",
+    "scientificName": "Citrus trifoliata L.",
+    "koTitle": "탱자나무",
+    "enTitle": "Trifoliate orange",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%83%B1%EC%9E%90%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Trifoliate_orange"
+  },
+  {
+    "id": 104,
+    "name": "백합나무",
+    "scientificName": "Liriodendron tulipifera L.",
+    "koTitle": "백합나무",
+    "enTitle": "Liriodendron tulipifera",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%B1%ED%95%A9%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Liriodendron_tulipifera"
+  },
+  {
+    "id": 105,
+    "name": "팔손이",
+    "scientificName": "Fatsia japonica (Thunb.) Decne. & Planch.",
+    "koTitle": "팔손이",
+    "enTitle": "Fatsia japonica",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%8C%94%EC%86%90%EC%9D%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Fatsia_japonica"
+  },
+  {
+    "id": 106,
+    "name": "팥배나무",
+    "scientificName": "Sorbus alnifolia (Siebold & Zucc.) C. Koch",
+    "koTitle": "팥배나무",
+    "enTitle": "Alniaria alnifolia",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%8C%A5%EB%B0%B0%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Alniaria_alnifolia"
+  },
+  {
+    "id": 107,
+    "name": "팽나무",
+    "scientificName": "Celtis sinensis Pers.",
+    "koTitle": "팽나무",
+    "enTitle": "Celtis sinensis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%8C%BD%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Celtis_sinensis"
+  },
+  {
+    "id": 108,
+    "name": "풍년화",
+    "scientificName": "Hamamelis japonica Siebold & Zucc.",
+    "koTitle": "풍년화",
+    "enTitle": "Hamamelis japonica",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%92%8D%EB%85%84%ED%99%94",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Hamamelis_japonica"
+  },
+  {
+    "id": 109,
+    "name": "피나무",
+    "scientificName": "Tilia amurensis Rupr.",
+    "koTitle": "피나무",
+    "enTitle": "Tilia amurensis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%94%BC%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Tilia_amurensis"
+  },
+  {
+    "id": 110,
+    "name": "피라칸다",
+    "scientificName": "Pyracantha angustifolia (Franch.) C.K. Schneid.",
+    "koTitle": "피라칸타",
+    "enTitle": "Pyracantha angustifolia",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%94%BC%EB%9D%BC%EC%B9%B8%ED%83%80",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pyracantha_angustifolia"
+  },
+  {
+    "id": 111,
+    "name": "해당화",
+    "scientificName": "Rosa rugosa Thunb.",
+    "koTitle": "해당화",
+    "enTitle": "Rosa rugosa",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%95%B4%EB%8B%B9%ED%99%94",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rosa_rugosa"
+  },
+  {
+    "id": 112,
+    "name": "향나무",
+    "scientificName": "Juniperus chinensis L.",
+    "koTitle": "향나무",
+    "enTitle": "Juniperus chinensis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%96%A5%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Juniperus_chinensis"
+  },
+  {
+    "id": 113,
+    "name": "호두나무",
+    "scientificName": "Juglans regia L.",
+    "koTitle": "호두나무",
+    "enTitle": "Juglans regia",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%98%B8%EB%91%90%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Juglans_regia"
+  },
+  {
+    "id": 114,
+    "name": "호랑가시나무",
+    "scientificName": "Ilex cornuta Lindl. & Paxton",
+    "koTitle": "호랑가시나무",
+    "enTitle": "Ilex cornuta",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%98%B8%EB%9E%91%EA%B0%80%EC%8B%9C%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_cornuta"
+  },
+  {
+    "id": 115,
+    "name": "화살나무",
+    "scientificName": "Euonymus alatus (Thunb.) Siebold",
+    "koTitle": "화살나무",
+    "enTitle": "Euonymus alatus",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%99%94%EC%82%B4%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Euonymus_alatus"
+  },
+  {
+    "id": 116,
+    "name": "회양목",
+    "scientificName": "Buxus microphylla Sieb. & Zucc.",
+    "koTitle": "회양목",
+    "enTitle": "Buxus microphylla",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9A%8C%EC%96%91%EB%AA%A9",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Buxus_microphylla"
+  },
+  {
+    "id": 117,
+    "name": "회화나무",
+    "scientificName": "Styphnolobium japonicum (L.) Schott",
+    "koTitle": "회화나무",
+    "enTitle": "Styphnolobium japonicum",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9A%8C%ED%99%94%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Styphnolobium_japonicum"
+  },
+  {
+    "id": 118,
+    "name": "후박나무",
+    "scientificName": "Machilus thunbergii Siebold & Zucc.",
+    "koTitle": "후박나무",
+    "enTitle": "Machilus thunbergii",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9B%84%EB%B0%95%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Machilus_thunbergii"
+  },
+  {
+    "id": 119,
+    "name": "흰말채나무",
+    "scientificName": "Cornus alba L.",
+    "koTitle": "흰말채나무",
+    "enTitle": "Cornus alba",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9D%B0%EB%A7%90%EC%B1%84%EB%82%98%EB%AC%B4",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_alba"
+  },
+  {
+    "id": 120,
+    "name": "히어리",
+    "scientificName": "Corylopsis coreana Uyeki",
+    "koTitle": "히어리",
+    "enTitle": "Corylopsis",
+    "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9E%88%EC%96%B4%EB%A6%AC",
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Corylopsis"
+  }
+]

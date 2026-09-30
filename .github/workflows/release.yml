@@ -1,0 +1,40 @@
+name: Build and Release Package
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag name (e.g. v1.0.0)'
+        required: true
+        default: 'v1.0.0'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Zip Utility
+        run: sudo apt-get update && sudo apt-get install -y zip
+
+      - name: Build Offline Learning Package
+        run: |
+          chmod +x tools/build_package.sh
+          ./tools/build_package.sh
+
+      - name: Create GitHub Release and Upload Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Release ${{ github.ref_name || inputs.tag_name }}
+          tag_name: ${{ github.ref_name || inputs.tag_name }}
+          files: dist/조경기능사_수목감별120_학습패키지.zip
+          draft: false
+          prerelease: false
+          generate_release_notes: true
