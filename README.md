@@ -72,26 +72,19 @@ chmod +x tools/build_package.sh
 
 ---
 
-## 📝 커밋 메시지 컨벤션 (Commit Convention)
+## 🤝 기여하기 (Contributing)
 
-본 프로젝트는 [Conventional Commits](https://www.conventionalcommits.org/) 표준을 따릅니다:
+프로젝트에 기여하고 싶으신가요? 수목 데이터 수정, UI 개선, 버그 제보 등 모든 기여를 환영합니다!  
+상세한 개발 환경 설정, 커밋 컨벤션 및 품질 검증 체크리스트는 **[기여 가이드라인 (CONTRIBUTING.md)](CONTRIBUTING.md)** 문서를 확인해 주세요.
+
+### 📝 커밋 메시지 컨벤션 요약
+본 프로젝트는 [Conventional Commits](https://www.conventionalcommits.org/) 표준을 준수합니다:
 
 ```
 <type>(<scope>): <subject>
-
-[본문 (선택)]
 ```
-
-| 타입 (Type) | 설명 | 예시 |
-|---|---|---|
-| `feat` | 새로운 기능 추가 | `feat(quiz): 주관식 입력 시 자동 완성 지원` |
-| `fix` | 버그 수정 | `fix(overlay): 모바일 터치 시 오버레이 중복 닫힘 수정` |
-| `docs` | 문서 수정 | `docs: README 실행 방법 보완` |
-| `style` | 코드 서식 및 포맷팅 (로직 변경 없음) | `style(css): 반응형 패딩 규격 정리` |
-| `refactor` | 코드 리팩토링 | `refactor(app): 퀴즈 상태 관리 로직 모듈화` |
-| `data` | 수목 데이터 및 이미지 수정 | `data(trees): 045번 산수유 학명 오탈자 수정` |
-| `ci` | CI/CD 설정 및 워크플로우 수정 | `ci(pages): GitHub Pages 배포 설정 업데이트` |
-| `chore` | 빌드, 패키징 스크립트 및 잡무 | `chore(release): 패키징 템플릿 스크립트 갱신` |
+- 주요 타입: `feat`(기능 추가), `fix`(버그 수정), `data`(수목 데이터/학명/이미지 매핑), `docs`(문서), `style`(서식), `refactor`(리팩토링), `ci`(CI/CD), `chore`(빌드/패키징)
+- 자세한 스코프 및 작성 예시는 [CONTRIBUTING.md#5-커밋-메시지-컨벤션](CONTRIBUTING.md#5-커밋-메시지-컨벤션-commit-convention)을 참고하세요.
 
 ---
 

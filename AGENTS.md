@@ -19,22 +19,30 @@
 ```
 조경기능사 실기/
 ├── AGENTS.md                         # 본 개발자/에이전트 가이드
-├── web/                              # 배포 및 실행용 프론트엔드 루트
+├── README.md                         # GitHub 저장소 메인 소개 및 사용 가이드
+├── CONTRIBUTING.md                   # 기여 가이드라인, 커밋 컨벤션 및 품질 검증 기준
+├── .gitignore                        # Git 추적 제외 목록 (dist, OS 임시 파일 등)
+├── .github/workflows/                # GitHub Actions CI/CD 워크플로우
+│   ├── deploy-pages.yml              # GitHub Pages 웹앱 자동 배포 워크플로우
+│   └── release.yml                   # 태그 푸시 시 오프라인 패키지 자동 빌드 & 릴리즈
+├── web/                              # 배포 및 실행용 프론트엔드 루트 (Pages 배포 대상)
 │   ├── index.html                    # 메인 단일 HTML 문서 (SPA 구조)
 │   ├── style.css                     # 전체 스타일시트 (반응형, 모바일, 오버레이, 애니메이션)
 │   ├── app.js                        # 핵심 비즈니스 로직, 상태 관리, 뷰 렌더러
 │   ├── data.js                       # 120종 수목 데이터 (window.TREES 전역 객체)
 │   ├── trees.json                    # 120종 원본 JSON 데이터
 │   └── assets/                       # 수목 실물 사진 467장 (001-1.jpg ~ 120-4.jpg)
-├── tools/                            # 데이터 수집 및 파이프라인 도구
+├── tools/                            # 데이터 수집 및 패키징 도구
 │   ├── fetch_treeworld.py            # 사이버 수목원 데이터 크롤러 및 매퍼
 │   ├── download_treeworld_photos.py  # 수목 도감 사진 다운로더 & 리사이저 (sips 활용)
-│   └── build_data.py                 # 최종 trees.json, data.js, md, csv 빌드 스크립트
+│   ├── build_data.py                 # 최종 trees.json, data.js, md, csv 빌드 스크립트
+│   ├── build_package.sh              # 오프라인 패키지(ZIP) 원클릭 빌드 스크립트
+│   └── package_template/             # 오프라인 패키지 동봉 실행기(Mac/Win) 및 안내문
 ├── research/                         # 데이터 원본 및 크롤링 결과물
 │   ├── treeworld_data.json           # 사이버 수목원 수집 데이터
 │   ├── treeworld_images_manifest.json# 사진 매니페스트
 │   └── assets_video_backup/          # 원본 영상 캡처 사진 백업본 (317장)
-├── dist/                             # 배포용 패키지
+├── dist/                             # 로컬 빌드 산출물 (.gitignore로 관리, Releases 배포)
 │   ├── 조경기능사_수목감별120_학습패키지/      # 무설치 오프라인 배포 폴더
 │   └── 조경기능사_수목감별120_학습패키지.zip  # 배포용 단일 ZIP 파일 (82MB)
 ├── 수목120-학습노트.md                # 120종 텍스트 정리 노트
@@ -168,27 +176,102 @@ python3 -m http.server 8080 -d web
 
 ---
 
-## 7. 배포 패키지 빌드 가이드
+## 7. 오프라인 배포 패키지 빌드 가이드
 
-배포용 독립 패키지(`.zip`)를 재생성할 때는 다음 단계를 거칩니다:
+로컬에서 배포용 독립 패키지(`.zip`, 약 82MB)를 재생성할 때는 원클릭 패키징 스크립트를 사용합니다:
 
 ```bash
-# 1. dist 디렉토리 준비 및 web 소스 복사
-mkdir -p "dist/조경기능사_수목감별120_학습패키지"
-cp -R web/* "dist/조경기능사_수목감별120_학습패키지/"
-
-# 2. 실행 스크립트 권한 부여
-chmod +x "dist/조경기능사_수목감별120_학습패키지/실행하기_Mac.command"
-
-# 3. 압축 파일 생성
-cd dist && zip -r "조경기능사_수목감별120_학습패키지.zip" "조경기능사_수목감별120_학습패키지"
+# 원클릭 패키징 스크립트 실행 (dist/ 생성 및 압축)
+chmod +x tools/build_package.sh
+./tools/build_package.sh
 ```
+
+- 스크립트 동작 과정:
+  1. `dist/조경기능사_수목감별120_학습패키지/` 디렉토리 초기화.
+  2. `web/` 내의 모든 정적 자산(HTML, CSS, JS, 467장 사진) 복사.
+  3. `tools/package_template/` 내의 OS별 실행기(`실행하기_Mac.command`, `실행하기_Windows.bat`) 및 `사용안내.txt` 동봉.
+  4. Mac 실행기 권한 부여(`chmod +x`) 및 `dist/조경기능사_수목감별120_학습패키지.zip` 압축 생성.
+
+> **주의**: 82MB ZIP 파일과 `dist/` 폴더는 `.gitignore`에 의해 Git 트래킹에서 제외되며, GitHub Releases 자산으로 분리 관리됩니다.
 
 ---
 
-## 8. 에이전트 개발 지침 (Guidelines for AI Agents)
+## 8. Git 브랜치 전략 및 커밋 컨벤션 가이드
 
-1. **외부 런타임 종속성 추가 금지**: CDN 라이브러리(jQuery, Lodash, Bootstrap 등)나 NPM 패키지를 추가하지 마십시오. 오프라인 순수 바닐라 JS 환경을 유지해야 합니다.
-2. **퀴즈 힌트 정책 보존**: 퀴즈 문제 화면에 텍스트 힌트가 들어가지 않도록 주의하십시오.
-3. **메모리 정리(Cleanup)**: Canvas 애니메이션 루프나 `window` 전역 이벤트 리스너를 추가할 때는 반드시 뷰 전환 시 해제되는 `cleanup` 로직을 포함하십시오.
-4. **접근성 및 터치 UX**: 모바일 터치 타깃(최소 44px 이상)과 키보드 조작성을 항상 고려하십시오.
+> **참고**: 외부 기여자 및 세부 커밋 컨벤션, PR 절차는 [CONTRIBUTING.md](CONTRIBUTING.md)에 상세히 정의되어 있습니다.
+
+### 8.1. 브랜치 전략: `main` 단독 브랜치 운용 (Trunk-based)
+- 본 프로젝트는 오버헤드를 최소화하기 위해 **`main` 단독 브랜치**로 운용합니다.
+- `main` 브랜치에 코드가 푸시되면 자동으로 GitHub Pages에 웹앱이 배포됩니다.
+- 대규모 리팩토링이나 실험적인 대규모 개편 시에만 임시 `feature/*` 브랜치를 생성하고, 작업 완료 후 `main`에 병합합니다.
+
+### 8.2. 커밋 메시지 컨벤션 (Conventional Commits)
+커밋 메시지는 반드시 아래 형식을 준수하여 원자적(Atomic) 단위로 작성합니다:
+
+```
+<type>(<scope>): <subject>
+
+[본문 (선택 사항)]
+```
+
+| 타입 (`type`) | 용도 | 예시 |
+|---|---|---|
+| `feat` | 새로운 기능 추가 | `feat(quiz): 주관식 초성 힌트 옵션 추가` |
+| `fix` | 버그 및 오류 수정 | `fix(app): Safari 모바일에서 오버레이 스크롤 잠김 해제` |
+| `data` | 수목 데이터/학명/이미지 매핑 수정 | `data(trees): 012번 계수나무 학명 오탈자 수정` |
+| `docs` | 문서 수정 및 보완 | `docs: AGENTS.md 작업 지침 갱신` |
+| `style` | 코드 서식 및 포맷팅 (로직 변경 없음) | `style(css): 퀴즈 오버레이 모바일 여백 조정` |
+| `refactor` | 코드 리팩토링 (기능 변경 없음) | `refactor(quiz): 오답 저장 로직 모듈화` |
+| `perf` | 성능 개선 | `perf(image): 썸네일 렌더링 지연 로딩 최적화` |
+| `ci` | CI/CD 워크플로우 수정 | `ci(pages): GitHub Pages 배포 액션 v4 적용` |
+| `chore` | 빌드, 패키징 스크립트, 잡무 | `chore(package): Windows 실행 스크립트 인코딩 보완` |
+
+---
+
+## 9. CI/CD 및 배포 자동화 파이프라인 가이드
+
+### 9.1. 온라인 웹앱 배포 (GitHub Pages)
+- **워크플로우**: [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
+- **동작 방식**: `main` 브랜치에 `web/**` 변경 사항이 푸시되면, GitHub Actions가 `web/` 디렉토리를 아티팩트로 추출하여 GitHub Pages(`https://unizune.github.io/tree120/`)에 즉시 무중단 배포합니다.
+- **일상 개발 흐름**:
+  ```bash
+  # 코드 수정 후
+  git add .
+  git commit -m "fix(study): 도감 모달 확대 닫기 버그 수정"
+  git push origin main
+  # -> GitHub Pages 자동 반영 완료
+  ```
+
+### 9.2. 오프라인 패키지 배포 (GitHub Releases)
+- **워크플로우**: [`.github/workflows/release.yml`](.github/workflows/release.yml)
+- **동작 방식**: 버전 태그(`v*.*.*`) 푸시 시, GitHub 가상머신이 `tools/build_package.sh`를 실행하여 82MB 배포용 ZIP 패키지를 빌드하고 [GitHub Releases](../../releases)에 자산으로 자동 등록합니다.
+- **새 버전 릴리즈 흐름**:
+  ```bash
+  # 버전 태그 생성 및 푸시
+  git tag v1.0.1
+  git push origin v1.0.1
+  # -> GitHub Releases에 "조경기능사_수목감별120_학습패키지.zip" 자동 등록 완료
+  ```
+
+---
+
+## 10. 에이전트 개발 및 작업 지침 (Guidelines for AI Agents)
+
+에이전트는 코드 작성, 데이터 파이프라인 작업, 배포 관련 작업 시 다음 8대 원칙을 **반드시 준수**해야 합니다:
+
+1. **외부 런타임 종속성 추가 금지 (Zero-Dependency)**:
+   - CDN 라이브러리(jQuery, Lodash, Bootstrap, React 등)나 NPM 패키지를 추가하지 마십시오. 오프라인 순수 바닐라 JS 환경을 절대 보존해야 합니다.
+2. **퀴즈 힌트 정책 보존 (Zero-Hint)**:
+   - 퀴즈 문제 풀이 화면에 학명, 과명, 텍스트 형태 설명 등의 스포일러 단서가 미리 노출되지 않도록 유지하십시오.
+3. **메모리 정리(Cleanup)**:
+   - Canvas 파티클 애니메이션 루프나 `window` 전역 이벤트 리스너를 추가할 때는 반드시 뷰 전환 시 해제되는 `cleanup` 로직을 포함하십시오.
+4. **접근성 및 터치 UX**:
+   - 모바일 터치 타깃(최소 44px 이상), `touch-action: manipulation`, 입력 폼 줌 방지(`font-size: 16px` 이상) 및 키보드 조작성을 항상 준수하십시오.
+5. **대용량 바이너리 Git 커밋 금지**:
+   - 82MB ZIP 파일이나 `dist/` 빌드 산출물, 비디오 프레임 추출 임시 파일(`research/frames/`)은 절대로 Git 저장소에 커밋하지 마십시오. 대용량 배포 파일은 GitHub Releases를 통해 관리합니다.
+6. **커밋 메시지 컨벤션 준수**:
+   - 변경 사항 커밋 시 반드시 [CONTRIBUTING.md](CONTRIBUTING.md)에 정의된 Conventional Commits 양식(`<type>(<scope>): <subject>`)을 따르고, 하나의 커밋에는 하나의 목적만 담는 원자적(Atomic) 커밋을 유지하십시오.
+7. **`main` 단독 브랜치 기반 작업**:
+   - 복잡한 브랜치 분기 없이 `main` 단독 브랜치에 직접 커밋 및 푸시하여 GitHub Pages 자동 배포가 정상 트리거되도록 하십시오.
+8. **데이터 동기화 빌드 검증**:
+   - `web/trees.json`을 수정했을 경우 반드시 `python3 tools/build_data.py`를 실행하여 브라우저 로딩용 `web/data.js`를 동기화하고, `node -c web/app.js`로 문법 검증을 완료한 후 커밋하십시오.
