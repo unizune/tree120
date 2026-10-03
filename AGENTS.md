@@ -31,9 +31,13 @@
 │   ├── app.js                        # 핵심 비즈니스 로직, 상태 관리, 뷰 렌더러
 │   ├── data.js                       # 120종 수목 데이터 (window.TREES 전역 객체)
 │   ├── trees.json                    # 120종 원본 JSON 데이터
-│   └── assets/                       # 수목 실물 사진 467장 (001-1.jpg ~ 120-4.jpg)
+│   └── assets/                       # 수목 실물 사진 946장 (treeworld 467장 + nature 479장)
+│       └── nature/                   # 국가생물종지식정보시스템 고화질 사진 479장
 ├── tools/                            # 데이터 수집 및 패키징 도구
 │   ├── fetch_nature.py               # 국가생물종지식정보시스템 식물도감 URL 매퍼
+│   ├── fetch_nature_gallery.py       # 국가생물종지식정보시스템 갤러리 이미지 & 메타 수집기
+│   ├── label_nature_photos.py        # 5대 부위 레이블러 & 스마트 큐레이터
+│   ├── download_nature_photos.py     # 국가생물종 사진 다운로더 & sips 웹 최적화기
 │   ├── fetch_wikipedia.py            # 한국어/영문 위키백과 문서 매퍼
 │   ├── fetch_treeworld.py            # 사이버 수목원 데이터 크롤러 및 매퍼
 │   ├── download_treeworld_photos.py  # 수목 도감 사진 다운로더 & 리사이저 (sips 활용)
@@ -42,13 +46,15 @@
 │   └── package_template/             # 오프라인 패키지 동봉 실행기(Mac/Win) 및 안내문
 ├── research/                         # 데이터 원본 및 크롤링 결과물
 │   ├── nature_data.json              # 국가생물종지식정보시스템 매핑 데이터
+│   ├── nature_images_manifest.json   # 국가생물종 4,270장 전수 갤러리 메타데이터
+│   ├── nature_curated_manifest.json  # 5대 부위 레이블링 완료 엄선 사진 479장 매니페스트
 │   ├── treeworld_data.json           # 사이버 수목원 수집 데이터
 │   ├── wikipedia_data.json           # 위키백과 수집 데이터
-│   ├── treeworld_images_manifest.json# 사진 매니페스트
+│   ├── treeworld_images_manifest.json# 사이버수목원 사진 매니페스트
 │   └── assets_video_backup/          # 원본 영상 캡처 사진 백업본 (317장)
 ├── dist/                             # 로컬 빌드 산출물 (.gitignore로 관리, Releases 배포)
 │   ├── 조경기능사_수목감별120_학습패키지/      # 무설치 오프라인 배포 폴더
-│   └── 조경기능사_수목감별120_학습패키지.zip  # 배포용 단일 ZIP 파일 (82MB)
+│   └── 조경기능사_수목감별120_학습패키지.zip  # 배포용 단일 ZIP 파일
 ├── 수목120-학습노트.md                # 120종 텍스트 정리 노트
 └── 수목120-학습자료.csv                # 120종 스프레드시트 데이터
 ```
@@ -77,7 +83,7 @@ interface Tree {
   treeworldUrl: string;       // 사이버 수목원 도감 원문 URL
   wikiKoUrl: string;          // 한국어 위키백과 문서 URL
   wikiEnUrl: string;          // 영문 Wikipedia 문서 URL
-  images: TreeImage[];        // 도감 실물 사진 목록 (보통 2~4장)
+  images: TreeImage[];        // 도감 실물 사진 목록 (수종당 6~9장, 총 946장)
   morphology: {               // 4대 형태학적 상세 특징
     leaf: string;             // 잎 특징
     flower: string;           // 꽃 특징
@@ -87,9 +93,13 @@ interface Tree {
 }
 
 interface TreeImage {
-  src: string;                // 상대 경로 (예: "assets/001-1.jpg")
-  tag: string;                // 부위 구분 ("잎" | "꽃" | "열매" | "수형" | "줄기")
+  src: string;                // 상대 경로 (예: "assets/001-1.jpg" 또는 "assets/nature/nature_001_01.jpg")
+  tag: string;                // 부위 구분 ("잎" | "꽃" | "열매" | "줄기·수형" | "기타")
   desc: string;               // 해당 부위 형태학적 상세 캡션
+  source?: string;            // 사진 출처 ("국가생물종지식정보시스템" | "사이버수목원")
+  author?: string;            // 촬영자/기관 (예: "국립수목원(이동혁)")
+  date?: string;              // 촬영 일자 (예: "2019-09-23")
+  location?: string;          // 촬영 장소 (예: "전북 정읍시 내장산")
 }
 ```
 
@@ -145,13 +155,22 @@ python3 tools/fetch_treeworld.py
 # 2. 산림청 국가생물종지식정보시스템 도감 상세 URL 매핑
 python3 tools/fetch_nature.py
 
-# 3. 위키백과(한국어/영문) 문서 URL 매핑
+# 3. 국가생물종지식정보시스템 갤러리 이미지 & 메타데이터 수집 (4,270장)
+python3 tools/fetch_nature_gallery.py
+
+# 4. 5대 부위(잎, 꽃, 열매, 줄기·수형, 기타) 레이블링 및 스마트 큐레이션 (479장)
+python3 tools/label_nature_photos.py
+
+# 5. 국가생물종 실물 사진 다운로드 및 웹 규격 최적화 (macOS sips 활용)
+python3 tools/download_nature_photos.py
+
+# 6. 위키백과(한국어/영문) 문서 URL 매핑
 python3 tools/fetch_wikipedia.py
 
-# 4. 도감 실물 고해상도 사진 다운로드 및 리사이징 (macOS sips 도구 활용)
+# 7. 사이버 수목원 사진 다운로드 및 리사이징
 python3 tools/download_treeworld_photos.py
 
-# 5. web/trees.json, web/data.js, 수목120-학습노트.md 등 종합 빌드
+# 8. web/trees.json, web/data.js, 수목120-학습노트.md 등 종합 빌드
 python3 tools/build_data.py
 ```
 

@@ -15,6 +15,7 @@ for line in (r / 'research/notes.tsv').read_text(encoding='utf-8').splitlines():
 # 2. Load catalog & images
 raw_trees = json.loads((r / 'research/images.json').read_text(encoding='utf-8'))
 tw_images = json.loads((r / 'research/treeworld_images_manifest.json').read_text(encoding='utf-8'))
+nature_images = json.loads((r / 'research/nature_curated_manifest.json').read_text(encoding='utf-8'))
 
 # 3. Load treeworld rich data & wikipedia data & nature data
 tw_data = json.loads((r / 'research/treeworld_data.json').read_text(encoding='utf-8'))
@@ -44,8 +45,28 @@ for t in raw_trees:
     }
     item.update(notes[tid])
 
-    # Assign treeworld photos
-    item['images'] = tw_images.get(str(tid), [])
+    # Combine photos: Treeworld photos + Nature (국가생물종지식정보시스템) photos
+    combined_images = []
+    for im in tw_images.get(str(tid), []):
+        combined_images.append({
+            'src': im['src'],
+            'tag': im['tag'],
+            'desc': im.get('desc', f"{t['name']} {im['tag']} 형태"),
+            'source': '사이버수목원'
+        })
+
+    for im in nature_images.get(str(tid), {}).get('images', []):
+        combined_images.append({
+            'src': im['src'],
+            'tag': im['tag'],
+            'desc': im.get('desc', f"{t['name']} {im['tag']} 형태"),
+            'author': im.get('author', '국립수목원'),
+            'date': im.get('date', ''),
+            'location': im.get('location', ''),
+            'source': '국가생물종지식정보시스템'
+        })
+
+    item['images'] = combined_images
 
     # Treeworld enrichments
     tw = tw_data.get(str(tid), {})
@@ -76,7 +97,7 @@ for t in raw_trees:
     trees.append(item)
 
 assert len(trees) == 120 and [t['id'] for t in trees] == list(range(1, 121))
-assert all(t['images'] and len(t['points']) == 3 for t in trees)
+assert all(len(t['images']) >= 4 and len(t['points']) == 3 for t in trees)
 assert all(len(t['features4']) == 4 for t in trees)
 assert all(t['treeworldUrl'] for t in trees)
 assert all(t.get('natureUrl') for t in trees)
@@ -148,7 +169,11 @@ for t in trees:
     # Photos with morphology tag and description
     for idx, im in enumerate(t['images']):
         md.append(f"![{t['name']} - {im['tag']}](web/{im['src']})")
-        md.append(f"*{im['tag']} | {im['desc']}*")
+        src_label = f"[{im.get('source', '')}] " if im.get('source') else ""
+        meta_parts = [f"{im['tag']} | {im['desc']}"]
+        if im.get('author'): meta_parts.append(im['author'])
+        if im.get('date'): meta_parts.append(im['date'])
+        md.append(f"*{src_label}{' · '.join(meta_parts)}*")
         md.append('')
 
     md.append('### 감별 핵심 포인트')
@@ -179,4 +204,6 @@ for t in trees:
 
 (r / '수목120-학습노트.md').write_text('\n'.join(md), encoding='utf-8')
 
-print(f"Verified {len(trees)} trees, {sum(len(t['images']) for t in trees)} treeworld photos, {sum(len(t['points']) for t in trees)} points, 120 nature links, 120 treeworld links, 120 KO wiki links, 120 EN wiki links.")
+tw_cnt = sum(1 for t in trees for im in t['images'] if im.get('source') == '사이버수목원')
+nat_cnt = sum(1 for t in trees for im in t['images'] if im.get('source') == '국가생물종지식정보시스템')
+print(f"Verified {len(trees)} trees, {sum(len(t['images']) for t in trees)} total photos ({tw_cnt} treeworld + {nat_cnt} nature), {sum(len(t['points']) for t in trees)} points, 120 nature links, 120 treeworld links, 120 KO wiki links, 120 EN wiki links.")

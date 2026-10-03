@@ -45,7 +45,70 @@
 }
 
 .thumbs button{display:flex;flex-direction:column;align-items:center;width:auto;min-width:68px}
-.thumb-tag{font-size:11px;font-weight:600;color:#244633;margin-top:3px;display:block}
+.thumbs button.hidden-by-filter{display:none !important}
+.thumb-tag{font-size:11px;font-weight:600;color:#244633;margin-top:3px;display:flex;align-items:center;gap:3px}
+
+/* Photo Filter Tabs & Rich Metadata */
+.photo-filter-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 12px 0 10px;
+}
+
+.photo-filter-chip {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #c7d7c4;
+  background: #ffffff;
+  color: #31523c;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  touch-action: manipulation;
+}
+
+.photo-filter-chip:hover {
+  border-color: var(--green);
+  color: var(--green);
+  background: #f4f8f2;
+}
+
+.photo-filter-chip.active {
+  background: var(--green);
+  border-color: var(--green);
+  color: #ffffff;
+}
+
+.photo-source-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.photo-source-badge.nature {
+  background: #e3f5e7;
+  color: #12572b;
+  border: 1px solid #99d6a8;
+}
+
+.photo-source-badge.treeworld {
+  background: #eff5ea;
+  color: #245230;
+  border: 1px solid #c0d8b9;
+}
+
+.photo-meta-info {
+  margin-top: 5px;
+  font-size: 11.5px;
+  color: #637667;
+  line-height: 1.4;
+}
 
 /* Statistics Dashboard Styles */
 .stats-container{max-width:1080px;margin:0 auto}

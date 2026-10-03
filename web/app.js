@@ -170,6 +170,15 @@ function videoUrl(t) {
   return `https://www.youtube.com/watch?v=K3PvgTi3eXI&t=${Math.floor(t.start)}s`;
 }
 
+function formatPhotoMeta(im) {
+  if (!im) return '';
+  const parts = [];
+  if (im.author) parts.push(`촬영: ${escapeHtml(im.author)}`);
+  if (im.date) parts.push(`일자: ${escapeHtml(im.date)}`);
+  if (im.location) parts.push(`장소: ${escapeHtml(im.location)}`);
+  return parts.length ? parts.join(' · ') : '';
+}
+
 function showDetail(id) {
   detailId = id;
   const t = trees.find(t => t.id === id);
@@ -177,6 +186,13 @@ function showDetail(id) {
   const prevT = trees.find(x => x.id === id - 1);
   const nextT = trees.find(x => x.id === id + 1);
   const initialImg = t.images[0];
+
+  const tagCounts = {};
+  t.images.forEach(im => {
+    const tag = im.tag || '기타';
+    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+  });
+  const uniqueTags = Object.keys(tagCounts);
 
   document.querySelector('#detail-content').innerHTML = `
     <!-- Floating Side Arrows (Desktop) -->
@@ -202,18 +218,33 @@ function showDetail(id) {
       <div class="detail-visual">
         <img id="large-photo" src="${initialImg.src}" alt="${escapeHtml(t.name)} 감별 사진">
         <div id="photo-caption-box" class="photo-caption-box">
-          <span id="photo-morph-tag" class="photo-morph-tag">${escapeHtml(initialImg.tag || '감별 사진')}</span>
-          <p id="photo-morph-desc" class="photo-morph-desc">${escapeHtml(initialImg.desc || t.points[0])}</p>
+          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px">
+            <span id="photo-morph-tag" class="photo-morph-tag">${escapeHtml(initialImg.tag || '감별 사진')}</span>
+            <span id="photo-source-badge" class="photo-source-badge ${initialImg.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}">
+              ${initialImg.source === '국가생물종지식정보시스템' ? '🌿 국가생물종' : '🌳 사이버수목원'}
+            </span>
+          </div>
+          <p id="photo-morph-desc" class="photo-morph-desc" style="margin-top:6px">${escapeHtml(initialImg.desc || t.points[0])}</p>
+          <div id="photo-meta-info" class="photo-meta-info">${formatPhotoMeta(initialImg)}</div>
         </div>
+
+        <div class="photo-filter-tabs">
+          <button class="photo-filter-chip active" data-filter="all">전체 (${t.images.length})</button>
+          ${uniqueTags.map(tag => `<button class="photo-filter-chip" data-filter="${escapeHtml(tag)}">${escapeHtml(tag)} (${tagCounts[tag]})</button>`).join('')}
+        </div>
+
         <div class="thumbs">
           ${t.images.map((im, i) => `
-            <button data-img="${i}" class="${i === 0 ? 'active' : ''}" aria-label="사진 ${i + 1} (${im.tag})">
+            <button data-img="${i}" data-tag="${escapeHtml(im.tag)}" class="${i === 0 ? 'active' : ''}" aria-label="사진 ${i + 1} (${im.tag})">
               <img src="${im.src}" alt="">
-              <span class="thumb-tag">${escapeHtml(im.tag)}</span>
+              <span class="thumb-tag">
+                <small>${im.source === '국가생물종지식정보시스템' ? '🌿' : '🌳'}</small>
+                ${escapeHtml(im.tag)}
+              </span>
             </button>
           `).join('')}
         </div>
-        <p class="detail-source">사이버 수목원(treeworld) 수목도감 부위별 실물 사진 · ${t.images.length}장<br>사진을 누르면 형태 부위 및 해설이 변경됩니다.</p>
+        <p class="detail-source">산림청 국가생물종지식정보시스템 및 사이버 수목원(treeworld) 실물 사진 · 총 ${t.images.length}장<br>부위별 필터 칩이나 썸네일을 누르면 해당 부위의 고해상도 실물 사진과 해설을 관찰할 수 있습니다.</p>
       </div>
       <div class="detail-text">
         <h2>${escapeHtml(t.name)}</h2>
@@ -286,13 +317,47 @@ function showDetail(id) {
 
   document.querySelector('.close').onclick = () => dialog.close();
 
-  document.querySelectorAll('[data-img]').forEach(b => b.onclick = () => {
-    const idx = +b.dataset.img;
+  const updateActivePhoto = (idx) => {
     const im = t.images[idx];
+    if (!im) return;
     document.querySelector('#large-photo').src = im.src;
     document.querySelector('#photo-morph-tag').textContent = im.tag || '감별 사진';
+    const badge = document.querySelector('#photo-source-badge');
+    if (badge) {
+      badge.textContent = im.source === '국가생물종지식정보시스템' ? '🌿 국가생물종' : '🌳 사이버수목원';
+      badge.className = `photo-source-badge ${im.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}`;
+    }
     document.querySelector('#photo-morph-desc').textContent = im.desc || t.points[Math.min(idx, t.points.length - 1)];
-    document.querySelectorAll('[data-img]').forEach(x => x.classList.toggle('active', x === b));
+    const metaEl = document.querySelector('#photo-meta-info');
+    if (metaEl) metaEl.innerHTML = formatPhotoMeta(im);
+
+    document.querySelectorAll('[data-img]').forEach(x => {
+      x.classList.toggle('active', +x.dataset.img === idx);
+    });
+  };
+
+  document.querySelectorAll('[data-img]').forEach(b => {
+    b.onclick = () => updateActivePhoto(+b.dataset.img);
+  });
+
+  document.querySelectorAll('.photo-filter-chip').forEach(chip => {
+    chip.onclick = () => {
+      document.querySelectorAll('.photo-filter-chip').forEach(c => c.classList.toggle('active', c === chip));
+      const filter = chip.dataset.filter;
+      let firstVisibleIdx = null;
+
+      document.querySelectorAll('.thumbs button[data-img]').forEach(b => {
+        const matches = (filter === 'all' || b.dataset.tag === filter);
+        b.classList.toggle('hidden-by-filter', !matches);
+        if (matches && firstVisibleIdx === null) {
+          firstVisibleIdx = +b.dataset.img;
+        }
+      });
+
+      if (firstVisibleIdx !== null) {
+        updateActivePhoto(firstVisibleIdx);
+      }
+    };
   });
 
   const goPrev = () => { if (prevT) showDetail(id - 1); };
@@ -458,12 +523,46 @@ function renderSetup() {
   };
 }
 
+function sampleQuizPhotos(images, maxCount = 4) {
+  if (!images || images.length <= maxCount) return images ? [...images] : [];
+
+  const groups = {};
+  for (const im of images) {
+    const tag = im.tag || '기타';
+    if (!groups[tag]) groups[tag] = [];
+    groups[tag].push(im);
+  }
+
+  const selected = [];
+  const tags = Object.keys(groups).sort(() => Math.random() - 0.5);
+
+  // 1. 서로 다른 부위에서 1장씩 우선 선택
+  for (const tag of tags) {
+    if (selected.length < maxCount) {
+      const pool = groups[tag];
+      const picked = pool[Math.floor(Math.random() * pool.length)];
+      selected.push(picked);
+    }
+  }
+
+  // 2. 4장 미만인 경우 남은 사진 풀에서 랜덤 보충
+  if (selected.length < maxCount) {
+    const remaining = images.filter(im => !selected.includes(im)).sort(() => Math.random() - 0.5);
+    while (selected.length < maxCount && remaining.length) {
+      selected.push(remaining.pop());
+    }
+  }
+
+  return selected.sort(() => Math.random() - 0.5);
+}
+
 function startQuiz(pool, n, mode, poolName = '전체 120종') {
   quiz = {
     poolName,
     questions: shuffle(pool).slice(0, n).map(t => ({
       tree: t,
-      choices: shuffle([t, ...shuffle(trees.filter(x => x.id !== t.id)).slice(0, 3)])
+      choices: shuffle([t, ...shuffle(trees.filter(x => x.id !== t.id)).slice(0, 3)]),
+      photos: sampleQuizPhotos(t.images, 4)
     })),
     index: 0,
     answers: [],
@@ -676,6 +775,8 @@ function renderQuestion() {
   const t = q.tree;
   quiz.answered = false;
 
+  const qPhotos = q.photos || sampleQuizPhotos(t.images, 4);
+
   main.innerHTML = `
     <div class="quiz-top">
       <span class="num">QUESTION ${String(quiz.index + 1).padStart(2, '0')} / ${quiz.questions.length}</span>
@@ -685,8 +786,8 @@ function renderQuestion() {
       <div style="width:${quiz.index / quiz.questions.length * 100}%"></div>
     </div>
     <div class="quiz-layout">
-      <div class="quiz-photos-grid count-${t.images.length}">
-        ${t.images.map((im, i) => `
+      <div class="quiz-photos-grid count-${qPhotos.length}">
+        ${qPhotos.map((im, i) => `
           <div class="quiz-photo-card" data-preview-img="${im.src}" data-preview-tag="${escapeHtml(im.tag)}" title="클릭하여 ${escapeHtml(im.tag)} 사진 확대">
             <img src="${im.src}" alt="${escapeHtml(im.tag)} 감별 사진" loading="lazy">
             <span class="quiz-photo-badge">${escapeHtml(im.tag)}</span>
