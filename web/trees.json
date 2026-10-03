@@ -92,7 +92,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%80%EB%A7%89%EC%82%B4%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Viburnum_dilatatum"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Viburnum_dilatatum",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=40752"
   },
   {
     "id": 2,
@@ -187,7 +188,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%8B%9C%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_myrsinifolia"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_myrsinifolia",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=29963"
   },
   {
     "id": 3,
@@ -282,7 +284,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%88%EC%B0%B8%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_aliena"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_aliena",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30261"
   },
   {
     "id": 4,
@@ -377,7 +380,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%90%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Diospyros_kaki"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Diospyros_kaki",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23141"
   },
   {
     "id": 5,
@@ -462,7 +466,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%90%ED%83%95%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_integra"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_integra",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23125"
   },
   {
     "id": 6,
@@ -557,7 +562,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%9C%EB%82%98%EB%A6%AC",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Forsythia_koreana"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Forsythia_koreana",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30525"
   },
   {
     "id": 7,
@@ -652,7 +658,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%9C%EB%B9%84%EC%9E%90%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cephalotaxus_koreana"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cephalotaxus_koreana",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30864"
   },
   {
     "id": 8,
@@ -747,7 +754,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%98%A4%EB%8F%99",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Catalpa_ovata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Catalpa_ovata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=27067"
   },
   {
     "id": 9,
@@ -842,7 +850,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B3%84%EC%88%98%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cercidiphyllum_japonicum"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cercidiphyllum_japonicum",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=29873"
   },
   {
     "id": 10,
@@ -937,7 +946,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B3%A8%EB%8B%B4%EC%B4%88",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Caragana_sinica"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Caragana_sinica",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31246"
   },
   {
     "id": 11,
@@ -1034,7 +1044,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B3%B0%EC%86%94",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_thunbergii"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_thunbergii",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31649"
   },
   {
     "id": 12,
@@ -1129,7 +1140,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B4%91%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ligustrum_japonicum"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ligustrum_japonicum",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=24978"
   },
   {
     "id": 13,
@@ -1224,7 +1236,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B5%AC%EC%83%81%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Abies_koreana"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Abies_koreana",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30847"
   },
   {
     "id": 14,
@@ -1319,7 +1332,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B8%88%EB%AA%A9%EC%84%9C",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Osmanthus_fragrans"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Osmanthus_fragrans",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30477"
   },
   {
     "id": 15,
@@ -1414,7 +1428,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B8%88%EC%86%A1",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sciadopitys_verticillata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sciadopitys_verticillata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31641"
   },
   {
     "id": 16,
@@ -1509,7 +1524,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%8B%9D%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Aucuba_japonica"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Aucuba_japonica",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26150"
   },
   {
     "id": 17,
@@ -1604,7 +1620,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%BD%9D%EA%BD%9D%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_crenata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_crenata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23130"
   },
   {
     "id": 18,
@@ -1699,7 +1716,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%82%99%EC%83%81%ED%99%8D",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_serrata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_serrata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=27734"
   },
   {
     "id": 19,
@@ -1794,7 +1812,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%82%A8%EC%B2%9C",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Nandina"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Nandina",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=40402"
   },
   {
     "id": 20,
@@ -1889,7 +1908,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%85%B8%EA%B0%81%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Stewartia_pseudocamellia"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Stewartia_pseudocamellia",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26838"
   },
   {
     "id": 21,
@@ -1984,7 +2004,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9D%B0%EB%A7%90%EC%B1%84%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_alba"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_alba",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=37816"
   },
   {
     "id": 22,
@@ -2079,7 +2100,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%85%B9%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Camphora_officinarum"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Camphora_officinarum",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23982"
   },
   {
     "id": 23,
@@ -2174,7 +2196,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%96%A5%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Juniperus_chinensis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Juniperus_chinensis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31457"
   },
   {
     "id": 24,
@@ -2269,7 +2292,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8A%90%ED%8B%B0%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Zelkova_serrata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Zelkova_serrata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=37021"
   },
   {
     "id": 25,
@@ -2364,7 +2388,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8A%A5%EC%86%8C%ED%99%94",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Campsis_grandiflora"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Campsis_grandiflora",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=27074"
   },
   {
     "id": 26,
@@ -2459,7 +2484,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8B%A8%ED%92%8D%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_palmatum"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_palmatum",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=36497"
   },
   {
     "id": 27,
@@ -2554,7 +2580,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8B%B4%EC%9F%81%EC%9D%B4%EB%8D%A9%EA%B5%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Parthenocissus_tricuspidata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Parthenocissus_tricuspidata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=28299"
   },
   {
     "id": 28,
@@ -2649,7 +2676,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A7%A4%EC%9E%90%EB%82%98%EB%AC%B4%EC%86%8D",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Berberis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Berberis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26488"
   },
   {
     "id": 29,
@@ -2744,7 +2772,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8C%80%EC%B6%94%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Jujube"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Jujube",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=33699"
   },
   {
     "id": 30,
@@ -2824,7 +2853,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EA%B0%80%EB%AC%B8%EB%B9%84%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Picea_abies"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Picea_abies",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30828"
   },
   {
     "id": 31,
@@ -2919,7 +2949,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8F%88%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pittosporum_tobira"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pittosporum_tobira",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=22901"
   },
   {
     "id": 32,
@@ -3014,7 +3045,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%8F%99%EB%B0%B1%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Camellia_japonica"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Camellia_japonica",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26901"
   },
   {
     "id": 33,
@@ -3109,7 +3141,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%93%B1",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Wisteria_floribunda"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Wisteria_floribunda",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30431"
   },
   {
     "id": 34,
@@ -3204,7 +3237,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%95%8C%EC%A3%BD%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Styrax_japonicus"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Styrax_japonicus",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=39831"
   },
   {
     "id": 35,
@@ -3299,7 +3333,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%96%A1%EA%B0%88%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_dentata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_dentata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30253"
   },
   {
     "id": 36,
@@ -3394,7 +3429,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A7%88%EA%B0%80%EB%AA%A9",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sorbus_commixta"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sorbus_commixta",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23844"
   },
   {
     "id": 37,
@@ -3489,7 +3525,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A7%90%EC%B1%84%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_walteri"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_walteri",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26090"
   },
   {
     "id": 38,
@@ -3586,7 +3623,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A7%A4%EC%8B%A4%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_mume"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_mume",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=28944"
   },
   {
     "id": 39,
@@ -3681,7 +3719,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A8%BC%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_rotunda"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_rotunda",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23113"
   },
   {
     "id": 40,
@@ -3776,7 +3815,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%A9%94%ED%83%80%EC%84%B8%EC%BF%BC%EC%9D%B4%EC%95%84",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Metasequoia_glyptostroboides"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Metasequoia_glyptostroboides",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31645"
   },
   {
     "id": 41,
@@ -3871,7 +3911,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%AA%A8%EA%B0%90%EC%A3%BC%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Koelreuteria_paniculata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Koelreuteria_paniculata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=22988"
   },
   {
     "id": 42,
@@ -3966,7 +4007,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%AA%A8%EA%B3%BC%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pseudocydonia_sinensis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pseudocydonia_sinensis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=29636"
   },
   {
     "id": 43,
@@ -4061,7 +4103,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%AC%B4%EA%B6%81%ED%99%94",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Hibiscus_syriacus"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Hibiscus_syriacus",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31548"
   },
   {
     "id": 44,
@@ -4156,7 +4199,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%AC%BC%ED%91%B8%EB%A0%88%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Fraxinus_chinensis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Fraxinus_chinensis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=28322"
   },
   {
     "id": 45,
@@ -4251,7 +4295,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%AF%B8%EC%84%A0%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Abeliophyllum_distichum"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Abeliophyllum_distichum",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30528"
   },
   {
     "id": 46,
@@ -4346,7 +4391,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%95%ED%83%9C%EA%B8%B0%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cercis_chinensis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cercis_chinensis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=39881"
   },
   {
     "id": 47,
@@ -4441,7 +4487,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%98%EC%86%A1",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_densiflora"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_densiflora",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31658"
   },
   {
     "id": 48,
@@ -4536,7 +4583,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%B0%EB%A1%B1%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Lagerstroemia_indica"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Lagerstroemia_indica",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30762"
   },
   {
     "id": 49,
@@ -4631,7 +4679,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%B1%EB%8B%B9%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Viburnum_sargentii"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Viburnum_sargentii",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=43258"
   },
   {
     "id": 50,
@@ -4726,7 +4775,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%B1%EB%AA%A9%EB%A0%A8",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Magnolia_denudata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Magnolia_denudata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23663"
   },
   {
     "id": 51,
@@ -4821,7 +4871,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%B1%EC%86%A1",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_bungeana"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_bungeana",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31664"
   },
   {
     "id": 52,
@@ -4916,7 +4967,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B2%84%EB%93%9C%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Salix_pierotii"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Salix_pierotii",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=27617"
   },
   {
     "id": 53,
@@ -5011,7 +5063,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B2%BD%EC%98%A4%EB%8F%99",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Firmiana_simplex"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Firmiana_simplex",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=33696"
   },
   {
     "id": 54,
@@ -5106,7 +5159,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B3%91%EA%BD%83%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Weigela_subsessilis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Weigela_subsessilis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26592"
   },
   {
     "id": 55,
@@ -5201,7 +5255,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B3%B4%EB%A6%AC%EC%88%98%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Elaeagnus_umbellata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Elaeagnus_umbellata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=24532"
   },
   {
     "id": 56,
@@ -5298,7 +5353,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B3%B5%EC%88%AD%EC%95%84",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Peach"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Peach",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=27244"
   },
   {
     "id": 57,
@@ -5393,7 +5449,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B3%B5%EC%9E%90%EA%B8%B0",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_triflorum"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_triflorum",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=36445"
   },
   {
     "id": 58,
@@ -5478,7 +5535,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B6%89%EA%B0%80%EC%8B%9C%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_acuta"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_acuta",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30273"
   },
   {
     "id": 59,
@@ -5573,7 +5631,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%AC%EC%B2%A0%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Euonymus_japonicus"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Euonymus_japonicus",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=36554"
   },
   {
     "id": 60,
@@ -5668,7 +5727,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B0%EB%94%B8%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_kousa"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_kousa",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26112"
   },
   {
     "id": 61,
@@ -5763,7 +5823,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B0%EB%B2%9A%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_sargentii"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_sargentii",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=27198"
   },
   {
     "id": 62,
@@ -5858,7 +5919,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%82%AC%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Crataegus_pinnatifida"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Crataegus_pinnatifida",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=29615"
   },
   {
     "id": 63,
@@ -5953,7 +6015,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%88%98%EC%9C%A0",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_officinalis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_officinalis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26093"
   },
   {
     "id": 64,
@@ -6048,7 +6111,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%B2%A0%EC%AD%89",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rhododendron_yedoense"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rhododendron_yedoense",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26022"
   },
   {
     "id": 65,
@@ -6143,7 +6207,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%82%B4%EA%B5%AC%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_armeniaca"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_armeniaca",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23144"
   },
   {
     "id": 66,
@@ -6238,7 +6303,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%83%81%EC%88%98%EB%A6%AC%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_acutissima"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_acutissima",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30266"
   },
   {
     "id": 67,
@@ -6333,7 +6399,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%83%9D%EA%B0%95%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Lindera_obtusiloba"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Lindera_obtusiloba",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=21883"
   },
   {
     "id": 68,
@@ -6428,7 +6495,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%96%B4%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Carpinus_laxiflora"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Carpinus_laxiflora",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=37159"
   },
   {
     "id": 69,
@@ -6523,7 +6591,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%84%9D%EB%A5%98%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pomegranate"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pomegranate",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=38899"
   },
   {
     "id": 70,
@@ -6618,7 +6687,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%86%8C%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_densiflora"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_densiflora",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31658"
   },
   {
     "id": 71,
@@ -6713,7 +6783,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%88%98%EA%B5%AD",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Hydrangea_macrophylla"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Hydrangea_macrophylla",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=29371"
   },
   {
     "id": 72,
@@ -6808,7 +6879,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%88%98%EC%88%98%EA%BD%83%EB%8B%A4%EB%A6%AC",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Syringa_oblata_subsp._dilatata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Syringa_oblata_subsp._dilatata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30472"
   },
   {
     "id": 73,
@@ -6903,7 +6975,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%89%AC%EB%95%85%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sorbaria_sorbifolia"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sorbaria_sorbifolia",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=32693"
   },
   {
     "id": 74,
@@ -6988,7 +7061,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%8A%B8%EB%A1%9C%EB%B8%8C%EC%9E%A3%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_strobus"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_strobus",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31669"
   },
   {
     "id": 75,
@@ -7083,7 +7157,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%8B%A0%EA%B0%88%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_mongolica"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_mongolica",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=28804"
   },
   {
     "id": 76,
@@ -7178,7 +7253,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%8B%A0%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_tataricum_subsp._ginnala"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_tataricum_subsp._ginnala",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=36456"
   },
   {
     "id": 77,
@@ -7273,7 +7349,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%95%84%EA%B9%8C%EC%8B%9C%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Robinia_pseudoacacia"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Robinia_pseudoacacia",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=35298"
   },
   {
     "id": 78,
@@ -7370,7 +7447,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%95%B5%EB%91%90%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_tomentosa"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_tomentosa",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=27186"
   },
   {
     "id": 79,
@@ -7465,7 +7543,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%98%A4%EB%8F%99%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Paulownia_coreana"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Paulownia_coreana",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30056"
   },
   {
     "id": 80,
@@ -7560,7 +7639,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%99%95%EB%B2%9A%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_%C3%97_yedoensis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Prunus_%C3%97_yedoensis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=28683"
   },
   {
     "id": 81,
@@ -7655,7 +7735,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ginkgo_biloba"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ginkgo_biloba",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30876"
   },
   {
     "id": 82,
@@ -7750,7 +7831,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9D%B4%ED%8C%9D%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Chionanthus_retusus"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Chionanthus_retusus",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26807"
   },
   {
     "id": 83,
@@ -7845,7 +7927,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9D%B8%EB%8F%99%EB%8D%A9%EA%B5%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Lonicera_japonica"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Lonicera_japonica",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26580"
   },
   {
     "id": 84,
@@ -7940,7 +8023,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9D%BC%EB%B3%B8%EB%AA%A9%EB%A0%A8",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Magnolia_obovata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Magnolia_obovata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23617"
   },
   {
     "id": 85,
@@ -8035,7 +8119,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9E%90%EA%B7%80%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Albizia_julibrissin"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Albizia_julibrissin",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31268"
   },
   {
     "id": 86,
@@ -8130,7 +8215,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9E%91%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Betula_platyphylla"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Betula_platyphylla",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=37180"
   },
   {
     "id": 87,
@@ -8225,7 +8311,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9E%91%EC%82%B4%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Callicarpa_japonica"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Callicarpa_japonica",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=24515"
   },
   {
     "id": 88,
@@ -8320,7 +8407,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%9E%A3%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_koraiensis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pinus_koraiensis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31678"
   },
   {
     "id": 89,
@@ -8415,7 +8503,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A0%84%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Abies_holophylla"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Abies_holophylla",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30855"
   },
   {
     "id": 90,
@@ -8500,7 +8589,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A1%B0%EB%A6%BF%EB%8C%80%EC%86%8D",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sasamorpha"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Sasamorpha",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=37819"
   },
   {
     "id": 91,
@@ -8595,7 +8685,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A1%B8%EC%B0%B8%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_serrata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Quercus_serrata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=29949"
   },
   {
     "id": 92,
@@ -8690,7 +8781,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A3%BC%EB%AA%A9",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Taxus_cuspidata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Taxus_cuspidata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30872"
   },
   {
     "id": 93,
@@ -8785,7 +8877,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A4%91%EA%B5%AD%EB%8B%A8%ED%92%8D",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_buergerianum"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Acer_buergerianum",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=40519"
   },
   {
     "id": 94,
@@ -8880,7 +8973,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A5%90%EB%98%A5%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ligustrum_obtusifolium"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ligustrum_obtusifolium",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=24953"
   },
   {
     "id": 95,
@@ -8965,7 +9059,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%A7%84%EB%8B%AC%EB%9E%98",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rhododendron_mucronulatum"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rhododendron_mucronulatum",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26055"
   },
   {
     "id": 96,
@@ -9060,7 +9155,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%AA%BD%EB%8F%99%EB%B0%B1%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Styrax_obassia"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Styrax_obassia",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=27721"
   },
   {
     "id": 97,
@@ -9155,7 +9251,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%B0%B8%EB%8A%90%EB%A6%85%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ulmus_parvifolia"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ulmus_parvifolia",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=37029"
   },
   {
     "id": 98,
@@ -9250,7 +9347,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%B2%A0%EC%AD%89",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rhododendron_schlippenbachii"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rhododendron_schlippenbachii",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26035"
   },
   {
     "id": 99,
@@ -9345,7 +9443,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%B8%A1%EB%B0%B1%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Platycladus"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Platycladus",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31623"
   },
   {
     "id": 100,
@@ -9440,7 +9539,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%B8%B5%EC%B8%B5%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_controversa"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_controversa",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26120"
   },
   {
     "id": 101,
@@ -9535,7 +9635,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EC%B9%A0%EC%97%BD%EC%88%98",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Aesculus_turbinata"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Aesculus_turbinata",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23999"
   },
   {
     "id": 102,
@@ -9630,7 +9731,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%83%9C%EC%82%B0%EB%AA%A9",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Magnolia_grandiflora"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Magnolia_grandiflora",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23646"
   },
   {
     "id": 103,
@@ -9725,7 +9827,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%83%B1%EC%9E%90%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Trifoliate_orange"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Trifoliate_orange",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31527"
   },
   {
     "id": 104,
@@ -9822,7 +9925,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%EB%B0%B1%ED%95%A9%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Liriodendron_tulipifera"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Liriodendron_tulipifera",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23670"
   },
   {
     "id": 105,
@@ -9917,7 +10021,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%8C%94%EC%86%90%EC%9D%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Fatsia_japonica"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Fatsia_japonica",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=34734"
   },
   {
     "id": 106,
@@ -10012,7 +10117,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%8C%A5%EB%B0%B0%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Alniaria_alnifolia"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Alniaria_alnifolia",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=37629"
   },
   {
     "id": 107,
@@ -10107,7 +10213,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%8C%BD%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Celtis_sinensis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Celtis_sinensis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=37436"
   },
   {
     "id": 108,
@@ -10202,7 +10309,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%92%8D%EB%85%84%ED%99%94",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Hamamelis_japonica"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Hamamelis_japonica",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=37726"
   },
   {
     "id": 109,
@@ -10297,7 +10405,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%94%BC%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Tilia_amurensis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Tilia_amurensis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=30561"
   },
   {
     "id": 110,
@@ -10394,7 +10503,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%94%BC%EB%9D%BC%EC%B9%B8%ED%83%80",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pyracantha_angustifolia"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Pyracantha_angustifolia",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=28676"
   },
   {
     "id": 111,
@@ -10489,7 +10599,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%95%B4%EB%8B%B9%ED%99%94",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rosa_rugosa"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Rosa_rugosa",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=32204"
   },
   {
     "id": 112,
@@ -10584,7 +10695,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%96%A5%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Juniperus_chinensis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Juniperus_chinensis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=31608"
   },
   {
     "id": 113,
@@ -10679,7 +10791,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%98%B8%EB%91%90%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Juglans_regia"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Juglans_regia",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=22989"
   },
   {
     "id": 114,
@@ -10774,7 +10887,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%98%B8%EB%9E%91%EA%B0%80%EC%8B%9C%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_cornuta"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Ilex_cornuta",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23136"
   },
   {
     "id": 115,
@@ -10869,7 +10983,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%99%94%EC%82%B4%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Euonymus_alatus"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Euonymus_alatus",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=35194"
   },
   {
     "id": 116,
@@ -10964,7 +11079,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9A%8C%EC%96%91%EB%AA%A9",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Buxus_microphylla"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Buxus_microphylla",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=41902"
   },
   {
     "id": 117,
@@ -11059,7 +11175,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9A%8C%ED%99%94%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Styphnolobium_japonicum"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Styphnolobium_japonicum",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=37704"
   },
   {
     "id": 118,
@@ -11154,7 +11271,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9B%84%EB%B0%95%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Machilus_thunbergii"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Machilus_thunbergii",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=23701"
   },
   {
     "id": 119,
@@ -11249,7 +11367,8 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9D%B0%EB%A7%90%EC%B1%84%EB%82%98%EB%AC%B4",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_alba"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Cornus_alba",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26140"
   },
   {
     "id": 120,
@@ -11344,6 +11463,7 @@
       }
     },
     "wikiKoUrl": "https://ko.wikipedia.org/wiki/%ED%9E%88%EC%96%B4%EB%A6%AC",
-    "wikiEnUrl": "https://en.wikipedia.org/wiki/Corylopsis"
+    "wikiEnUrl": "https://en.wikipedia.org/wiki/Corylopsis",
+    "natureUrl": "https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtl.do?plantPilbkNo=26364"
   }
 ]

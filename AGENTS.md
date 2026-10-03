@@ -33,13 +33,17 @@
 │   ├── trees.json                    # 120종 원본 JSON 데이터
 │   └── assets/                       # 수목 실물 사진 467장 (001-1.jpg ~ 120-4.jpg)
 ├── tools/                            # 데이터 수집 및 패키징 도구
+│   ├── fetch_nature.py               # 국가생물종지식정보시스템 식물도감 URL 매퍼
+│   ├── fetch_wikipedia.py            # 한국어/영문 위키백과 문서 매퍼
 │   ├── fetch_treeworld.py            # 사이버 수목원 데이터 크롤러 및 매퍼
 │   ├── download_treeworld_photos.py  # 수목 도감 사진 다운로더 & 리사이저 (sips 활용)
 │   ├── build_data.py                 # 최종 trees.json, data.js, md, csv 빌드 스크립트
 │   ├── build_package.sh              # 오프라인 패키지(ZIP) 원클릭 빌드 스크립트
 │   └── package_template/             # 오프라인 패키지 동봉 실행기(Mac/Win) 및 안내문
 ├── research/                         # 데이터 원본 및 크롤링 결과물
+│   ├── nature_data.json              # 국가생물종지식정보시스템 매핑 데이터
 │   ├── treeworld_data.json           # 사이버 수목원 수집 데이터
+│   ├── wikipedia_data.json           # 위키백과 수집 데이터
 │   ├── treeworld_images_manifest.json# 사진 매니페스트
 │   └── assets_video_backup/          # 원본 영상 캡처 사진 백업본 (317장)
 ├── dist/                             # 로컬 빌드 산출물 (.gitignore로 관리, Releases 배포)
@@ -69,6 +73,7 @@ interface Tree {
   caution: string;            // 주의사항 및 혼동 수목 비교
   scientificName: string;     // 학명 (예: "Viburnum dilatatum Thunb.")
   family: string;             // 과명 (예: "Adoxaceae 연복초과")
+  natureUrl: string;          // 국가생물종지식정보시스템 식물도감 원문 URL
   treeworldUrl: string;       // 사이버 수목원 도감 원문 URL
   wikiKoUrl: string;          // 한국어 위키백과 문서 URL
   wikiEnUrl: string;          // 영문 Wikipedia 문서 URL
@@ -137,10 +142,16 @@ interface TreeImage {
 # 1. 사이버 수목원 도감에서 120종 식물학 데이터 크롤링
 python3 tools/fetch_treeworld.py
 
-# 2. 도감 실물 고해상도 사진 다운로드 및 리사이징 (macOS sips 도구 활용)
+# 2. 산림청 국가생물종지식정보시스템 도감 상세 URL 매핑
+python3 tools/fetch_nature.py
+
+# 3. 위키백과(한국어/영문) 문서 URL 매핑
+python3 tools/fetch_wikipedia.py
+
+# 4. 도감 실물 고해상도 사진 다운로드 및 리사이징 (macOS sips 도구 활용)
 python3 tools/download_treeworld_photos.py
 
-# 3. web/trees.json, web/data.js, 수목120-학습노트.md 등 종합 빌드
+# 5. web/trees.json, web/data.js, 수목120-학습노트.md 등 종합 빌드
 python3 tools/build_data.py
 ```
 

@@ -298,6 +298,17 @@
   color: var(--green);
 }
 
+.overlay-link.nature {
+  color: #12572b;
+  background: #edf7ef;
+  font-weight: 700;
+}
+
+.overlay-link.nature:hover {
+  background: #daf0df;
+  color: #0b4520;
+}
+
 .overlay-link.tw {
   color: #175235;
   background: #e3efe0;
@@ -422,6 +433,19 @@
   border-color: #85a881;
 }
 
+.source-link-btn.nature {
+  background: #edf7ef;
+  border-color: #92cca1;
+  color: #12572b;
+  font-weight: 700;
+}
+
+.source-link-btn.nature:hover {
+  background: #def0e2;
+  border-color: #64b579;
+  color: #0b4520;
+}
+
 .source-link-btn.treeworld {
   background: #eaf3e6;
   border-color: #9cb894;
@@ -445,6 +469,28 @@
   background: #fff5f3;
   border-color: #f7ccc4;
   color: #b33927;
+}
+
+.sources-sub-links {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #556b5a;
+  line-height: 1.5;
+  padding: 4px 6px;
+  background: #f6faf5;
+  border-radius: 6px;
+  border: 1px dashed #cde0cd;
+}
+
+.sources-sub-links a {
+  color: #176534;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+
+.sources-sub-links a:hover {
+  color: #0b4520;
 }
 
 .overlay-link.wiki {

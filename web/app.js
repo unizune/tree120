@@ -244,17 +244,21 @@ function showDetail(id) {
         <div class="detail-sources-box">
           <div class="sources-title">📚 다양한 정보 출처 및 도감 연계</div>
           <div class="sources-btn-row">
+            ${t.natureUrl ? `<a class="source-link-btn nature" target="_blank" rel="noreferrer" href="${escapeHtml(t.natureUrl)}">🌿 국가생물종지식정보 ↗</a>` : ''}
             ${t.treeworldUrl ? `<a class="source-link-btn treeworld" target="_blank" rel="noreferrer" href="${escapeHtml(t.treeworldUrl)}">🌳 사이버 수목원 도감 ↗</a>` : ''}
             ${t.wikiKoUrl ? `<a class="source-link-btn wiki-ko" target="_blank" rel="noreferrer" href="${escapeHtml(t.wikiKoUrl)}">🇰🇷 위키백과 (한국어) ↗</a>` : ''}
             ${t.wikiEnUrl ? `<a class="source-link-btn wiki-en" target="_blank" rel="noreferrer" href="${escapeHtml(t.wikiEnUrl)}">🌐 Wikipedia (English) ↗</a>` : ''}
             <a class="source-link-btn youtube" target="_blank" rel="noreferrer" href="${videoUrl(t)}">📺 파이팅혼공 TV 강의 ↗</a>
+          </div>
+          <div class="sources-sub-links">
+            <span>🌿 국가생물종지식정보시스템: <a href="${escapeHtml(t.natureUrl || 'https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtlList.do')}" target="_blank" rel="noreferrer">도감 상세</a> · <a href="https://www.nature.go.kr/kbi/plant/pilbk/selectPlantPilbkDtlList.do" target="_blank" rel="noreferrer">식물도감 자세히찾기</a> · <a href="https://www.nature.go.kr/main/Main.do" target="_blank" rel="noreferrer">메인 포털</a></span>
           </div>
         </div>
 
         <div class="detail-actions">
           ${progress[id]?.wrong ? '<button class="secondary" id="mastered">오답에서 제외</button>' : ''}
         </div>
-        <p class="detail-source">정보 출처: 파이팅혼공TV · 사이버 수목원(treeworld) · 한국어/영문 위키백과<br>단일 특징만으로 판단하지 말고 잎·꽃·열매·줄기 형태를 다각도로 비교해 보세요.</p>
+        <p class="detail-source">정보 출처: 국가생물종지식정보시스템(국립수목원) · 사이버 수목원(treeworld) · 파이팅혼공TV · 한국어/영문 위키백과<br>단일 특징만으로 판단하지 말고 잎·꽃·열매·줄기 형태를 다각도로 비교해 보세요.</p>
       </div>
     </div>
     <div class="dialog-nav">
@@ -637,6 +641,7 @@ function showQuizFeedbackOverlay(correct, t, answerName) {
 
       <div class="overlay-links">
         <a class="overlay-link yt" href="${videoUrl(t)}" target="_blank" rel="noreferrer">파이팅혼공 TV 강의 ↗</a>
+        ${t.natureUrl ? `<a class="overlay-link nature" href="${escapeHtml(t.natureUrl)}" target="_blank" rel="noreferrer">국가생물종 ↗</a>` : ''}
         ${t.treeworldUrl ? `<a class="overlay-link tw" href="${escapeHtml(t.treeworldUrl)}" target="_blank" rel="noreferrer">수목도감 ↗</a>` : ''}
         ${t.wikiKoUrl ? `<a class="overlay-link wiki" href="${escapeHtml(t.wikiKoUrl)}" target="_blank" rel="noreferrer">위키백과 ↗</a>` : ''}
         ${t.wikiEnUrl ? `<a class="overlay-link wiki-en" href="${escapeHtml(t.wikiEnUrl)}" target="_blank" rel="noreferrer">Wiki(EN) ↗</a>` : ''}
