@@ -45,21 +45,33 @@ for t in raw_trees:
     }
     item.update(notes[tid])
 
+    # Tag normalization to match 4 main morphology indicators (잎, 꽃, 열매, 줄기·수형, 기타)
+    tag_map = {
+        '수형': '줄기·수형',
+        '줄기': '줄기·수형',
+        '가지': '줄기·수형',
+        '꽃·전경': '꽃',
+        '잎·수형': '잎',
+        '기타1': '기타'
+    }
+
     # Combine photos: Treeworld photos + Nature (국가생물종지식정보시스템) photos
     combined_images = []
     for im in tw_images.get(str(tid), []):
+        norm_tag = tag_map.get(im['tag'], im['tag'])
         combined_images.append({
             'src': im['src'],
-            'tag': im['tag'],
-            'desc': im.get('desc', f"{t['name']} {im['tag']} 형태"),
+            'tag': norm_tag,
+            'desc': im.get('desc', f"{t['name']} {norm_tag} 형태"),
             'source': '사이버수목원'
         })
 
     for im in nature_images.get(str(tid), {}).get('images', []):
+        norm_tag = tag_map.get(im['tag'], im['tag'])
         combined_images.append({
             'src': im['src'],
-            'tag': im['tag'],
-            'desc': im.get('desc', f"{t['name']} {im['tag']} 형태"),
+            'tag': norm_tag,
+            'desc': im.get('desc', f"{t['name']} {norm_tag} 형태"),
             'author': im.get('author', '국립수목원'),
             'date': im.get('date', ''),
             'location': im.get('location', ''),

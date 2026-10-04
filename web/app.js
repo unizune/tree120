@@ -187,12 +187,41 @@ function showDetail(id) {
   const nextT = trees.find(x => x.id === id + 1);
   const initialImg = t.images[0];
 
+  const MORPH_ICONS = {
+    '잎': '🌿',
+    '꽃': '🌸',
+    '열매': '🍒',
+    '줄기·수형': '🪵',
+    '수형': '🪵',
+    '줄기': '🪵',
+    '가지': '🪵',
+    '겨울눈': '🌱',
+    '새순': '🌱',
+    '기타': '🔍'
+  };
+
+  const getMorphIcon = (tag) => {
+    if (!tag) return '🌿';
+    if (MORPH_ICONS[tag]) return MORPH_ICONS[tag];
+    if (tag.includes('꽃')) return '🌸';
+    if (tag.includes('열매')) return '🍒';
+    if (tag.includes('잎')) return '🌿';
+    if (tag.includes('줄기') || tag.includes('수형') || tag.includes('가지') || tag.includes('수피')) return '🪵';
+    if (tag.includes('겨울눈') || tag.includes('새순')) return '🌱';
+    return '🔍';
+  };
+
   const tagCounts = {};
   t.images.forEach(im => {
     const tag = im.tag || '기타';
     tagCounts[tag] = (tagCounts[tag] || 0) + 1;
   });
-  const uniqueTags = Object.keys(tagCounts);
+  const tagOrder = ['잎', '꽃', '열매', '줄기·수형', '수형', '줄기', '겨울눈', '새순', '기타'];
+  const uniqueTags = Object.keys(tagCounts).sort((a, b) => {
+    const ia = tagOrder.indexOf(a);
+    const ib = tagOrder.indexOf(b);
+    return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+  });
 
   document.querySelector('#detail-content').innerHTML = `
     <!-- Floating Side Arrows (Desktop) -->
@@ -220,16 +249,21 @@ function showDetail(id) {
 
         <div class="photo-filter-tabs">
           <button class="photo-filter-chip active" data-filter="all">전체 (${t.images.length})</button>
-          ${uniqueTags.map(tag => `<button class="photo-filter-chip" data-filter="${escapeHtml(tag)}">${escapeHtml(tag)} (${tagCounts[tag]})</button>`).join('')}
+          ${uniqueTags.map(tag => `<button class="photo-filter-chip" data-filter="${escapeHtml(tag)}">${getMorphIcon(tag)} ${escapeHtml(tag)} (${tagCounts[tag]})</button>`).join('')}
         </div>
 
         <div class="thumbs">
           ${t.images.map((im, i) => `
             <button data-img="${i}" data-tag="${escapeHtml(im.tag)}" class="" aria-label="사진 ${i + 1} (${im.tag})">
-              <img src="${im.src}" alt="">
+              <div class="thumb-img-wrap">
+                <img src="${im.src}" alt="">
+                <span class="thumb-source-badge ${im.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}" title="${escapeHtml(im.source || '')}">
+                  ${im.source === '국가생물종지식정보시스템' ? '🌿' : '🌳'}
+                </span>
+              </div>
               <span class="thumb-tag">
-                <small>${im.source === '국가생물종지식정보시스템' ? '🌿' : '🌳'}</small>
-                ${escapeHtml(im.tag)}
+                <span class="thumb-morph-icon">${getMorphIcon(im.tag)}</span>
+                <span>${escapeHtml(im.tag)}</span>
               </span>
             </button>
           `).join('')}
@@ -328,8 +362,8 @@ function showDetail(id) {
         <div class="photo-collage-view">
           <div class="photo-collage-header">
             <span class="collage-title">
-              <span>📸</span>
-              <strong>${escapeHtml(filterName)} 사진 모아보기</strong>
+              <span>${filterName === '전체' ? '📸' : getMorphIcon(filterName)}</span>
+              <strong>${filterName === '전체' ? '전체' : `${getMorphIcon(filterName)} ${escapeHtml(filterName)}`} 사진 모아보기</strong>
               <span class="collage-count">${activeImages.length}장</span>
             </span>
             <span class="collage-hint">사진을 클릭하면 크게 확대해 볼 수 있습니다</span>
@@ -339,9 +373,9 @@ function showDetail(id) {
               <div class="collage-item" data-img-idx="${im.idx}" role="button" tabindex="0" title="${escapeHtml(im.tag)} 사진 크게 보기">
                 <img src="${im.src}" alt="${escapeHtml(t.name)} ${escapeHtml(im.tag)}" loading="lazy">
                 <div class="collage-item-overlay">
-                  <span class="collage-morph-badge">${escapeHtml(im.tag)}</span>
+                  <span class="collage-morph-badge">${getMorphIcon(im.tag)} ${escapeHtml(im.tag)}</span>
                   <span class="collage-source-badge ${im.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}">
-                    ${im.source === '국가생물종지식정보시스템' ? '🌿' : '🌳'}
+                    ${im.source === '국가생물종지식정보시스템' ? '🌿 국가생물종' : '🌳 사이버수목원'}
                   </span>
                 </div>
                 ${im.desc ? `<div class="collage-item-caption">${escapeHtml(im.desc)}</div>` : ''}
@@ -376,7 +410,7 @@ function showDetail(id) {
           ${activeImages.length > 1 ? `
             <div class="single-photo-top-bar">
               <button id="btn-back-to-collage" class="photo-view-toggle-btn" title="선택된 사진들을 콜라주 그리드로 모아보기">
-                <span>◀</span> ${escapeHtml(filterName)} 콜라주로 모아보기 (${activeImages.length}장)
+                <span>◀</span> ${filterName === '전체' ? '📸 전체' : `${getMorphIcon(filterName)} ${escapeHtml(filterName)}`} 콜라주로 모아보기 (${activeImages.length}장)
               </button>
               <span class="single-photo-counter">${posLabel}</span>
             </div>
@@ -386,7 +420,7 @@ function showDetail(id) {
           </div>
           <div id="photo-caption-box" class="photo-caption-box">
             <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px">
-              <span id="photo-morph-tag" class="photo-morph-tag">${escapeHtml(im.tag || '감별 사진')}</span>
+              <span id="photo-morph-tag" class="photo-morph-tag">${getMorphIcon(im.tag)} ${escapeHtml(im.tag || '감별 사진')}</span>
               <span id="photo-source-badge" class="photo-source-badge ${im.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}">
                 ${im.source === '국가생물종지식정보시스템' ? '🌿 국가생물종' : '🌳 사이버수목원'}
               </span>
