@@ -42,6 +42,25 @@
 .quiz-features-grid{grid-template-columns:1fr}
 .quiz-photos-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 .quiz-photo-badge{font-size:11px;padding:3px 7px;top:6px;left:6px}
+.photo-collage-grid.count-5,
+.photo-collage-grid.count-6,
+.photo-collage-grid.count-7,
+.photo-collage-grid.count-8,
+.photo-collage-grid.count-9 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.photo-collage-header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.photo-collage-grid {
+  max-height: 380px;
+}
+.single-photo-frame {
+  max-height: 300px;
+  aspect-ratio: 1.2;
+}
 }
 
 .thumbs button{display:flex;flex-direction:column;align-items:center;width:auto;min-width:68px}
@@ -108,6 +127,282 @@
   font-size: 11.5px;
   color: #637667;
   line-height: 1.4;
+}
+
+/* ==========================================================================
+   Photo Display & Collage View in Detail Dialog
+   ========================================================================== */
+
+.photo-display-area {
+  min-height: 380px;
+}
+
+/* Single Photo View */
+.single-photo-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-photo-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.photo-view-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  border: 1px solid #b8cdb6;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.photo-view-toggle-btn:hover {
+  background: #eef5ea;
+  border-color: #8dae87;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(23,62,43,0.12);
+}
+
+.single-photo-counter {
+  font-size: 12.5px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.single-photo-frame {
+  width: 100%;
+  aspect-ratio: 1.18;
+  max-height: 440px;
+  background: #e1e7da;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.single-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Photo Collage View */
+.photo-collage-view {
+  background: #e8efe4;
+  border: 1px solid #c9d8c6;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.photo-collage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 4px;
+}
+
+.collage-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--green);
+}
+
+.collage-title strong {
+  font-weight: 700;
+}
+
+.collage-count {
+  font-size: 11.5px;
+  background: #ffffff;
+  color: #2b543c;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 1px solid #c0d4bd;
+}
+
+.collage-hint {
+  font-size: 12px;
+  color: #55705e;
+}
+
+.photo-collage-grid {
+  display: grid;
+  gap: 8px;
+  max-height: 480px;
+  overflow-y: auto;
+  padding-right: 2px;
+  border-radius: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: #a8bfa6 transparent;
+}
+
+.photo-collage-grid::-webkit-scrollbar {
+  width: 6px;
+}
+
+.photo-collage-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.photo-collage-grid::-webkit-scrollbar-thumb {
+  background: #a8bfa6;
+  border-radius: 3px;
+}
+
+/* Dynamic grid variations based on photo count */
+.photo-collage-grid.count-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-height: 380px;
+}
+
+.photo-collage-grid.count-2 .collage-item {
+  aspect-ratio: 1.15;
+}
+
+.photo-collage-grid.count-3 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.photo-collage-grid.count-3 .collage-item:first-child {
+  grid-column: span 2;
+  aspect-ratio: 1.8;
+}
+
+.photo-collage-grid.count-4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.photo-collage-grid.count-4 .collage-item {
+  aspect-ratio: 1.22;
+}
+
+.photo-collage-grid.count-5,
+.photo-collage-grid.count-6,
+.photo-collage-grid.count-7,
+.photo-collage-grid.count-8,
+.photo-collage-grid.count-9 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.collage-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #d6e2d3;
+  aspect-ratio: 1.25;
+  cursor: pointer;
+  border: 1px solid #bfd3bd;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  user-select: none;
+}
+
+.collage-item:hover {
+  transform: translateY(-2px) scale(1.015);
+  box-shadow: 0 6px 16px rgba(18, 52, 34, 0.2);
+  border-color: #2b5e3d;
+  z-index: 2;
+}
+
+.collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.collage-item:hover img {
+  transform: scale(1.05);
+}
+
+.collage-item-overlay {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.collage-morph-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  background: rgba(20, 52, 35, 0.88);
+  padding: 3px 8px;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  letter-spacing: -0.2px;
+}
+
+.collage-source-badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.collage-source-badge.nature {
+  background: rgba(227, 245, 231, 0.94);
+  color: #0d4a23;
+  border: 1px solid #7ecc90;
+}
+
+.collage-source-badge.treeworld {
+  background: rgba(240, 246, 236, 0.94);
+  color: #1a4427;
+  border: 1px solid #a8c9a2;
+}
+
+.collage-item-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 8px 6px;
+  background: linear-gradient(to top, rgba(14, 34, 23, 0.88) 0%, rgba(14, 34, 23, 0.4) 60%, transparent 100%);
+  color: #ffffff;
+  font-size: 11.5px;
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  opacity: 0.9;
+  transition: opacity 0.15s ease;
+}
+
+.collage-item:hover .collage-item-caption {
+  opacity: 1;
+}
+
+.thumbs button.in-collage {
+  border-color: #8bb785;
+  background: #f1f8ee;
 }
 
 /* Statistics Dashboard Styles */

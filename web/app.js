@@ -216,17 +216,7 @@ function showDetail(id) {
     </div>
     <div class="detail-layout">
       <div class="detail-visual">
-        <img id="large-photo" src="${initialImg.src}" alt="${escapeHtml(t.name)} 감별 사진">
-        <div id="photo-caption-box" class="photo-caption-box">
-          <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px">
-            <span id="photo-morph-tag" class="photo-morph-tag">${escapeHtml(initialImg.tag || '감별 사진')}</span>
-            <span id="photo-source-badge" class="photo-source-badge ${initialImg.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}">
-              ${initialImg.source === '국가생물종지식정보시스템' ? '🌿 국가생물종' : '🌳 사이버수목원'}
-            </span>
-          </div>
-          <p id="photo-morph-desc" class="photo-morph-desc" style="margin-top:6px">${escapeHtml(initialImg.desc || t.points[0])}</p>
-          <div id="photo-meta-info" class="photo-meta-info">${formatPhotoMeta(initialImg)}</div>
-        </div>
+        <div id="photo-display-area" class="photo-display-area"></div>
 
         <div class="photo-filter-tabs">
           <button class="photo-filter-chip active" data-filter="all">전체 (${t.images.length})</button>
@@ -235,7 +225,7 @@ function showDetail(id) {
 
         <div class="thumbs">
           ${t.images.map((im, i) => `
-            <button data-img="${i}" data-tag="${escapeHtml(im.tag)}" class="${i === 0 ? 'active' : ''}" aria-label="사진 ${i + 1} (${im.tag})">
+            <button data-img="${i}" data-tag="${escapeHtml(im.tag)}" class="" aria-label="사진 ${i + 1} (${im.tag})">
               <img src="${im.src}" alt="">
               <span class="thumb-tag">
                 <small>${im.source === '국가생물종지식정보시스템' ? '🌿' : '🌳'}</small>
@@ -317,48 +307,141 @@ function showDetail(id) {
 
   document.querySelector('.close').onclick = () => dialog.close();
 
-  const updateActivePhoto = (idx) => {
-    const im = t.images[idx];
-    if (!im) return;
-    document.querySelector('#large-photo').src = im.src;
-    document.querySelector('#photo-morph-tag').textContent = im.tag || '감별 사진';
-    const badge = document.querySelector('#photo-source-badge');
-    if (badge) {
-      badge.textContent = im.source === '국가생물종지식정보시스템' ? '🌿 국가생물종' : '🌳 사이버수목원';
-      badge.className = `photo-source-badge ${im.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}`;
-    }
-    document.querySelector('#photo-morph-desc').textContent = im.desc || t.points[Math.min(idx, t.points.length - 1)];
-    const metaEl = document.querySelector('#photo-meta-info');
-    if (metaEl) metaEl.innerHTML = formatPhotoMeta(im);
+  let currentFilter = 'all';
+  // 사진이 2장 이상이면 콜라주 모드(null)로 시작, 1장이면 단일 뷰(0)
+  let selectedImgIdx = t.images.length > 1 ? null : 0;
 
-    document.querySelectorAll('[data-img]').forEach(x => {
-      x.classList.toggle('active', +x.dataset.img === idx);
+  const renderPhotoDisplay = () => {
+    const displayArea = document.querySelector('#photo-display-area');
+    if (!displayArea) return;
+
+    const activeImages = t.images
+      .map((im, idx) => ({ ...im, idx }))
+      .filter(im => currentFilter === 'all' || im.tag === currentFilter);
+
+    const filterName = currentFilter === 'all' ? '전체' : currentFilter;
+
+    // 만약 선택된 이미지가 없고 매칭 사진이 2장 이상인 경우 -> 콜라주 뷰
+    if (selectedImgIdx === null && activeImages.length > 1) {
+      const countCls = `count-${Math.min(activeImages.length, 6)}`;
+      displayArea.innerHTML = `
+        <div class="photo-collage-view">
+          <div class="photo-collage-header">
+            <span class="collage-title">
+              <span>📸</span>
+              <strong>${escapeHtml(filterName)} 사진 모아보기</strong>
+              <span class="collage-count">${activeImages.length}장</span>
+            </span>
+            <span class="collage-hint">사진을 클릭하면 크게 확대해 볼 수 있습니다</span>
+          </div>
+          <div class="photo-collage-grid ${countCls}">
+            ${activeImages.map(im => `
+              <div class="collage-item" data-img-idx="${im.idx}" role="button" tabindex="0" title="${escapeHtml(im.tag)} 사진 크게 보기">
+                <img src="${im.src}" alt="${escapeHtml(t.name)} ${escapeHtml(im.tag)}" loading="lazy">
+                <div class="collage-item-overlay">
+                  <span class="collage-morph-badge">${escapeHtml(im.tag)}</span>
+                  <span class="collage-source-badge ${im.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}">
+                    ${im.source === '국가생물종지식정보시스템' ? '🌿' : '🌳'}
+                  </span>
+                </div>
+                ${im.desc ? `<div class="collage-item-caption">${escapeHtml(im.desc)}</div>` : ''}
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+
+      displayArea.querySelectorAll('.collage-item').forEach(item => {
+        item.onclick = () => {
+          selectedImgIdx = +item.dataset.imgIdx;
+          renderPhotoDisplay();
+        };
+        item.onkeydown = e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            selectedImgIdx = +item.dataset.imgIdx;
+            renderPhotoDisplay();
+          }
+        };
+      });
+    } else {
+      // 단일 이미지 확대 뷰
+      const curIdx = selectedImgIdx !== null ? selectedImgIdx : (activeImages[0]?.idx ?? 0);
+      const im = t.images[curIdx] || t.images[0];
+      const curPos = activeImages.findIndex(x => x.idx === curIdx);
+      const posLabel = curPos >= 0 ? `${curPos + 1} / ${activeImages.length}` : `1 / ${t.images.length}`;
+
+      displayArea.innerHTML = `
+        <div class="single-photo-view">
+          ${activeImages.length > 1 ? `
+            <div class="single-photo-top-bar">
+              <button id="btn-back-to-collage" class="photo-view-toggle-btn" title="선택된 사진들을 콜라주 그리드로 모아보기">
+                <span>◀</span> ${escapeHtml(filterName)} 콜라주로 모아보기 (${activeImages.length}장)
+              </button>
+              <span class="single-photo-counter">${posLabel}</span>
+            </div>
+          ` : ''}
+          <div class="single-photo-frame">
+            <img id="large-photo" src="${im.src}" alt="${escapeHtml(t.name)} 감별 사진">
+          </div>
+          <div id="photo-caption-box" class="photo-caption-box">
+            <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px">
+              <span id="photo-morph-tag" class="photo-morph-tag">${escapeHtml(im.tag || '감별 사진')}</span>
+              <span id="photo-source-badge" class="photo-source-badge ${im.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}">
+                ${im.source === '국가생물종지식정보시스템' ? '🌿 국가생물종' : '🌳 사이버수목원'}
+              </span>
+            </div>
+            <p id="photo-morph-desc" class="photo-morph-desc" style="margin-top:6px">${escapeHtml(im.desc || t.points[Math.min(curIdx, t.points.length - 1)])}</p>
+            <div id="photo-meta-info" class="photo-meta-info">${formatPhotoMeta(im)}</div>
+          </div>
+        </div>
+      `;
+
+      const backBtn = displayArea.querySelector('#btn-back-to-collage');
+      if (backBtn) {
+        backBtn.onclick = () => {
+          selectedImgIdx = null;
+          renderPhotoDisplay();
+        };
+      }
+    }
+
+    // 썸네일 상태 갱신
+    document.querySelectorAll('.thumbs button[data-img]').forEach(b => {
+      const idx = +b.dataset.img;
+      const matches = (currentFilter === 'all' || b.dataset.tag === currentFilter);
+      b.classList.toggle('hidden-by-filter', !matches);
+
+      if (selectedImgIdx === null) {
+        // 콜라주 모드
+        b.classList.remove('active');
+        b.classList.toggle('in-collage', matches);
+      } else {
+        // 단일 뷰 모드
+        b.classList.toggle('active', idx === selectedImgIdx);
+        b.classList.remove('in-collage');
+      }
     });
   };
 
-  document.querySelectorAll('[data-img]').forEach(b => {
-    b.onclick = () => updateActivePhoto(+b.dataset.img);
+  document.querySelectorAll('.thumbs button[data-img]').forEach(b => {
+    b.onclick = () => {
+      selectedImgIdx = +b.dataset.img;
+      renderPhotoDisplay();
+    };
   });
 
   document.querySelectorAll('.photo-filter-chip').forEach(chip => {
     chip.onclick = () => {
       document.querySelectorAll('.photo-filter-chip').forEach(c => c.classList.toggle('active', c === chip));
-      const filter = chip.dataset.filter;
-      let firstVisibleIdx = null;
-
-      document.querySelectorAll('.thumbs button[data-img]').forEach(b => {
-        const matches = (filter === 'all' || b.dataset.tag === filter);
-        b.classList.toggle('hidden-by-filter', !matches);
-        if (matches && firstVisibleIdx === null) {
-          firstVisibleIdx = +b.dataset.img;
-        }
-      });
-
-      if (firstVisibleIdx !== null) {
-        updateActivePhoto(firstVisibleIdx);
-      }
+      currentFilter = chip.dataset.filter;
+      const matches = t.images.filter(im => currentFilter === 'all' || im.tag === currentFilter);
+      selectedImgIdx = matches.length > 1 ? null : (matches[0] ? t.images.indexOf(matches[0]) : 0);
+      renderPhotoDisplay();
     };
   });
+
+  renderPhotoDisplay();
 
   const goPrev = () => { if (prevT) showDetail(id - 1); };
   const goNext = () => { if (nextT) showDetail(id + 1); };
