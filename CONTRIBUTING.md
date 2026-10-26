@@ -144,8 +144,8 @@ python3 tools/build_data.py
 ```
 - 스크립트 실행 시 다음 파일들이 자동으로 갱신됩니다:
   - `web/data.js` (`window.TREES` 전역 객체)
-  - `수목120-학습노트.md`
-  - `수목120-학습자료.csv`
+  - `docs/수목120-학습노트.md`
+  - `docs/수목120-학습자료.csv`
 
 ---
 

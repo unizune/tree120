@@ -131,7 +131,8 @@ csv_headers = [
     '파이팅혼공TV강의구간', '수목도감URL', '국가생물종지식정보시스템URL', '위키백과_한국어URL', 'Wikipedia_EnglishURL', '수목도감사진목록'
 ]
 
-with (r / '수목120-학습자료.csv').open('w', encoding='utf-8-sig', newline='') as f:
+(r / 'docs').mkdir(exist_ok=True)
+with (r / 'docs/수목120-학습자료.csv').open('w', encoding='utf-8-sig', newline='') as f:
     w = csv.writer(f)
     w.writerow(csv_headers)
     for t in trees:
@@ -180,7 +181,7 @@ for t in trees:
 
     # Photos with morphology tag and description
     for idx, im in enumerate(t['images']):
-        md.append(f"![{t['name']} - {im['tag']}](web/{im['src']})")
+        md.append(f"![{t['name']} - {im['tag']}](../web/{im['src']})")
         src_label = f"[{im.get('source', '')}] " if im.get('source') else ""
         meta_parts = [f"{im['tag']} | {im['desc']}"]
         if im.get('author'): meta_parts.append(im['author'])
@@ -214,7 +215,7 @@ for t in trees:
     md.append(' · '.join(links))
     md.append('')
 
-(r / '수목120-학습노트.md').write_text('\n'.join(md), encoding='utf-8')
+(r / 'docs/수목120-학습노트.md').write_text('\n'.join(md), encoding='utf-8')
 
 tw_cnt = sum(1 for t in trees for im in t['images'] if im.get('source') == '사이버수목원')
 nat_cnt = sum(1 for t in trees for im in t['images'] if im.get('source') == '국가생물종지식정보시스템')

@@ -25,9 +25,11 @@
 ├── .github/workflows/                # GitHub Actions CI/CD 워크플로우
 │   ├── deploy-pages.yml              # GitHub Pages 웹앱 자동 배포 워크플로우
 │   └── release.yml                   # 태그 푸시 시 오프라인 패키지 자동 빌드 & 릴리즈
-├── docs/                             # 모든 기능·규칙·설계 변경에 대한 근거 문서 아카이브
+├── docs/                             # 모든 기능·규칙·설계 변경 근거 및 학습 문서 아카이브
 │   ├── README.md                     # 문서화 원칙(Documentation-First) 및 문서 인덱스
-│   └── exam-simulation-spec.md       # 조경기능사 수목감별 실제 시험 규정 및 모의고사 설계 근거
+│   ├── exam-simulation-spec.md       # 조경기능사 수목감별 실제 시험 규정 및 모의고사 설계 근거
+│   ├── 수목120-학습노트.md            # 120종 텍스트 정리 노트
+│   └── 수목120-학습자료.csv            # 120종 스프레드시트 데이터
 ├── web/                              # 배포 및 실행용 프론트엔드 루트 (Pages 배포 대상)
 │   ├── index.html                    # 메인 단일 HTML 문서 (SPA 구조)
 │   ├── style.css                     # 전체 스타일시트 (반응형, 모바일, 오버레이, 애니메이션)
@@ -55,11 +57,9 @@
 │   ├── wikipedia_data.json           # 위키백과 수집 데이터
 │   ├── treeworld_images_manifest.json# 사이버수목원 사진 매니페스트
 │   └── assets_video_backup/          # 원본 영상 캡처 사진 백업본 (317장)
-├── dist/                             # 로컬 빌드 산출물 (.gitignore로 관리, Releases 배포)
-│   ├── 조경기능사_수목감별120_학습패키지/      # 무설치 오프라인 배포 폴더
-│   └── 조경기능사_수목감별120_학습패키지.zip  # 배포용 단일 ZIP 파일
-├── 수목120-학습노트.md                # 120종 텍스트 정리 노트
-└── 수목120-학습자료.csv                # 120종 스프레드시트 데이터
+└── dist/                             # 로컬 빌드 산출물 (.gitignore로 관리, Releases 배포)
+    ├── 조경기능사_수목감별120_학습패키지/      # 무설치 오프라인 배포 폴더
+    └── 조경기능사_수목감별120_학습패키지.zip  # 배포용 단일 ZIP 파일
 ```
 
 ---
@@ -174,7 +174,7 @@ python3 tools/fetch_wikipedia.py
 # 7. 사이버 수목원 사진 다운로드 및 리사이징
 python3 tools/download_treeworld_photos.py
 
-# 8. web/trees.json, web/data.js, 수목120-학습노트.md 등 종합 빌드
+# 8. web/trees.json, web/data.js, docs/수목120-학습노트.md 등 종합 빌드
 python3 tools/build_data.py
 ```
 
