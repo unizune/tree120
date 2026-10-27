@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'web/**'
+      - 'tools/verify_ui.js'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
@@ -27,6 +28,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Verify UI & Mobile Responsive Integrity
+        run: node tools/verify_ui.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

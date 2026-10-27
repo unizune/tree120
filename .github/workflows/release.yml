@@ -21,6 +21,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Verify UI & Mobile Responsive Integrity
+        run: node tools/verify_ui.js
+
       - name: Install Zip Utility
         run: sudo apt-get update && sudo apt-get install -y zip
 
