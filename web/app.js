@@ -37,7 +37,76 @@ try {
 }
 const quizHistory = Array.isArray(savedHistory) ? savedHistory : [];
 
-let view = 'study', query = '', range = 'all', quiz = null, exam = null, examTimerId = null, detailId = null;
+let view = 'study',
+  query = '',
+  range = 'all',
+  quiz = null,
+  exam = null,
+  examTimerId = null,
+  detailId = null,
+  toastTimerId = null,
+  studyScrollY = 0,
+  lastFocusedEl = null,
+  isHandlingPopState = false;
+
+const VALID_VIEWS = ['study', 'quiz', 'exam', 'wrong', 'stats'];
+
+const VIEW_TITLES = {
+  study: () => '수목 도감 (120종) · 수목 120',
+  quiz: () => '랜덤 퀴즈 · 수목 120',
+  exam: () => '실전 모의고사 (20선) · 수목 120',
+  wrong: () => `오답 복습 (${wrongTrees().length}종) · 수목 120`,
+  stats: () => '학습 통계 · 수목 120'
+};
+
+function updateDocumentTitle(customTitle) {
+  const nextTitle = customTitle || (VIEW_TITLES[view] ? VIEW_TITLES[view]() : '수목 120 · 조경기능사 감별 노트');
+  document.title = nextTitle;
+  const announcer = document.querySelector('#route-announcer');
+  if (announcer) announcer.textContent = nextTitle;
+}
+
+function updateUrlHash(hash, replace = false) {
+  if (isHandlingPopState) return;
+  try {
+    if (window.history && typeof window.history.pushState === 'function') {
+      if (replace) {
+        window.history.replaceState({ view, detailId }, '', hash);
+      } else if (!window.location || window.location.hash !== hash) {
+        window.history.pushState({ view, detailId }, '', hash);
+      }
+    } else if (window.location) {
+      window.location.hash = hash;
+    }
+  } catch {
+    // 로컬 file:// 프로토콜 등 History API 제약 환경 폴백
+  }
+}
+
+function isSessionBusy() {
+  if (view === 'exam' && exam && exam.phase !== 'done') return true;
+  if (view === 'quiz' && quiz && !quiz.recorded && quiz.answers.length > 0 && quiz.index < quiz.questions.length) return true;
+  return false;
+}
+
+function confirmNavigationIfBusy(targetView) {
+  if (targetView === view || !isSessionBusy()) return true;
+  const msg = view === 'exam'
+    ? '실전 모의고사가 진행 중입니다. 다른 화면으로 이동하면 현재 진행 중인 시험이 종료됩니다. 이동하시겠습니까?'
+    : '풀고 있는 퀴즈가 있습니다. 다른 화면으로 이동하면 현재 퀴즈 진행 상태가 초기화됩니다. 이동하시겠습니까?';
+  return confirm(msg);
+}
+
+function preloadImages(photos) {
+  if (typeof Image === 'undefined' || !Array.isArray(photos)) return;
+  photos.forEach(p => {
+    const src = typeof p === 'string' ? p : p?.src;
+    if (src) {
+      const img = new Image();
+      img.src = src;
+    }
+  });
+}
 
 function save() {
   try {
@@ -61,9 +130,14 @@ function updateCount() {
 
 function toast(msg) {
   const t = document.querySelector('#toast');
+  if (!t) return;
+  if (toastTimerId) clearTimeout(toastTimerId);
   t.textContent = msg;
   t.style.opacity = 1;
-  setTimeout(() => t.style.opacity = 0, 2600);
+  toastTimerId = setTimeout(() => {
+    t.style.opacity = 0;
+    toastTimerId = null;
+  }, 2600);
 }
 
 function shuffle(array) {
@@ -75,22 +149,60 @@ function shuffle(array) {
   return a;
 }
 
-function navigate(v) {
+function navigate(v, opts = {}) {
+  if (!VALID_VIEWS.includes(v)) v = 'study';
+  if (!opts.skipGuard && !opts.fromPopState && v !== view) {
+    if (!confirmNavigationIfBusy(v)) return false;
+  }
+
+  if (view === 'study' && v !== 'study' && typeof window.scrollY === 'number') {
+    studyScrollY = window.scrollY;
+  }
+
   cleanupQuizOverlay();
   cleanupExamTimer();
+  if (v !== 'quiz') quiz = null;
+  if (v !== 'exam') exam = null;
+
+  if (dialog && dialog.open && !opts.keepDialog) {
+    detailId = null;
+    dialog.close();
+  }
+
+  const prevView = view;
   view = v;
-  document.querySelectorAll('[data-nav]').forEach(b => b.classList.toggle('active', b.dataset.nav === v));
+
+  document.querySelectorAll('[data-nav]').forEach(b => {
+    const isActive = b.dataset.nav === v;
+    b.classList.toggle('active', isActive);
+    if (typeof b.setAttribute === 'function') {
+      if (isActive) b.setAttribute('aria-current', 'page');
+      else if (typeof b.removeAttribute === 'function') b.removeAttribute('aria-current');
+    }
+  });
+
+  if (!opts.skipHash) {
+    updateUrlHash(`#${v}`, Boolean(opts.replaceHash));
+  }
+  updateDocumentTitle();
+
   if (v === 'quiz') renderSetup();
   else if (v === 'exam') renderExamSetup();
   else if (v === 'stats') renderStats();
   else renderStudy();
-  window.scrollTo(0, 0);
+
+  if (v === 'study' && prevView !== 'study' && !opts.resetScroll && studyScrollY > 0) {
+    window.scrollTo(0, studyScrollY);
+  } else {
+    window.scrollTo(0, 0);
+  }
+  return true;
 }
 
 document.querySelectorAll('[data-nav]').forEach(b => b.onclick = () => navigate(b.dataset.nav));
 document.querySelector('.brand').onclick = e => {
   e.preventDefault();
-  navigate('study');
+  navigate('study', { resetScroll: true });
 };
 
 function card(t) {
@@ -133,7 +245,8 @@ function renderStudy() {
   </div>`}
   <div class="toolbar">
     <label class="search">
-      <input id="search" type="search" placeholder="수목 이름 또는 번호 검색" aria-label="수목 이름 또는 번호 검색" value="${escapeHtml(query)}">
+      <input id="search" type="search" placeholder="수목 이름 또는 번호 검색 (단축키 /)" aria-label="수목 이름 또는 번호 검색" value="${escapeHtml(query)}">
+      <button type="button" id="clear-search" class="search-clear" aria-label="검색어 지우기" title="검색어 지우기" ${query ? '' : 'hidden'}>×</button>
     </label>
     <div class="range" aria-label="번호 범위">
       ${[['all', '전체'], ['1', '01–30'], ['31', '31–60'], ['61', '61–90'], ['91', '91–120']].map(([v, l]) => `<button data-range="${v}" class="${range === v ? 'active' : ''}">${l}</button>`).join('')}
@@ -143,20 +256,34 @@ function renderStudy() {
   <div class="grid" id="cards"></div>`;
 
   document.querySelector('#go-exam').onclick = () => {
-    navigate('exam');
-    if (wrong) {
+    if (navigate('exam') && wrong) {
       const ep = document.querySelector('#exam-pool');
       if (ep) ep.value = 'wrong';
     }
   };
   document.querySelector('#go-quiz').onclick = () => {
-    navigate('quiz');
-    if (wrong) document.querySelector('#pool').value = 'wrong';
+    if (navigate('quiz') && wrong) {
+      const poolEl = document.querySelector('#pool');
+      if (poolEl) poolEl.value = 'wrong';
+    }
   };
-  document.querySelector('#search').oninput = e => {
+  const searchInput = document.querySelector('#search');
+  const clearBtn = document.querySelector('#clear-search');
+  searchInput.oninput = e => {
     query = e.target.value;
+    if (clearBtn) clearBtn.hidden = !query;
     renderCards();
   };
+  if (clearBtn) {
+    clearBtn.onclick = e => {
+      e.preventDefault();
+      query = '';
+      searchInput.value = '';
+      clearBtn.hidden = true;
+      renderCards();
+      searchInput.focus();
+    };
+  }
   document.querySelectorAll('[data-range]').forEach(b => b.onclick = () => {
     range = b.dataset.range;
     document.querySelectorAll('[data-range]').forEach(x => x.classList.toggle('active', x === b));
@@ -169,11 +296,29 @@ function renderCards() {
   const source = view === 'wrong' ? wrongTrees() : trees;
   const q = query.trim().replace(/\s/g, '');
   const arr = source.filter(t => (!q || t.name.includes(q) || String(t.id) === q || pad(t.id) === q || (t.family && t.family.includes(q)) || (t.scientificName && t.scientificName.toLowerCase().includes(q.toLowerCase()))) && (range === 'all' || t.id >= +range && t.id < +range + 30));
+  const hasFilter = Boolean(q) || range !== 'all';
 
   document.querySelector('#count').textContent = `${arr.length}종 / ${source.length}종`;
   document.querySelector('#cards').innerHTML = arr.length
     ? arr.map(card).join('')
-    : `<div class="empty">${view === 'wrong' && !source.length ? '아직 오답이 없어요. 랜덤 퀴즈를 풀면 복습할 수목이 모입니다.' : '검색 결과가 없어요. 이름이나 번호를 다시 확인해 주세요.'}</div>`;
+    : `<div class="empty">
+        <p>${view === 'wrong' && !source.length ? '아직 오답이 없어요. 랜덤 퀴즈를 풀면 복습할 수목이 모입니다.' : '검색 결과가 없어요. 이름이나 번호를 다시 확인해 주세요.'}</p>
+        ${hasFilter ? '<button type="button" class="secondary empty-reset-btn" id="reset-filter">검색어 및 필터 초기화</button>' : ''}
+      </div>`;
+
+  const resetBtn = document.querySelector('#reset-filter');
+  if (resetBtn) {
+    resetBtn.onclick = () => {
+      query = '';
+      range = 'all';
+      const searchEl = document.querySelector('#search');
+      if (searchEl) searchEl.value = '';
+      const clearEl = document.querySelector('#clear-search');
+      if (clearEl) clearEl.hidden = true;
+      document.querySelectorAll('[data-range]').forEach(x => x.classList.toggle('active', x.dataset.range === 'all'));
+      renderCards();
+    };
+  }
 
   document.querySelectorAll('[data-tree]').forEach(b => b.onclick = () => showDetail(+b.dataset.tree));
 }
@@ -191,12 +336,23 @@ function formatPhotoMeta(im) {
   return parts.length ? parts.join(' · ') : '';
 }
 
-function showDetail(id) {
-  detailId = id;
+function showDetail(id, opts = {}) {
   const t = trees.find(t => t.id === id);
   if (!t) return;
+  const wasOpen = Boolean(dialog.open && detailId !== null);
+  if (!wasOpen && document.activeElement) {
+    lastFocusedEl = document.activeElement;
+  }
+  detailId = id;
+  if (!opts.skipHash) {
+    updateUrlHash(`#tree-${pad(t.id)}`, wasOpen || Boolean(opts.replaceHash));
+  }
+  updateDocumentTitle(`${pad(t.id)}. ${t.name} · 수목 120 도감`);
+
   const prevT = trees.find(x => x.id === id - 1);
   const nextT = trees.find(x => x.id === id + 1);
+  if (prevT && prevT.images[0]) preloadImages([prevT.images[0]]);
+  if (nextT && nextT.images[0]) preloadImages([nextT.images[0]]);
   const initialImg = t.images[0];
 
   const MORPH_ICONS = {
@@ -530,6 +686,26 @@ function showDetail(id) {
   dialog.scrollTop = 0;
 }
 
+dialog.addEventListener('close', () => {
+  if (detailId !== null) {
+    const closedTreeId = detailId;
+    detailId = null;
+    updateDocumentTitle();
+    if (!isHandlingPopState) {
+      updateUrlHash(`#${view}`, true);
+    }
+    const targetCard = document.querySelector(`[data-tree="${closedTreeId}"]`);
+    if (targetCard && typeof targetCard.focus === 'function') {
+      if (typeof targetCard.scrollIntoView === 'function') {
+        targetCard.scrollIntoView({ block: 'nearest' });
+      }
+      targetCard.focus({ preventScroll: true });
+    } else if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
+      lastFocusedEl.focus({ preventScroll: true });
+    }
+  }
+});
+
 dialog.addEventListener('click', e => {
   if (e.target === dialog) {
     const r = dialog.getBoundingClientRect();
@@ -537,17 +713,56 @@ dialog.addEventListener('click', e => {
   }
 });
 
-// Keyboard shortcut: Left/Right arrows navigate trees when detail dialog is open
+// Keyboard shortcuts across views (Detail modal arrows, Study '/' search, Quiz 1~4 choices)
 window.addEventListener('keydown', e => {
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  const tag = document.activeElement && document.activeElement.tagName ? document.activeElement.tagName.toLowerCase() : '';
+  const isTyping = tag === 'input' || tag === 'textarea' || tag === 'select';
+
   if (dialog && dialog.open && detailId !== null && !document.querySelector('#quiz-overlay')) {
-    const tag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
-    if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+    if (isTyping) return;
     if (e.key === 'ArrowLeft') {
       e.preventDefault();
       if (detailId > 1) showDetail(detailId - 1);
     } else if (e.key === 'ArrowRight') {
       e.preventDefault();
       if (detailId < trees.length) showDetail(detailId + 1);
+    }
+    return;
+  }
+
+  if (dialog && dialog.open) return;
+  if (document.querySelector('#quiz-overlay')) return;
+  if (isTyping) return;
+
+  // 도감(study / wrong) 뷰에서 '/' 키로 검색창 즉시 포커스
+  if ((view === 'study' || view === 'wrong') && e.key === '/') {
+    const searchEl = document.querySelector('#search');
+    if (searchEl) {
+      e.preventDefault();
+      searchEl.focus();
+      if (typeof searchEl.select === 'function') searchEl.select();
+    }
+    return;
+  }
+
+  // 4지선다 퀴즈 풀이 화면에서 숫자키 1~4로 보기 선택, 0으로 '잘 모르겠어요'
+  if (view === 'quiz' && quiz && !quiz.answered && quiz.mode === 'choice') {
+    const choiceBtns = document.querySelectorAll('[data-answer]');
+    if (choiceBtns.length) {
+      if (e.key >= '1' && e.key <= '4') {
+        const idx = Number(e.key) - 1;
+        if (choiceBtns[idx]) {
+          e.preventDefault();
+          grade(+choiceBtns[idx].dataset.answer);
+        }
+      } else if (e.key === '0') {
+        const unknownBtn = document.querySelector('#unknown');
+        if (unknownBtn && !unknownBtn.hidden) {
+          e.preventDefault();
+          grade(null);
+        }
+      }
     }
   }
 });
@@ -686,6 +901,7 @@ function sampleQuizPhotos(images, maxCount = 4) {
 }
 
 function startQuiz(pool, n, mode, poolName = '전체 120종') {
+  view = 'quiz';
   quiz = {
     poolName,
     questions: shuffle(pool).slice(0, n).map(t => ({
@@ -974,6 +1190,8 @@ function renderQuestion() {
 
   const form = document.querySelector('#typed-form');
   if (form) {
+    const ansInput = document.querySelector('#answer');
+    if (ansInput && typeof ansInput.focus === 'function') ansInput.focus();
     form.onsubmit = e => {
       e.preventDefault();
       const a = document.querySelector('#answer').value.trim();
@@ -986,6 +1204,12 @@ function renderQuestion() {
   }
 
   document.querySelector('#unknown').onclick = () => grade(null);
+
+  // 다음 문항 사진 백그라운드 프리로드 (전환 지연 방지)
+  const nextQ = quiz.questions[quiz.index + 1];
+  if (nextQ && nextQ.photos) {
+    preloadImages(nextQ.photos);
+  }
 }
 
 function normalize(s) {
@@ -1202,6 +1426,7 @@ function renderExamSetup() {
 
 function startExam(poolMode, pass1Sec = 4, enablePass2 = true) {
   cleanupExamTimer();
+  view = 'exam';
 
   let selectedTrees = [];
   let poolName = '전체 120종';
@@ -1509,6 +1734,9 @@ function renderExamStage() {
 
   bindPhotoDotButtons();
   updateExamFilledCount();
+
+  const nextExamQ = exam.questions[exam.qIndex + 1];
+  if (nextExamQ && nextExamQ.photos) preloadImages(nextExamQ.photos);
 }
 
 function bindPhotoDotButtons() {
@@ -1685,6 +1913,9 @@ function updateExamQuestionUI() {
   syncQuickInputToCurrentQuestion();
   updateExamPhaseHeader();
   updateExamSlideUI();
+
+  const nextExamQ = exam.questions[exam.qIndex + 1];
+  if (nextExamQ && nextExamQ.photos) preloadImages(nextExamQ.photos);
 }
 
 function updateExamTimerUI() {
@@ -2206,5 +2437,53 @@ document.querySelector('#sources').onclick = () => {
   dialog.showModal();
 };
 
+function handleRouteFromHash(isInitial = false) {
+  const rawHash = (window.location && window.location.hash ? window.location.hash : '').replace(/^#/, '').trim();
+  isHandlingPopState = true;
+  try {
+    if (!isInitial && document.querySelector('#quiz-overlay')) {
+      cleanupQuizOverlay();
+    }
+
+    const treeMatch = rawHash.match(/^tree[-/](\d{1,3})$/i);
+    if (treeMatch) {
+      const targetId = parseInt(treeMatch[1], 10);
+      if (trees.some(t => t.id === targetId)) {
+        if (isInitial) {
+          navigate('study', { skipHash: true, skipGuard: true });
+        }
+        showDetail(targetId, { skipHash: true });
+        return;
+      }
+    }
+
+    if (dialog && dialog.open) {
+      dialog.close();
+    }
+
+    const targetView = VALID_VIEWS.includes(rawHash) ? rawHash : 'study';
+    if (isInitial || targetView !== view) {
+      navigate(targetView, {
+        fromPopState: !isInitial,
+        skipHash: !isInitial && Boolean(rawHash),
+        replaceHash: isInitial
+      });
+    } else {
+      updateDocumentTitle();
+    }
+  } finally {
+    isHandlingPopState = false;
+  }
+}
+
+window.addEventListener('popstate', () => handleRouteFromHash(false));
+
+window.addEventListener('beforeunload', e => {
+  if (isSessionBusy()) {
+    e.preventDefault();
+    e.returnValue = '';
+  }
+});
+
 updateCount();
-navigate('study');
+handleRouteFromHash(true);

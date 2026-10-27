@@ -89,6 +89,12 @@ if (JSON.stringify(navButtons) === JSON.stringify(expectedNavs)) {
   fail('상단 내비게이션 탭 구성 불일치', `현재 탭: ${navButtons.join(', ')}`);
 }
 
+if (html.includes('class="skip-link"') && html.includes('aria-current="page"') && html.includes('id="route-announcer"')) {
+  pass('SPA 접근성 마크업(.skip-link, aria-current="page", #route-announcer) 확인');
+} else {
+  fail('index.html에 SPA 접근성 마크업(.skip-link, aria-current="page", #route-announcer) 중 일부가 누락되었습니다.');
+}
+
 // ---------------------------------------------------------------------------
 // 3. CSS 구문, 가독성(Minified 방지) 및 중괄호 검증
 // ---------------------------------------------------------------------------
@@ -262,13 +268,21 @@ if (mobileSearchInputMatch && /font-size\s*:\s*16px/.test(mobileSearchInputMatch
   fail('모바일 .search input의 font-size: 16px 규칙이 누락되었습니다.');
 }
 
+// 불변식 10: 오프라인 환경 대비 한국어 시스템 폰트 폴백 스택 확인
+if (/Apple SD Gothic Neo/.test(css) && /Malgun Gothic/.test(css)) {
+  pass('오프라인 대비 한국어 네이티브 시스템 폰트 폴백(Apple SD Gothic Neo, Malgun Gothic) 확인');
+} else {
+  fail('style.css :root에 한국어 오프라인 시스템 폰트 폴백 스택이 누락되었습니다.');
+}
+
 // ---------------------------------------------------------------------------
-// 5. SPA 5대 뷰(study, quiz, exam, wrong, stats) 런타임 렌더링 무결성 검증
+// 5. SPA 5대 뷰(study, quiz, exam, wrong, stats) 및 핵심 사용성 원칙 시뮬레이션 검증
 // ---------------------------------------------------------------------------
-console.log('\n5️⃣  SPA 5대 뷰 전환 및 DOM 마크업 구조 시뮬레이션 검증');
+console.log('\n5️⃣  SPA 5대 뷰 전환·해시 라우팅·세션 가드 시뮬레이션 검증');
 try {
   const mainEl = { innerHTML: '', querySelector: () => createStubEl(), querySelectorAll: () => [] };
   const detailContentEl = { innerHTML: '' };
+  const routeAnnouncerEl = { textContent: '' };
   const dialogEl = {
     open: false,
     scrollTop: 0,
@@ -283,11 +297,16 @@ try {
       value: 'all',
       textContent: '',
       innerHTML: '',
+      hidden: false,
       style: {},
       dataset: {},
       classList: { toggle() {}, add() {}, remove() {} },
       addEventListener() {},
+      setAttribute() {},
+      removeAttribute() {},
       focus() {},
+      select() {},
+      scrollIntoView() {},
       remove() {},
       getAttribute: () => '',
       querySelector: () => createStubEl(),
@@ -295,17 +314,38 @@ try {
     };
   }
 
-  const navBtns = expectedNavs.map(nav => ({
-    dataset: { nav },
-    classList: { toggle() {} },
-    onclick: null
-  }));
+  const navBtns = expectedNavs.map(nav => {
+    const attrs = {};
+    return {
+      dataset: { nav },
+      classList: { toggle() {} },
+      setAttribute(k, v) { attrs[k] = v; },
+      removeAttribute(k) { delete attrs[k]; },
+      getAttribute(k) { return attrs[k] || null; },
+      onclick: null
+    };
+  });
+
+  const historyStack = [];
+  const locationObj = { hash: '' };
 
   const sandbox = {
     window: {
       TREES: null,
       innerWidth: 375,
       innerHeight: 812,
+      scrollY: 0,
+      location: locationObj,
+      history: {
+        pushState(state, _, hash) {
+          locationObj.hash = hash;
+          historyStack.push({ mode: 'push', hash, state });
+        },
+        replaceState(state, _, hash) {
+          locationObj.hash = hash;
+          historyStack.push({ mode: 'replace', hash, state });
+        }
+      },
       scrollTo() {},
       addEventListener() {},
       removeEventListener() {}
@@ -315,6 +355,7 @@ try {
       setItem() {}
     },
     document: {
+      title: '',
       activeElement: null,
       body: { appendChild() {} },
       createElement: () => ({
@@ -339,6 +380,7 @@ try {
         if (sel === '#main') return mainEl;
         if (sel === '#detail') return dialogEl;
         if (sel === '#detail-content') return detailContentEl;
+        if (sel === '#route-announcer') return routeAnnouncerEl;
         return createStubEl();
       },
       querySelectorAll(sel) {
@@ -348,6 +390,7 @@ try {
     },
     confirm: () => true,
     setTimeout: () => 1,
+    clearTimeout() {},
     setInterval: () => 1,
     clearInterval() {},
     requestAnimationFrame: () => 1,
@@ -359,43 +402,69 @@ try {
   vm.runInContext(fs.readFileSync(DATA_JS, 'utf8'), sandbox);
   vm.runInContext(fs.readFileSync(APP_JS, 'utf8'), sandbox);
 
-  // 1) 초기 study 뷰 마크업 확인
-  if (mainEl.innerHTML.includes('class="intro"') && mainEl.innerHTML.includes('class="intro-actions"') && mainEl.innerHTML.includes('class="grid"')) {
-    pass('수목 도감(study) 뷰 초기 렌더링 및 .intro-actions 마크업 확인');
+  // 1) 초기 study 뷰 마크업 및 검색어 지우기 버튼(#clear-search) 확인
+  if (
+    mainEl.innerHTML.includes('class="intro"') &&
+    mainEl.innerHTML.includes('class="intro-actions"') &&
+    mainEl.innerHTML.includes('id="clear-search"') &&
+    mainEl.innerHTML.includes('class="grid"')
+  ) {
+    pass('수목 도감(study) 뷰 초기 렌더링 및 #clear-search 마크업 확인');
   } else {
     fail('수목 도감(study) 뷰 마크업이 정상 생성되지 않았습니다.');
   }
 
-  // 2) quiz, exam, wrong, stats 뷰 순차 전환 검증
+  // 2) quiz, exam, wrong, stats 뷰 순차 전환 + 해시/타이틀/aria-current 동기화 검증
   const viewChecks = [
-    { nav: 'quiz', expected: 'class="setup"' },
-    { nav: 'exam', expected: 'class="setup exam-setup"' },
-    { nav: 'wrong', expected: 'REVIEW YOUR MISTAKES' },
-    { nav: 'stats', expected: 'class="stats-container"' }
+    { nav: 'quiz', expected: 'class="setup"', hash: '#quiz' },
+    { nav: 'exam', expected: 'class="setup exam-setup"', hash: '#exam' },
+    { nav: 'wrong', expected: 'REVIEW YOUR MISTAKES', hash: '#wrong' },
+    { nav: 'stats', expected: 'class="stats-container"', hash: '#stats' }
   ];
 
   for (const vc of viewChecks) {
     sandbox.navigate(vc.nav);
-    if (mainEl.innerHTML.includes(vc.expected)) {
-      pass(`뷰 라우팅(${vc.nav}) 렌더링 성공 (${vc.expected})`);
+    const activeBtn = navBtns.find(b => b.dataset.nav === vc.nav);
+    if (
+      mainEl.innerHTML.includes(vc.expected) &&
+      locationObj.hash === vc.hash &&
+      activeBtn.getAttribute('aria-current') === 'page' &&
+      sandbox.document.title.includes('수목 120')
+    ) {
+      pass(`뷰 라우팅(${vc.nav}) 렌더링 및 해시(${vc.hash})·타이틀·aria-current 동기화 성공`);
     } else {
-      fail(`뷰 라우팅(${vc.nav}) 렌더링 실패`, `기대 마크업(${vc.expected}) 미발견`);
+      fail(`뷰 라우팅(${vc.nav}) 또는 SPA 상태 동기화 실패`, `hash=${locationObj.hash}, title=${sandbox.document.title}`);
     }
   }
 
-  // 3) 상세 도감 모달(showDetail) 및 실전 모의고사(startExam) 실행 검증
+  // 3) 상세 도감 모달(showDetail) 딥링크 해시(#tree-001) 및 연속 이동(replaceState) 검증
   sandbox.showDetail(1);
-  if (detailContentEl.innerHTML.includes('class="detail-layout"') && dialogEl.open) {
-    pass('수목 상세 모달(showDetail) 렌더링 및 다이얼로그 오픈 확인');
+  const firstModalHistory = historyStack[historyStack.length - 1];
+  sandbox.showDetail(2);
+  const secondModalHistory = historyStack[historyStack.length - 1];
+  if (
+    detailContentEl.innerHTML.includes('class="detail-layout"') &&
+    dialogEl.open &&
+    firstModalHistory.hash === '#tree-001' &&
+    firstModalHistory.mode === 'push' &&
+    secondModalHistory.hash === '#tree-002' &&
+    secondModalHistory.mode === 'replace'
+  ) {
+    pass('수목 상세 모달(showDetail) #tree-001 pushState 및 연속 탐색 replaceState 확인');
   } else {
-    fail('수목 상세 모달(showDetail) 렌더링 실패');
+    fail('수목 상세 모달(showDetail) 히스토리 동기화 실패');
   }
 
+  // 4) 실전 모의고사(startExam) 실행 및 진행 중 세션 보호 가드(isSessionBusy) 검증
   sandbox.startExam('all', 4, true);
-  if (mainEl.innerHTML.includes('class="exam-workspace"') && mainEl.innerHTML.includes('class="exam-answer-sheet"')) {
-    pass('20선 실전 모의고사(startExam) 프로젝터 및 답안지 렌더링 확인');
+  if (
+    mainEl.innerHTML.includes('class="exam-workspace"') &&
+    mainEl.innerHTML.includes('class="exam-answer-sheet"') &&
+    sandbox.isSessionBusy() === true
+  ) {
+    pass('20선 실전 모의고사(startExam) 렌더링 및 활성 세션 보호(isSessionBusy) 동작 확인');
   } else {
-    fail('20선 실전 모의고사(startExam) 렌더링 실패');
+    fail('20선 실전 모의고사(startExam) 렌더링 또는 세션 보호 가드 실패');
   }
   sandbox.cleanupExamTimer();
 } catch (err) {

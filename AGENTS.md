@@ -27,6 +27,7 @@
 │   └── release.yml                   # 태그 푸시 시 오프라인 패키지 자동 빌드 & 릴리즈
 ├── docs/                             # 모든 기능·규칙·설계 변경 근거 및 학습 문서 아카이브
 │   ├── README.md                     # 문서화 원칙(Documentation-First) 및 문서 인덱스
+│   ├── spa-usability-spec.md         # 모던 SPA 6대 핵심 사용성 원칙 및 라우팅/세션 보호 설계 명세
 │   ├── mobile-responsive-spec.md     # 모바일 반응형 UI 설계 기준 및 재발 방지 아키텍처
 │   ├── exam-simulation-spec.md       # 조경기능사 수목감별 실제 시험 규정 및 모의고사 설계 근거
 │   ├── 수목120-학습노트.md            # 120종 텍스트 정리 노트
@@ -121,13 +122,17 @@ interface TreeImage {
 
 ## 4. UI/UX 및 아키텍처 규칙
 
-### 4.1. 단일 페이지 애플리케이션 (SPA) 라우팅
-`app.js`의 `navigate(viewName)` 함수가 뷰 전환을 제어합니다:
-- `study`: 전체 120종 수목 도감 그리드 뷰 (검색, 번호대 필터, 모달 상세 보기).
-- `quiz`: 퀴즈 설정(출제 범위, 4지선다/직접 쓰기, 문항 수) 및 단기 학습용 랜덤 퀴즈 풀이.
+### 4.1. 단일 페이지 애플리케이션 (SPA) 라우팅 및 사용성 원칙 (상세 명세: [`docs/spa-usability-spec.md`](docs/spa-usability-spec.md))
+`app.js`의 `navigate(viewName, opts)` 및 `handleRouteFromHash()` 함수가 URL 해시(`#study`, `#quiz`, `#exam`, `#wrong`, `#stats`, `#tree-001`~`#tree-120`)와 History API(`pushState`/`replaceState`/`popstate`)를 양방향 동기화합니다:
+- `study`: 전체 120종 수목 도감 그리드 뷰 (검색, `/` 단축키, 원클릭 검색어 지우기 `#clear-search`, 번호대 필터, 스크롤 위치 복원, 모달 상세 보기).
+- `quiz`: 퀴즈 설정(출제 범위, 4지선다/직접 쓰기, 문항 수) 및 단기 학습용 랜덤 퀴즈 풀이 (4지선다 `1`~`4`, `0` 숫자 단축키 및 다음 문항 사진 프리로드).
 - `exam`: 실제 시험 환경과 동일한 20선 실전 모의고사 (부위별 4장 순차 슬라이드, 1·2차 회전 타이머, 일시정지 불가 연속 진행, 1~20번 주관식 답안지 및 10점 만점 엄격 채점 · 상세 근거는 [`docs/exam-simulation-spec.md`](docs/exam-simulation-spec.md) 참조).
 - `wrong`: 오답 노트 전용 뷰 (현재 틀린 수목만 집중 학습).
 - `stats`: 종합 학습 통계 대시보드 (정답률, 마스터 진도율, 취약 수목 Top 8, 응시 이력).
+- **SPA 핵심 사용성 보장**:
+  - 뷰 및 상세 모달 전환 시 `document.title`, `#route-announcer`(`aria-live`), 활성 탭 `aria-current="page"` 동적 갱신.
+  - 상세 모달 최초 오픈 시 `pushState(#tree-XXX)`, 모달 내 연속 이동 시 `replaceState`를 사용하여 뒤로 가기 1회로 모달 닫기 및 트리거 카드 포커스 복원.
+  - 활성 퀴즈/모의고사 진행 중(`isSessionBusy()`) 실수로 탭을 전환하거나 새로고침(`beforeunload`)할 때 세션 보호 가드 작동.
 
 ### 4.2. 퀴즈 풀이 화면 규칙 (엄격 준수)
 1. **Zero-Text Spoiler**: 문제 풀이 화면에는 학명, 과명, 텍스트 형태 설명을 절대로 미리 노출하지 않습니다. 오직 사진 그리드와 문제 질문만 표시해야 합니다.
@@ -189,7 +194,7 @@ python3 tools/build_data.py
 
 ## 6. 테스트 및 검증 명령
 
-코드 수정 후 반드시 아래 통합 검증 스크립트를 실행하여 16개 무결성 및 모바일 반응형 불변식을 통과해야 합니다 (GitHub Actions 배포 시에도 동일하게 자동 실행됩니다):
+코드 수정 후 반드시 아래 통합 검증 스크립트를 실행하여 28개 무결성·모바일 반응형·SPA 사용성 불변식을 통과해야 합니다 (GitHub Actions 배포 시에도 동일하게 자동 실행됩니다):
 
 ```bash
 # 1. 통합 UI·모바일 반응형 불변식 및 JS/CSS/데이터 무결성 자동 검증 (필수)
