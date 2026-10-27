@@ -27,6 +27,7 @@
 │   └── release.yml                   # 태그 푸시 시 오프라인 패키지 자동 빌드 & 릴리즈
 ├── docs/                             # 모든 기능·규칙·설계 변경 근거 및 학습 문서 아카이브
 │   ├── README.md                     # 문서화 원칙(Documentation-First) 및 문서 인덱스
+│   ├── mobile-responsive-spec.md     # 모바일 반응형 UI 설계 기준 및 재발 방지 아키텍처
 │   ├── exam-simulation-spec.md       # 조경기능사 수목감별 실제 시험 규정 및 모의고사 설계 근거
 │   ├── 수목120-학습노트.md            # 120종 텍스트 정리 노트
 │   └── 수목120-학습자료.csv            # 120종 스프레드시트 데이터
@@ -38,7 +39,8 @@
 │   ├── trees.json                    # 120종 원본 JSON 데이터
 │   └── assets/                       # 수목 실물 사진 946장 (treeworld 467장 + nature 479장)
 │       └── nature/                   # 국가생물종지식정보시스템 고화질 사진 479장
-├── tools/                            # 데이터 수집 및 패키징 도구
+├── tools/                            # 데이터 수집, 검증 및 패키징 도구
+│   ├── verify_ui.js                  # UI·모바일 반응형 불변식 및 JS/CSS 무결성 자동 검증기
 │   ├── fetch_nature.py               # 국가생물종지식정보시스템 식물도감 URL 매퍼
 │   ├── fetch_nature_gallery.py       # 국가생물종지식정보시스템 갤러리 이미지 & 메타 수집기
 │   ├── label_nature_photos.py        # 5대 부위 레이블러 & 스마트 큐레이터
@@ -140,8 +142,11 @@ interface TreeImage {
    - `Enter`, `Space`, `→(오른쪽 화살표)` 키 입력 또는 바깥 배경 클릭 시 즉시 다음 문제(`advanceQuiz()`)로 전환.
    - `cleanupQuizOverlay()`를 통해 뷰 전환이나 퀴즈 종료 시 잔여 이벤트 리스너와 캔버스를 메모리 누수 없이 즉시 정리.
 
-### 4.4. 모바일 반응형 규칙
-- `<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">` 설정.
+### 4.4. 모바일 반응형 규칙 (상세 명세: [`docs/mobile-responsive-spec.md`](docs/mobile-responsive-spec.md))
+- `<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">` 설정 및 `html, body { overflow-x: hidden; max-width: 100%; }` 유지.
+- `@media (max-width: 760px)`에서 `.intro`는 반드시 `flex-direction: column; align-items: stretch;`로 수직 적재하여 우측 액션 버튼(`.intro-actions`, `.intro > .primary`)이 좌측 제목 영역을 압박하지 않도록 보존.
+- 상단 5대 내비게이션 탭(`nav`)은 `360px` 이상 모바일 화면에서 우측 탭(`학습 통계`)이 잘리지 않도록 `justify-content: space-between; gap: 6px; font-size: 13.5px;` 유지.
+- 한글 제목 및 설명문(`h1~h3, .intro p` 등)에 `word-break: keep-all; overflow-wrap: break-word;` 적용 및 CSS 단일 행 과도 압축(>500자 Minified) 금지.
 - 터치 딜레이 방지를 위해 모든 인터랙티브 요소에 `touch-action: manipulation` 적용.
 - 모바일 Safari 인풋 포커스 시 자동 줌(Zoom-in) 방지를 위해 폰트 크기 `16px` 이상 유지.
 - iPhone 하단 홈 바 영역 침범 방지를 위해 `env(safe-area-inset-bottom)` 및 `min(88vh, 88dvh)` 적용.
@@ -184,25 +189,14 @@ python3 tools/build_data.py
 
 ## 6. 테스트 및 검증 명령
 
-코드 수정 후 반드시 아래 검증을 수행하십시오:
+코드 수정 후 반드시 아래 통합 검증 스크립트를 실행하여 16개 무결성 및 모바일 반응형 불변식을 통과해야 합니다 (GitHub Actions 배포 시에도 동일하게 자동 실행됩니다):
 
 ```bash
-# 1. JS 문법 및 린트 검증
-node -c web/app.js
+# 1. 통합 UI·모바일 반응형 불변식 및 JS/CSS/데이터 무결성 자동 검증 (필수)
+node tools/verify_ui.js
 
-# 2. CSS 괄호 매칭 및 문법 검증
-node -e "
-const fs = require('fs');
-const css = fs.readFileSync('web/style.css', 'utf8');
-let open = 0;
-for (let i = 0; i < css.length; i++) {
-  if (css[i] === '{') open++;
-  else if (css[i] === '}') open--;
-  if (open < 0) throw new Error('Unmatched brace at ' + i);
-}
-if (open !== 0) throw new Error('Unclosed brace count: ' + open);
-console.log('CSS Validated!');
-"
+# 2. JS 문법 단독 검증
+node -c web/app.js
 
 # 3. 로컬 서버 구동 (포트 8080)
 python3 -m http.server 8080 -d web

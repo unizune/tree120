@@ -151,32 +151,22 @@ python3 tools/build_data.py
 
 ## 7. 품질 검증 및 테스트 체크리스트
 
-코드를 커밋하거나 PR을 제출하기 전 반드시 다음 검증을 수행하십시오:
+코드를 커밋하거나 PR을 제출하기 전 반드시 다음 통합 검증 스크립트를 수행하십시오 (GitHub Actions 배포 파이프라인에서도 동일하게 검증됩니다):
 
 ```bash
-# 1. JavaScript 문법 검증
-node -c web/app.js
+# 1. 통합 UI·모바일 반응형 불변식 및 JS/CSS/데이터 무결성 자동 검증
+node tools/verify_ui.js
 
-# 2. CSS 문법 및 괄호 매칭 검증
-node -e "
-const fs = require('fs');
-const css = fs.readFileSync('web/style.css', 'utf8');
-let open = 0;
-for (let i = 0; i < css.length; i++) {
-  if (css[i] === '{') open++;
-  else if (css[i] === '}') open--;
-  if (open < 0) throw new Error('Unmatched brace at ' + i);
-}
-if (open !== 0) throw new Error('Unclosed brace count: ' + open);
-console.log('✅ CSS 검증 통과!');
-"
+# 2. JavaScript 문법 단독 검증
+node -c web/app.js
 ```
 
 ### ✅ 사전 점검 체크리스트
+- [ ] `node tools/verify_ui.js`의 모든 검증 항목(16개)을 통과했는가?
 - [ ] 기능/사양 변경에 대한 조사 결과 및 설계 근거가 [`docs/`](docs/README.md) 하위에 문서화되었는가?
 - [ ] 외부 CDN이나 npm 의존성이 추가되지 않았는가?
 - [ ] 퀴즈 풀이 화면에 학명, 과명 등의 힌트 스포일러가 없는가?
-- [ ] 모바일 터치 타깃(최소 44px 이상)이 확보되었는가?
+- [ ] 모바일 뷰포트(`360px`~`430px`)에서 가로 넘침이 없고 터치 타깃(최소 44px 이상)이 확보되었는가?
 - [ ] Canvas 애니메이션이나 전역 이벤트 리스너의 `cleanup` 로직이 누락되지 않았는가?
 - [ ] 82MB ZIP 파일이나 `dist/` 폴더가 Git 스테이지에 포함되지 않았는가?
 
