@@ -207,7 +207,7 @@ document.querySelector('.brand').onclick = e => {
 
 function card(t) {
   const fam = t.family ? t.family.split('/')[0].split('(')[0].trim() : '';
-  return `<button class="card" data-tree="${t.id}" aria-label="${t.id}번 ${escapeHtml(t.name)} 학습">
+  return `<button class="card" data-tree="${t.id}">
     <div class="card-photo">
       <img src="${t.images[0].src}" alt="${escapeHtml(t.name)} 감별 사진" loading="lazy">
       <span class="num">NO. ${pad(t.id)}</span>
@@ -353,7 +353,6 @@ function showDetail(id, opts = {}) {
   const nextT = trees.find(x => x.id === id + 1);
   if (prevT && prevT.images[0]) preloadImages([prevT.images[0]]);
   if (nextT && nextT.images[0]) preloadImages([nextT.images[0]]);
-  const initialImg = t.images[0];
 
   const MORPH_ICONS = {
     '잎': '🌿',
@@ -422,15 +421,15 @@ function showDetail(id, opts = {}) {
 
         <div class="thumbs">
           ${t.images.map((im, i) => `
-            <button data-img="${i}" data-tag="${escapeHtml(im.tag)}" class="" aria-label="사진 ${i + 1} (${im.tag})">
+            <button data-img="${i}" data-tag="${escapeHtml(im.tag)}" class="" title="사진 ${i + 1} (${escapeHtml(im.tag)})">
               <div class="thumb-img-wrap">
                 <img src="${im.src}" alt="">
-                <span class="thumb-source-badge ${im.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}" title="${escapeHtml(im.source || '')}">
+                <span class="thumb-source-badge ${im.source === '국가생물종지식정보시스템' ? 'nature' : 'treeworld'}" title="${escapeHtml(im.source || '')}" aria-hidden="true">
                   ${im.source === '국가생물종지식정보시스템' ? '🌿' : '🌳'}
                 </span>
               </div>
               <span class="thumb-tag">
-                <span class="thumb-morph-icon">${getMorphIcon(im.tag)}</span>
+                <span class="thumb-morph-icon" aria-hidden="true">${getMorphIcon(im.tag)}</span>
                 <span>${escapeHtml(im.tag)}</span>
               </span>
             </button>
@@ -1132,7 +1131,7 @@ function renderQuestion() {
     </div>
     <div class="quiz-layout">
       <div class="quiz-photos-grid count-${qPhotos.length}">
-        ${qPhotos.map((im, i) => `
+        ${qPhotos.map(im => `
           <div class="quiz-photo-card" data-preview-img="${im.src}" data-preview-tag="${escapeHtml(im.tag)}" title="클릭하여 ${escapeHtml(im.tag)} 사진 확대">
             <img src="${im.src}" alt="${escapeHtml(im.tag)} 감별 사진" loading="lazy">
             <span class="quiz-photo-badge">${escapeHtml(im.tag)}</span>
