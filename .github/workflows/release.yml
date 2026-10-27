@@ -21,8 +21,20 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Verify UI & Mobile Responsive Integrity
-        run: node tools/verify_ui.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dev Harness Dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run 2-Tier Agentic Harness (Lint + Data/Docs + Playwright E2E)
+        run: npm run verify
 
       - name: Install Zip Utility
         run: sudo apt-get update && sudo apt-get install -y zip

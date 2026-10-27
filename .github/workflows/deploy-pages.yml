@@ -6,7 +6,13 @@ on:
       - main
     paths:
       - 'web/**'
-      - 'tools/verify_ui.js'
+      - 'tools/**'
+      - 'tests/**'
+      - 'docs/**'
+      - 'package.json'
+      - 'eslint.config.mjs'
+      - 'stylelint.config.mjs'
+      - 'playwright.config.js'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
@@ -29,8 +35,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Verify UI & Mobile Responsive Integrity
-        run: node tools/verify_ui.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dev Harness Dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run 2-Tier Agentic Harness (Lint + Data/Docs + Playwright E2E)
+        run: npm run verify
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
