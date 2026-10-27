@@ -21,9 +21,9 @@
 
 모든 코드와 데이터 변경은 다음의 프로젝트 기본 철학을 반드시 준수해야 합니다:
 
-1. **Zero-Dependency (외부 의존성 없음)**:
-   - 외부 프레임워크(React, Vue 등), 번들러(Webpack, Vite 등), 외부 CDN 라이브러리(jQuery, Bootstrap, Lodash 등)를 절대로 추가하지 않습니다.
-   - 브라우저만으로 100% 실행 가능한 순수 바닐라 HTML5, CSS3, ES6+ JS 환경을 유지합니다.
+1. **Runtime Zero-Dependency (배포 결과물 외부 의존성 없음)**:
+   - 배포 대상인 `web/` 및 오프라인 패키지(`dist/`)에는 외부 프레임워크(React, Vue 등)나 외부 CDN 라이브러리(jQuery, Bootstrap, Lodash 등)를 절대로 추가하지 않습니다.
+   - 브라우저만으로 100% 실행 가능한 순수 바닐라 HTML5, CSS3, ES6+ JS 환경을 유지하며, 루트 `devDependencies`는 코드 품질 검증 하네스(ESLint, Stylelint, Playwright, Axe) 용도로만 사용합니다.
 2. **Zero-Hint 실전 감별 (힌트 배제)**:
    - 퀴즈 문제 풀이 화면에는 학명, 과명, 텍스트 형태 설명 등 스포일러가 될 수 있는 어떠한 텍스트 단서도 미리 노출되어서는 안 됩니다.
    - 오직 실물 도감 사진의 형태적 특징만 관찰하여 동정(Identification)하도록 유도합니다.
@@ -151,24 +151,27 @@ python3 tools/build_data.py
 
 ## 7. 품질 검증 및 테스트 체크리스트
 
-코드를 커밋하거나 PR을 제출하기 전 반드시 다음 통합 검증 스크립트를 수행하십시오 (GitHub Actions 배포 파이프라인에서도 동일하게 검증됩니다):
+코드를 커밋하거나 PR을 제출하기 전 반드시 다음 2-Tier 통합 하네스 검증을 수행하십시오 (로컬 Pre-commit 훅 및 GitHub Actions 배포 파이프라인에서도 동일하게 검증됩니다):
 
 ```bash
-# 1. 통합 UI·모바일 반응형 불변식 및 JS/CSS/데이터 무결성 자동 검증
-node tools/verify_ui.js
+# 1. Tier-1 Fast 검증 (ESLint + Stylelint + 데이터/문서/반응형/도메인 무결성)
+npm run verify:fast
 
-# 2. JavaScript 문법 단독 검증
-node -c web/app.js
+# 2. Tier-2 실제 브라우저 E2E 및 접근성 검증 (Playwright + Axe-core)
+npm run verify:e2e
+
+# 3. 전체 하네스 일괄 검증 (Tier-1 + Tier-2)
+npm test
 ```
 
 ### ✅ 사전 점검 체크리스트
-- [ ] `node tools/verify_ui.js`의 모든 검증 항목(16개)을 통과했는가?
-- [ ] 기능/사양 변경에 대한 조사 결과 및 설계 근거가 [`docs/`](docs/README.md) 하위에 문서화되었는가?
-- [ ] 외부 CDN이나 npm 의존성이 추가되지 않았는가?
-- [ ] 퀴즈 풀이 화면에 학명, 과명 등의 힌트 스포일러가 없는가?
+- [ ] `npm test` (`verify:fast` + `verify:e2e`)의 모든 하네스 검증 항목을 통과했는가?
+- [ ] 기능/사양 변경에 대한 조사 결과 및 설계 근거가 [`docs/`](docs/README.md) 하위에 문서화되고 `docs/README.md` 인덱스에 등록되었는가?
+- [ ] 배포 결과물(`web/`)에 외부 런타임 CDN이 유입되지 않았는가?
+- [ ] 퀴즈 및 모의고사 풀이 화면에 학명, 과명 등의 힌트 스포일러가 없는가?
 - [ ] 모바일 뷰포트(`360px`~`430px`)에서 가로 넘침이 없고 터치 타깃(최소 44px 이상)이 확보되었는가?
 - [ ] Canvas 애니메이션이나 전역 이벤트 리스너의 `cleanup` 로직이 누락되지 않았는가?
-- [ ] 82MB ZIP 파일이나 `dist/` 폴더가 Git 스테이지에 포함되지 않았는가?
+- [ ] ZIP 파일이나 `dist/`, `node_modules/` 폴더가 Git 스테이지에 포함되지 않았는가?
 
 ---
 

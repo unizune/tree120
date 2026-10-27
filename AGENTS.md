@@ -8,7 +8,7 @@
 
 - **목적**: 국가기술자격 조경기능사 및 나무의사 2차 실기 시험 대비 120종 수목 실전 감별 학습 웹 앱.
 - **핵심 철학**:
-  - **Zero-Dependency & Offline-First**: 외부 런타임 프레임워크(React, Vue 등)나 빌드 번들러 없이 순수 바닐라 HTML/CSS/JS로 동작하며, 인터넷 연결 없이도 로컬 환경에서 100% 작동.
+  - **Runtime Zero-Dependency & Offline-First**: 배포 결과물(`web/`, `dist/`)은 외부 런타임 프레임워크(React, Vue 등), CDN이나 빌드 번들러 없이 순수 바닐라 HTML/CSS/JS로 동작하며, 인터넷 연결 없이도 로컬 환경에서 100% 작동합니다. (단, 개발·검증 환경인 루트 `devDependencies`에서는 ESLint, Stylelint, Playwright, Axe 등 에이전트 하네스 검증 도구를 적극 활용합니다.)
   - **Zero-Hint 실전 감별**: 퀴즈 출제 시 형태적 텍스트 단서(스포일러)를 철저히 배제하고, 실물 도감 사진의 형태만 관찰하여 동정(Identification)하도록 유도.
   - **데이터 연계성**: 사이버 수목원(treeworld.co.kr) 공공 식물 데이터 및 파이팅혼공TV 유튜브 실기 강의 기반.
 
@@ -21,18 +21,23 @@
 ├── AGENTS.md                         # 본 개발자/에이전트 가이드
 ├── README.md                         # GitHub 저장소 메인 소개 및 사용 가이드
 ├── CONTRIBUTING.md                   # 기여 가이드라인, 커밋 컨벤션 및 품질 검증 기준
-├── .gitignore                        # Git 추적 제외 목록 (dist, OS 임시 파일 등)
+├── package.json                      # 개발·검증 전용 2-Tier 하네스 설정 (devDependencies)
+├── eslint.config.mjs                 # JS AST 정적 분석 규칙 (ESLint v9)
+├── stylelint.config.mjs              # CSS AST 정적 분석 규칙 (Stylelint)
+├── playwright.config.js              # 실제 헤드리스 브라우저 E2E 하네스 설정
+├── .gitignore                        # Git 추적 제외 목록 (dist, node_modules, OS 임시 파일 등)
 ├── .github/workflows/                # GitHub Actions CI/CD 워크플로우
 │   ├── deploy-pages.yml              # GitHub Pages 웹앱 자동 배포 워크플로우
 │   └── release.yml                   # 태그 푸시 시 오프라인 패키지 자동 빌드 & 릴리즈
 ├── docs/                             # 모든 기능·규칙·설계 변경 근거 및 학습 문서 아카이브
 │   ├── README.md                     # 문서화 원칙(Documentation-First) 및 문서 인덱스
+│   ├── harness-engineering-spec.md   # AI 에이전틱 2-Tier 하네스 엔지니어링 아키텍처 명세
 │   ├── spa-usability-spec.md         # 모던 SPA 6대 핵심 사용성 원칙 및 라우팅/세션 보호 설계 명세
 │   ├── mobile-responsive-spec.md     # 모바일 반응형 UI 설계 기준 및 재발 방지 아키텍처
 │   ├── exam-simulation-spec.md       # 조경기능사 수목감별 실제 시험 규정 및 모의고사 설계 근거
 │   ├── 수목120-학습노트.md            # 120종 텍스트 정리 노트
 │   └── 수목120-학습자료.csv            # 120종 스프레드시트 데이터
-├── web/                              # 배포 및 실행용 프론트엔드 루트 (Pages 배포 대상)
+├── web/                              # 배포 및 실행용 프론트엔드 루트 (Pages 배포 대상 · 100% 무의존성)
 │   ├── index.html                    # 메인 단일 HTML 문서 (SPA 구조)
 │   ├── style.css                     # 전체 스타일시트 (반응형, 모바일, 오버레이, 애니메이션)
 │   ├── app.js                        # 핵심 비즈니스 로직, 상태 관리, 뷰 렌더러
@@ -40,8 +45,11 @@
 │   ├── trees.json                    # 120종 원본 JSON 데이터
 │   └── assets/                       # 수목 실물 사진 946장 (treeworld 467장 + nature 479장)
 │       └── nature/                   # 국가생물종지식정보시스템 고화질 사진 479장
+├── tests/                            # Tier-2 실제 브라우저 E2E 및 접근성 검증 스위트
+│   └── harness.spec.js               # Playwright 모바일 좌표·SPA 라우팅·Zero-Hint·Axe 감사
 ├── tools/                            # 데이터 수집, 검증 및 패키징 도구
-│   ├── verify_ui.js                  # UI·모바일 반응형 불변식 및 JS/CSS 무결성 자동 검증기
+│   ├── verify_ui.js                  # Tier-1 데이터 동기화·반응형·도메인·문서 자가치유 검증기
+│   ├── install_hooks.sh              # Git pre-commit 하네스 훅 자동 설치 스크립트
 │   ├── fetch_nature.py               # 국가생물종지식정보시스템 식물도감 URL 매퍼
 │   ├── fetch_nature_gallery.py       # 국가생물종지식정보시스템 갤러리 이미지 & 메타 수집기
 │   ├── label_nature_photos.py        # 5대 부위 레이블러 & 스마트 큐레이터
@@ -80,21 +88,28 @@ interface Tree {
   source: string;             // 원본 영상 URL
   sourceTitle: string;        // 원본 강의 제목
   creator: string;            // 강의 제작자
-  aliases: string[];          // 이명/유사 표기 (예: ["배롱나무", "백일홍"])
+  aliases: string[];          // 이명/유사 표기 (예: ["해송"])
   points: string[];           // 핵심 감별 포인트 3가지
   caution: string;            // 주의사항 및 혼동 수목 비교
   scientificName: string;     // 학명 (예: "Viburnum dilatatum Thunb.")
-  family: string;             // 과명 (예: "Adoxaceae 연복초과")
+  family: string;             // 과명 (예: "Adoxaceae (연복초과) / 인동과")
+  englishName: string;        // 영명 (예: "Linden viburnum")
+  folkNames: string;          // 지방명/이명 텍스트
   natureUrl: string;          // 국가생물종지식정보시스템 식물도감 원문 URL
   treeworldUrl: string;       // 사이버 수목원 도감 원문 URL
   wikiKoUrl: string;          // 한국어 위키백과 문서 URL
   wikiEnUrl: string;          // 영문 Wikipedia 문서 URL
   images: TreeImage[];        // 도감 실물 사진 목록 (수종당 6~9장, 총 946장)
-  morphology: {               // 4대 형태학적 상세 특징
-    leaf: string;             // 잎 특징
-    flower: string;           // 꽃 특징
-    fruit: string;            // 열매 특징
-    stem: string;             // 줄기/수형 특징
+  features4: {                // 4대 감별 지표 요약 배열 (잎, 꽃, 열매, 줄기·수형)
+    part: string;
+    icon: string;
+    desc: string;
+  }[];
+  morphology: {               // 4대 형태학적 상세 특징 객체
+    leaf: Record<string, string>;
+    flower: Record<string, string>;
+    fruit: Record<string, string>;
+    stem: Record<string, string>;
   };
 }
 
@@ -192,18 +207,22 @@ python3 tools/build_data.py
 
 ---
 
-## 6. 테스트 및 검증 명령
+## 6. 테스트 및 검증 명령 (2-Tier Agentic Harness · 상세 명세: [`docs/harness-engineering-spec.md`](docs/harness-engineering-spec.md))
 
-코드 수정 후 반드시 아래 통합 검증 스크립트를 실행하여 28개 무결성·모바일 반응형·SPA 사용성 불변식을 통과해야 합니다 (GitHub Actions 배포 시에도 동일하게 자동 실행됩니다):
+코드나 데이터를 수정한 후에는 반드시 아래 **2-Tier 하네스 검증 명령**을 실행하여 모든 정적 린터, 데이터/문서 드리프트, 실제 헤드리스 브라우저(Playwright) 반응형 좌표 및 접근성 불변식을 통과해야 합니다:
 
 ```bash
-# 1. 통합 UI·모바일 반응형 불변식 및 JS/CSS/데이터 무결성 자동 검증 (필수)
-node tools/verify_ui.js
+# 1. Tier-1 Fast 하네스 검증 (~1초, 코드 수정 직후 상시 및 Pre-commit 훅 자동 실행)
+#    (ESLint v9 + Stylelint + tools/verify_ui.js 35개 불변식)
+npm run verify:fast
 
-# 2. JS 문법 단독 검증
-node -c web/app.js
+# 2. Tier-2 Deep 브라우저 E2E 하네스 검증 (~5초, Playwright Chromium + Axe 접근성 감사)
+npm run verify:e2e
 
-# 3. 로컬 서버 구동 (포트 8080)
+# 3. 전체 통합 하네스 검증 (Tier-1 + Tier-2 일괄 실행 · 커밋 확정 및 CI 배포 게이트)
+npm test
+
+# 4. 로컬 서버 단독 구동 (포트 8080)
 python3 -m http.server 8080 -d web
 ```
 
@@ -211,7 +230,7 @@ python3 -m http.server 8080 -d web
 
 ## 7. 오프라인 배포 패키지 빌드 가이드
 
-로컬에서 배포용 독립 패키지(`.zip`, 약 82MB)를 재생성할 때는 원클릭 패키징 스크립트를 사용합니다:
+로컬에서 배포용 독립 패키지(`.zip`)를 재생성할 때는 원클릭 패키징 스크립트를 사용합니다:
 
 ```bash
 # 원클릭 패키징 스크립트 실행 (dist/ 생성 및 압축)
@@ -221,11 +240,11 @@ chmod +x tools/build_package.sh
 
 - 스크립트 동작 과정:
   1. `dist/조경기능사_수목감별120_학습패키지/` 디렉토리 초기화.
-  2. `web/` 내의 모든 정적 자산(HTML, CSS, JS, 467장 사진) 복사.
+  2. `web/` 내의 모든 정적 자산(HTML, CSS, JS, 946장 사진 — 사이버수목원 467장 + 국가생물종 479장)만 복사 (`node_modules` 및 `package.json` 제외).
   3. `tools/package_template/` 내의 OS별 실행기(`실행하기_Mac.command`, `실행하기_Windows.bat`) 및 `사용안내.txt` 동봉.
   4. Mac 실행기 권한 부여(`chmod +x`) 및 `dist/조경기능사_수목감별120_학습패키지.zip` 압축 생성.
 
-> **주의**: 82MB ZIP 파일과 `dist/` 폴더는 `.gitignore`에 의해 Git 트래킹에서 제외되며, GitHub Releases 자산으로 분리 관리됩니다.
+> **주의**: 배포용 ZIP 파일과 `dist/` 폴더는 `.gitignore`에 의해 Git 트래킹에서 제외되며, GitHub Releases 자산으로 분리 관리됩니다.
 
 ---
 
@@ -292,8 +311,8 @@ chmod +x tools/build_package.sh
 
 에이전트는 코드 작성, 데이터 파이프라인 작업, 배포 관련 작업 시 다음 9대 원칙을 **반드시 준수**해야 합니다:
 
-1. **외부 런타임 종속성 추가 금지 (Zero-Dependency)**:
-   - CDN 라이브러리(jQuery, Lodash, Bootstrap, React 등)나 NPM 패키지를 추가하지 마십시오. 오프라인 순수 바닐라 JS 환경을 절대 보존해야 합니다.
+1. **배포 결과물(`web/`, `dist/`) 외부 런타임 종속성 추가 금지 (Runtime Zero-Dependency)**:
+   - `web/` 내부에는 외부 CDN 라이브러리(jQuery, Lodash, Bootstrap, React 등)나 번들러 런타임 의존성을 절대로 추가하지 마십시오. 오프라인 순수 바닐라 JS 실행 환경을 절대 보존해야 합니다. (단, 루트 `package.json`의 `devDependencies`를 통한 테스트·린트·브라우저 검증 하네스 도구는 허용됩니다.)
 2. **퀴즈 힌트 정책 보존 (Zero-Hint)**:
    - 퀴즈 및 모의고사 문제 풀이 화면에 학명, 과명, 부위 설명, 텍스트 형태 설명 등의 스포일러 단서가 미리 노출되지 않도록 유지하십시오.
 3. **메모리 정리(Cleanup)**:
