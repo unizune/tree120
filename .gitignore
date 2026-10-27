@@ -49,3 +49,13 @@ research/frames/
 *.log
 .env
 .env.local
+
+# ========================================================
+# Dev Harness Dependencies & Browser Test Artifacts
+# (Deliverable in web/ remains 100% Zero-Dependency)
+# ========================================================
+node_modules/
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/

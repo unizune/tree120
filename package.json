@@ -1,0 +1,25 @@
+{
+  "name": "tree120-harness",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agent-First Verification Harness for 조경기능사 실기 수목감별 120 (Deliverable in web/ remains 100% Zero-Dependency)",
+  "scripts": {
+    "lint:js": "eslint web/app.js tools/verify_ui.js playwright.config.js tests/",
+    "lint:css": "stylelint \"web/**/*.css\"",
+    "verify:unit": "node tools/verify_ui.js",
+    "verify:fast": "npm run lint:js && npm run lint:css && npm run verify:unit",
+    "verify:e2e": "playwright test",
+    "verify": "npm run verify:fast && npm run verify:e2e",
+    "test": "npm run verify",
+    "prepare": "chmod +x tools/install_hooks.sh && ./tools/install_hooks.sh"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@eslint/js": "^9.15.0",
+    "@playwright/test": "^1.49.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
+    "stylelint": "^16.11.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}
