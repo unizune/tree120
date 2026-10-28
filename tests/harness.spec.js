@@ -76,8 +76,7 @@ test.describe('Tier-2 Agentic Browser Harness (Layout Geometry · SPA E2E · Zer
     await page.goBack();
     await expect(page.locator('#detail')).toBeHidden();
     await expect(page).toHaveURL(/#study$/);
-    const focusedTreeId = await page.evaluate(() => document.activeElement?.getAttribute('data-tree'));
-    expect(focusedTreeId).toBe('2');
+    await expect.poll(async () => page.evaluate(() => document.activeElement?.getAttribute('data-tree'))).toBe('2');
   });
 
   test('도메인 불변식: 랜덤 퀴즈 & 20선 실전 모의고사 Zero-Hint 스포일러 차단 및 표준명 엄격 채점 E2E 검증', async ({ page }) => {

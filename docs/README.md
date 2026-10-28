@@ -22,6 +22,7 @@
 
 | 문서 파일 | 주제 및 내용 요약 | 최초 작성일 | 최근 수정일 |
 |---|---|---|---|
+| [webp-migration-spec.md](webp-migration-spec.md) | **수목 도감 사진 WebP 전면 전환 엔지니어링 명세** (181MB ➔ 126MB 초고화질 q90 + sharp_yuv 시각적 무손실 최적화, 24개 사진 EXIF 정방향 회전 Bake-in 교정, 110개 비표준 ICC sRGB 매칭, Zero-Dependency 파이프라인) | 2026-10-28 | 2026-10-28 |
 | [harness-engineering-spec.md](harness-engineering-spec.md) | **AI 에이전틱 하네스 엔지니어링 설계 명세** (`Agent = Model + Harness` 원칙, 결과물 Zero-Dependency와 개발 하네스 분리, Tier-1 정적/드리프트 센서 & Tier-2 Playwright/Axe 실제 브라우저 E2E 아키텍처, 자가 치유형 에러 프로토콜) | 2026-10-28 | 2026-10-28 |
 | [spa-usability-spec.md](spa-usability-spec.md) | **모던 SPA 6대 핵심 사용성 원칙 및 아키텍처 설계 명세** (해시 라우팅·History API 양방향 동기화, 모달 `pushState`/`replaceState` 하이브리드 전략, 활성 세션 보호 가드, 키보드 단축키 및 프리로드) | 2026-10-27 | 2026-10-27 |
 | [mobile-responsive-spec.md](mobile-responsive-spec.md) | **모바일 반응형 UI 설계 기준 및 레이아웃 결함 포스트모템** (`.intro` 및 상단 5대 탭 깨짐 원인 분석, 브레이크포인트 규격, 방어적 CSS 5대 원칙 및 `tools/verify_ui.js` 4중 재발 방지 아키텍처) | 2026-10-27 | 2026-10-27 |

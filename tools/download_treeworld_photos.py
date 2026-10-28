@@ -67,13 +67,17 @@ def download_and_optimize(url, out_path):
     req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=15, context=CTX) as r:
         data = r.read()
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_bytes(data)
+    temp_path = out_path.with_suffix('.tmp.jpg')
+    temp_path.parent.mkdir(parents=True, exist_ok=True)
+    temp_path.write_bytes(data)
     # Resize with sips if available
     try:
-        subprocess.run(['/usr/bin/sips', '-Z', '960', str(out_path)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(['/usr/bin/sips', '-Z', '960', str(temp_path)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        # Convert to WebP using cwebp (q90, method 6, sharp_yuv)
+        subprocess.run(['cwebp', '-q', '90', '-m', '6', '-sharp_yuv', str(temp_path), '-o', str(out_path)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+        temp_path.unlink(missing_ok=True)
     except Exception:
-        pass
+        temp_path.unlink(missing_ok=True)
 
 def process_tree(tid, raw_info, tw_info, points):
     name = raw_info['name']
@@ -88,10 +92,10 @@ def process_tree(tid, raw_info, tw_info, points):
             ('095-2.jpg', '잎·수형', '잎 및 줄기: 긴타원형 또는 거꿀피침형, 높이 2~3m 자람')
         ]):
             src_file = backup_dir / b_name
-            target_rel = f'assets/{tid:03}-{idx+1}.jpg'
+            target_rel = f'assets/{tid:03}-{idx+1}.webp'
             target_file = ROOT / 'web' / target_rel
             if src_file.exists():
-                shutil.copy(src_file, target_file)
+                subprocess.run(['cwebp', '-q', '90', '-m', '6', '-sharp_yuv', str(src_file), '-o', str(target_file)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                 images_manifest.append({
                     'src': target_rel,
                     'tag': tag,
@@ -125,7 +129,7 @@ def process_tree(tid, raw_info, tw_info, points):
     for idx, p in enumerate(picked):
         tag = p['type']
         desc = get_morph_desc_for_tag(tag, tw_info.get('morphology', {}), points, name)
-        target_rel = f'assets/{tid:03}-{idx+1}.jpg'
+        target_rel = f'assets/{tid:03}-{idx+1}.webp'
         target_file = ROOT / 'web' / target_rel
         try:
             download_and_optimize(p['src'], target_file)

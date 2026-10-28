@@ -134,7 +134,7 @@ def curate_images():
         # 정제된 TreeImage 객체 목록 생성
         tree_images = []
         for seq, (tag, raw_img) in enumerate(selected, start=1):
-            src_path = f"assets/nature/nature_{tid:03d}_{seq:02d}.jpg"
+            src_path = f"assets/nature/nature_{tid:03d}_{seq:02d}.webp"
             desc_text = raw_img["desc"].strip()
             if not desc_text:
                 desc_text = f"{name} {tag} 형태"

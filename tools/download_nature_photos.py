@@ -2,7 +2,7 @@
 """
 tools/download_nature_photos.py
 research/nature_curated_manifest.json의 479장 이미지를 다운로드하고
-macOS sips 도구를 활용하여 웹 규격(최대 가로 960px, JPEG 82%)으로 최적화하여
+macOS sips 도구 및 cwebp를 활용하여 웹 규격(최대 가로 960px, sRGB 매칭, WebP q80)으로 최적화하여
 web/assets/nature/ 디렉토리에 저장하는 스크립트.
 """
 
@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CURATED_FILE = ROOT / "research" / "nature_curated_manifest.json"
 TARGET_DIR = ROOT / "web" / "assets" / "nature"
+SRGB_PROFILE = "/System/Library/ColorSync/Profiles/sRGB Profile.icc"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -50,20 +51,25 @@ def download_and_optimize(item: dict) -> tuple:
     if not success or not temp_path.exists():
         return False, rel_src, f"Failed to download from {url}"
 
-    # 2. Optimize with macOS sips
+    # 2. Optimize with macOS sips & cwebp
     try:
         # Resize to max width 960px if larger
-        cmd = ["sips", "--resampleWidth", "960", str(temp_path), "--out", str(dest_path)]
+        cmd = ["sips", "--resampleWidth", "960", str(temp_path)]
         subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
-        # Apply JPEG compression
-        cmd2 = ["sips", "-s", "format", "jpeg", "-s", "formatOptions", "82", str(dest_path)]
-        subprocess.run(cmd2, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+
+        # Match to sRGB if profile exists
+        if Path(SRGB_PROFILE).exists():
+            cmd_col = ["sips", "--matchTo", SRGB_PROFILE, str(temp_path)]
+            subprocess.run(cmd_col, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+        # Convert to WebP using cwebp (q90, method 6, sharp_yuv)
+        cmd_webp = ["cwebp", "-q", "90", "-m", "6", "-sharp_yuv", str(temp_path), "-o", str(dest_path)]
+        subprocess.run(cmd_webp, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
         temp_path.unlink(missing_ok=True)
-        return True, rel_src, "Optimized"
+        return True, rel_src, "Optimized to WebP"
     except Exception as e:
-        # Fallback if sips fails: rename temp to dest
-        temp_path.rename(dest_path)
-        return True, rel_src, f"Saved without sips: {e}"
+        temp_path.unlink(missing_ok=True)
+        return False, rel_src, f"Optimization failed: {e}"
 
 def main():
     curated = json.loads(CURATED_FILE.read_text(encoding="utf-8"))
@@ -99,7 +105,7 @@ def main():
     print(f"Failed: {fail_cnt}/{len(tasks)}")
 
     # Verify size
-    total_size = sum(f.stat().st_size for f in TARGET_DIR.glob("*.jpg"))
+    total_size = sum(f.stat().st_size for f in TARGET_DIR.glob("*.webp"))
     print(f"Total size of {TARGET_DIR.name}: {total_size / (1024 * 1024):.2f} MB")
 
 if __name__ == "__main__":

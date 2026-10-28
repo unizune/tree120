@@ -31,6 +31,7 @@
 │   └── release.yml                   # 태그 푸시 시 오프라인 패키지 자동 빌드 & 릴리즈
 ├── docs/                             # 모든 기능·규칙·설계 변경 근거 및 학습 문서 아카이브
 │   ├── README.md                     # 문서화 원칙(Documentation-First) 및 문서 인덱스
+│   ├── webp-migration-spec.md        # 수목 도감 사진 WebP 전면 전환 엔지니어링 명세
 │   ├── harness-engineering-spec.md   # AI 에이전틱 2-Tier 하네스 엔지니어링 아키텍처 명세
 │   ├── spa-usability-spec.md         # 모던 SPA 6대 핵심 사용성 원칙 및 라우팅/세션 보호 설계 명세
 │   ├── mobile-responsive-spec.md     # 모바일 반응형 UI 설계 기준 및 재발 방지 아키텍처
@@ -49,6 +50,7 @@
 │   └── harness.spec.js               # Playwright 모바일 좌표·SPA 라우팅·Zero-Hint·Axe 감사
 ├── tools/                            # 데이터 수집, 검증 및 패키징 도구
 │   ├── verify_ui.js                  # Tier-1 데이터 동기화·반응형·도메인·문서 자가치유 검증기
+│   ├── convert_to_webp.py            # 도감 사진 WebP 일괄 변환 및 색공간/회전 정규화기
 │   ├── install_hooks.sh              # Git pre-commit 하네스 훅 자동 설치 스크립트
 │   ├── fetch_nature.py               # 국가생물종지식정보시스템 식물도감 URL 매퍼
 │   ├── fetch_nature_gallery.py       # 국가생물종지식정보시스템 갤러리 이미지 & 메타 수집기
@@ -114,7 +116,7 @@ interface Tree {
 }
 
 interface TreeImage {
-  src: string;                // 상대 경로 (예: "assets/001-1.jpg" 또는 "assets/nature/nature_001_01.jpg")
+  src: string;                // 상대 경로 (예: "assets/001-1.webp" 또는 "assets/nature/nature_001_01.webp")
   tag: string;                // 부위 구분 ("잎" | "꽃" | "열매" | "줄기·수형" | "기타")
   desc: string;               // 해당 부위 형태학적 상세 캡션
   source?: string;            // 사진 출처 ("국가생물종지식정보시스템" | "사이버수목원")
@@ -296,7 +298,7 @@ chmod +x tools/build_package.sh
 
 ### 9.2. 오프라인 패키지 배포 (GitHub Releases)
 - **워크플로우**: [`.github/workflows/release.yml`](.github/workflows/release.yml)
-- **동작 방식**: 버전 태그(`v*.*.*`) 푸시 시, GitHub 가상머신이 `tools/build_package.sh`를 실행하여 82MB 배포용 ZIP 패키지를 빌드하고 [GitHub Releases](../../releases)에 자산으로 자동 등록합니다.
+- **동작 방식**: 버전 태그(`v*.*.*`) 푸시 시, GitHub 가상머신이 `tools/build_package.sh`를 실행하여 126MB 배포용 ZIP 패키지를 빌드하고 [GitHub Releases](../../releases)에 자산으로 자동 등록합니다.
 - **새 버전 릴리즈 흐름**:
   ```bash
   # 버전 태그 생성 및 푸시
@@ -320,7 +322,7 @@ chmod +x tools/build_package.sh
 4. **접근성 및 터치 UX**:
    - 모바일 터치 타깃(최소 44px 이상), `touch-action: manipulation`, 입력 폼 줌 방지(`font-size: 16px` 이상) 및 키보드 조작성을 항상 준수하십시오.
 5. **대용량 바이너리 Git 커밋 금지**:
-   - 82MB ZIP 파일이나 `dist/` 빌드 산출물, 비디오 프레임 추출 임시 파일(`research/frames/`)은 절대로 Git 저장소에 커밋하지 마십시오. 대용량 배포 파일은 GitHub Releases를 통해 관리합니다.
+   - 126MB ZIP 파일이나 `dist/` 빌드 산출물, 비디오 프레임 추출 임시 파일(`research/frames/`)은 절대로 Git 저장소에 커밋하지 마십시오. 대용량 배포 파일은 GitHub Releases를 통해 관리합니다.
 6. **커밋 메시지 컨벤션 준수**:
    - 변경 사항 커밋 시 반드시 [CONTRIBUTING.md](CONTRIBUTING.md)에 정의된 Conventional Commits 양식(`<type>(<scope>): <subject>`)을 따르고, 하나의 커밋에는 하나의 목적만 담는 원자적(Atomic) 커밋을 유지하십시오.
 7. **`main` 단독 브랜치 기반 작업**:

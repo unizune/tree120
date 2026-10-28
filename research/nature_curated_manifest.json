@@ -7,7 +7,7 @@
     "totalImages": 5,
     "images": [
       {
-        "src": "assets/nature/nature_001_01.jpg",
+        "src": "assets/nature/nature_001_01.webp",
         "tag": "꽃",
         "desc": "가막살나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/22830/1.JPG",
@@ -17,7 +17,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_001_02.jpg",
+        "src": "assets/nature/nature_001_02.webp",
         "tag": "잎",
         "desc": "가막살나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/22830/3.JPG",
@@ -27,7 +27,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_001_03.jpg",
+        "src": "assets/nature/nature_001_03.webp",
         "tag": "열매",
         "desc": "가막살나무의 열매 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/22830/22830_2020_3.JPG",
@@ -37,7 +37,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_001_04.jpg",
+        "src": "assets/nature/nature_001_04.webp",
         "tag": "줄기·수형",
         "desc": "가막살나무의 가지 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/22830/22830_2020_1.JPG",
@@ -47,7 +47,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_001_05.jpg",
+        "src": "assets/nature/nature_001_05.webp",
         "tag": "기타",
         "desc": "가막살나무의 겨울눈 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/22830/22830_2020_2.JPG",
@@ -66,7 +66,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_002_01.jpg",
+        "src": "assets/nature/nature_002_01.webp",
         "tag": "꽃",
         "desc": "가시나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6577/6577_11.JPG",
@@ -76,7 +76,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_002_02.jpg",
+        "src": "assets/nature/nature_002_02.webp",
         "tag": "잎",
         "desc": "가시나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6577/2.JPG",
@@ -86,7 +86,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_002_03.jpg",
+        "src": "assets/nature/nature_002_03.webp",
         "tag": "열매",
         "desc": "가시나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6577/6577_10.JPG",
@@ -96,7 +96,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_002_04.jpg",
+        "src": "assets/nature/nature_002_04.webp",
         "tag": "줄기·수형",
         "desc": "가시나무의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6577/1.JPG",
@@ -115,7 +115,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_003_01.jpg",
+        "src": "assets/nature/nature_003_01.webp",
         "tag": "꽃",
         "desc": "갈참나무의 꽃눈파열 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6517/6517_2020_3.JPG",
@@ -125,7 +125,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_003_02.jpg",
+        "src": "assets/nature/nature_003_02.webp",
         "tag": "잎",
         "desc": "갈참나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6517/5.JPG",
@@ -135,7 +135,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_003_03.jpg",
+        "src": "assets/nature/nature_003_03.webp",
         "tag": "열매",
         "desc": "갈참나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6517/6517_12.JPG",
@@ -145,7 +145,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_003_04.jpg",
+        "src": "assets/nature/nature_003_04.webp",
         "tag": "줄기·수형",
         "desc": "갈참나무의 가지 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6517/6517_2020_1.JPG",
@@ -164,17 +164,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_004_01.jpg",
+        "src": "assets/nature/nature_004_01.webp",
         "tag": "꽃",
         "desc": "감나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ebenaceae/Diospyros/16659/16659_10.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ebenaceae/Diospyros/16659/16659_10.webp",
         "author": "국립수목원",
         "date": "2009-05-30",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_004_02.jpg",
+        "src": "assets/nature/nature_004_02.webp",
         "tag": "잎",
         "desc": "감나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ebenaceae/Diospyros/16659/16659_13.JPG",
@@ -184,7 +184,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_004_03.jpg",
+        "src": "assets/nature/nature_004_03.webp",
         "tag": "열매",
         "desc": "감나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ebenaceae/Diospyros/16659/1.JPG",
@@ -194,7 +194,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_004_04.jpg",
+        "src": "assets/nature/nature_004_04.webp",
         "tag": "줄기·수형",
         "desc": "감나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ebenaceae/Diospyros/16659/4.JPG",
@@ -213,7 +213,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_005_01.jpg",
+        "src": "assets/nature/nature_005_01.webp",
         "tag": "꽃",
         "desc": "감탕나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16680/16680_13.JPG",
@@ -223,7 +223,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_005_02.jpg",
+        "src": "assets/nature/nature_005_02.webp",
         "tag": "잎",
         "desc": "감탕나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16680/16680_2.JPG",
@@ -233,20 +233,20 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_005_03.jpg",
+        "src": "assets/nature/nature_005_03.webp",
         "tag": "줄기·수형",
         "desc": "감탕나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16680/16680_14.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16680/16680_14.webp",
         "author": "국립수목원",
         "date": "2005-02-15",
         "location": "통영비진도",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_005_04.jpg",
+        "src": "assets/nature/nature_005_04.webp",
         "tag": "꽃",
         "desc": "감탕나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16680/16680_6.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16680/16680_6.webp",
         "author": "국립수목원",
         "date": "2008-05-02",
         "location": "통영(비진도)",
@@ -262,7 +262,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_006_01.jpg",
+        "src": "assets/nature/nature_006_01.webp",
         "tag": "꽃",
         "desc": "개나리 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Forsythia/9311/9311_12.JPG",
@@ -272,27 +272,27 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_006_02.jpg",
+        "src": "assets/nature/nature_006_02.webp",
         "tag": "잎",
         "desc": "개나리 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Forsythia/P000003478/P000003478_202205_22.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Forsythia/P000003478/P000003478_202205_22.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-06-14",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_006_03.jpg",
+        "src": "assets/nature/nature_006_03.webp",
         "tag": "열매",
         "desc": "개나리 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Forsythia/P000003478/P000003478_202205_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Forsythia/P000003478/P000003478_202205_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2015-10-28",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_006_04.jpg",
+        "src": "assets/nature/nature_006_04.webp",
         "tag": "줄기·수형",
         "desc": "개나리 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Forsythia/9311/7.JPG",
@@ -311,17 +311,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_007_01.jpg",
+        "src": "assets/nature/nature_007_01.webp",
         "tag": "꽃",
         "desc": "개비자나무의 꽃 이미지 입니다.",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cephalotaxaceae/Cephalotaxus/14910/14910_8.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cephalotaxaceae/Cephalotaxus/14910/14910_8.webp",
         "author": "국립수목원",
         "date": "2007-05-08",
         "location": "팔공산",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_007_02.jpg",
+        "src": "assets/nature/nature_007_02.webp",
         "tag": "잎",
         "desc": "개비자나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cephalotaxaceae/Cephalotaxus/14910/14910_1.JPG",
@@ -331,20 +331,20 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_007_03.jpg",
+        "src": "assets/nature/nature_007_03.webp",
         "tag": "열매",
         "desc": "개비자나무 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cephalotaxaceae/Cephalotaxus/14910/14910_22.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cephalotaxaceae/Cephalotaxus/14910/14910_22.webp",
         "author": "국립수목원",
         "date": "2008-09-26",
         "location": "함양 괘관산",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_007_04.jpg",
+        "src": "assets/nature/nature_007_04.webp",
         "tag": "줄기·수형",
         "desc": "개비자나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cephalotaxaceae/Cephalotaxus/14910/14910_16.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cephalotaxaceae/Cephalotaxus/14910/14910_16.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
@@ -360,7 +360,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_008_01.jpg",
+        "src": "assets/nature/nature_008_01.webp",
         "tag": "꽃",
         "desc": "개오동 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Catalpa/7910/7910_13.JPG",
@@ -370,7 +370,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_008_02.jpg",
+        "src": "assets/nature/nature_008_02.webp",
         "tag": "잎",
         "desc": "개오동 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Catalpa/7910/7910_1.JPG",
@@ -380,17 +380,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_008_03.jpg",
+        "src": "assets/nature/nature_008_03.webp",
         "tag": "열매",
         "desc": "개오동 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Catalpa/P000003077/P000003077_202205_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Catalpa/P000003077/P000003077_202205_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2011-09-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_008_04.jpg",
+        "src": "assets/nature/nature_008_04.webp",
         "tag": "줄기·수형",
         "desc": "개오동 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Catalpa/7910/7.JPG",
@@ -409,7 +409,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_009_01.jpg",
+        "src": "assets/nature/nature_009_01.webp",
         "tag": "꽃",
         "desc": "계수나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cercidiphyllaceae/Cercidiphyllum/6668/6668_8.JPG",
@@ -419,17 +419,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_009_02.jpg",
+        "src": "assets/nature/nature_009_02.webp",
         "tag": "잎",
         "desc": "계수나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cercidiphyllaceae/Cercidiphyllum/P000002751/P000002751_202205_16.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cercidiphyllaceae/Cercidiphyllum/P000002751/P000002751_202205_16.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-07-24",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_009_03.jpg",
+        "src": "assets/nature/nature_009_03.webp",
         "tag": "열매",
         "desc": "계수나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cercidiphyllaceae/Cercidiphyllum/6668/6668_6.JPG",
@@ -439,10 +439,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_009_04.jpg",
+        "src": "assets/nature/nature_009_04.webp",
         "tag": "줄기·수형",
         "desc": "계수나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cercidiphyllaceae/Cercidiphyllum/P000002751/P000002751_202205_3.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cercidiphyllaceae/Cercidiphyllum/P000002751/P000002751_202205_3.webp",
         "author": "국립수목원(정수영)",
         "date": "2015-11-05",
         "location": "",
@@ -458,7 +458,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_010_01.jpg",
+        "src": "assets/nature/nature_010_01.webp",
         "tag": "꽃",
         "desc": "골담초의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Caragana/12252/2.JPG",
@@ -468,7 +468,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_010_02.jpg",
+        "src": "assets/nature/nature_010_02.webp",
         "tag": "잎",
         "desc": "골담초 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Caragana/12252/12252_6.JPG",
@@ -478,7 +478,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_010_03.jpg",
+        "src": "assets/nature/nature_010_03.webp",
         "tag": "꽃",
         "desc": "골담초 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Caragana/12252/12252_5.JPG",
@@ -488,7 +488,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_010_04.jpg",
+        "src": "assets/nature/nature_010_04.webp",
         "tag": "꽃",
         "desc": "골담초 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Caragana/12252/12252_8.JPG",
@@ -507,7 +507,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_011_01.jpg",
+        "src": "assets/nature/nature_011_01.webp",
         "tag": "꽃",
         "desc": "곰솔의 수배우체 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/15003/15003_2.JPG",
@@ -517,17 +517,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_011_02.jpg",
+        "src": "assets/nature/nature_011_02.webp",
         "tag": "잎",
         "desc": "곰솔 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/P000004958/P000004958_202205_12.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/P000004958/P000004958_202205_12.webp",
         "author": "국립수목원(정수영)",
         "date": "2016-06-14",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_011_03.jpg",
+        "src": "assets/nature/nature_011_03.webp",
         "tag": "열매",
         "desc": "곰솔의 방풍림 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/15003/15003_2020_2.JPG",
@@ -537,7 +537,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_011_04.jpg",
+        "src": "assets/nature/nature_011_04.webp",
         "tag": "줄기·수형",
         "desc": "곰솔의 수배우체 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/15003/7.JPG",
@@ -556,7 +556,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_012_01.jpg",
+        "src": "assets/nature/nature_012_01.webp",
         "tag": "꽃",
         "desc": "광나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Ligustrum/11065/11065_9.JPG",
@@ -566,7 +566,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_012_02.jpg",
+        "src": "assets/nature/nature_012_02.webp",
         "tag": "잎",
         "desc": "광나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Ligustrum/11065/11065_17.JPG",
@@ -576,7 +576,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_012_03.jpg",
+        "src": "assets/nature/nature_012_03.webp",
         "tag": "열매",
         "desc": "광나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Ligustrum/11065/11065_18.JPG",
@@ -586,7 +586,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_012_04.jpg",
+        "src": "assets/nature/nature_012_04.webp",
         "tag": "줄기·수형",
         "desc": "광나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Ligustrum/11065/1.JPG",
@@ -605,17 +605,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_013_01.jpg",
+        "src": "assets/nature/nature_013_01.webp",
         "tag": "꽃",
         "desc": "구상나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Abies/14932/14932_12.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Abies/14932/14932_12.webp",
         "author": "국립수목원",
         "date": "2008-04-15",
         "location": "한라산 남성대코스 갈림길",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_013_02.jpg",
+        "src": "assets/nature/nature_013_02.webp",
         "tag": "잎",
         "desc": "구상나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Abies/14932/14932_26.JPG",
@@ -625,7 +625,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_013_03.jpg",
+        "src": "assets/nature/nature_013_03.webp",
         "tag": "열매",
         "desc": "구상나무의 고사목 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Abies/14932/14932_2020_1.JPG",
@@ -635,7 +635,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_013_04.jpg",
+        "src": "assets/nature/nature_013_04.webp",
         "tag": "줄기·수형",
         "desc": "구상나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Abies/14932/14932_2020_18.JPG",
@@ -654,7 +654,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_014_01.jpg",
+        "src": "assets/nature/nature_014_01.webp",
         "tag": "꽃",
         "desc": "금목서 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Osmanthus/9383/9383_3.JPG",
@@ -664,7 +664,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_014_02.jpg",
+        "src": "assets/nature/nature_014_02.webp",
         "tag": "열매",
         "desc": "금목서 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Osmanthus/9383/9383_4.JPG",
@@ -674,7 +674,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_014_03.jpg",
+        "src": "assets/nature/nature_014_03.webp",
         "tag": "줄기·수형",
         "desc": "금목서의 줄기이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Osmanthus/9383/2.JPG",
@@ -684,7 +684,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_014_04.jpg",
+        "src": "assets/nature/nature_014_04.webp",
         "tag": "열매",
         "desc": "금목서 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Osmanthus/9383/9383_6.JPG",
@@ -703,7 +703,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_015_01.jpg",
+        "src": "assets/nature/nature_015_01.webp",
         "tag": "꽃",
         "desc": "금송의 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxodiaceae/Sciadopitys/31641/10.JPG",
@@ -713,17 +713,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_015_02.jpg",
+        "src": "assets/nature/nature_015_02.webp",
         "tag": "잎",
         "desc": "금송의 잎 이미지 입니다.",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxodiaceae/Sciadopitys/15011/15011_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxodiaceae/Sciadopitys/15011/15011_1.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_015_03.jpg",
+        "src": "assets/nature/nature_015_03.webp",
         "tag": "열매",
         "desc": "금송의 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxodiaceae/Sciadopitys/31641/6.JPG",
@@ -733,7 +733,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_015_04.jpg",
+        "src": "assets/nature/nature_015_04.webp",
         "tag": "열매",
         "desc": "금송의 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxodiaceae/Sciadopitys/31641/7.JPG",
@@ -752,27 +752,27 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_016_01.jpg",
+        "src": "assets/nature/nature_016_01.webp",
         "tag": "꽃",
         "desc": "금식나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Aucuba/7414/7414_3.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Aucuba/7414/7414_3.webp",
         "author": "국립수목원",
         "date": "2009-04-16",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_016_02.jpg",
+        "src": "assets/nature/nature_016_02.webp",
         "tag": "잎",
         "desc": "금식나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Aucuba/P000002947/P000002947_220206_4.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Aucuba/P000002947/P000002947_220206_4.webp",
         "author": "국립수목원(정수영)",
         "date": "2012-06-26",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_016_03.jpg",
+        "src": "assets/nature/nature_016_03.webp",
         "tag": "줄기·수형",
         "desc": "금식나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Aucuba/7414/7414_8.JPG",
@@ -782,7 +782,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_016_04.jpg",
+        "src": "assets/nature/nature_016_04.webp",
         "tag": "꽃",
         "desc": "금식나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Aucuba/7414/7414_5.JPG",
@@ -801,17 +801,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_017_01.jpg",
+        "src": "assets/nature/nature_017_01.webp",
         "tag": "꽃",
         "desc": "꽝꽝나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/P000005415/P000005415_202205_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/P000005415/P000005415_202205_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2017-05-25",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_017_02.jpg",
+        "src": "assets/nature/nature_017_02.webp",
         "tag": "잎",
         "desc": "꽝꽝나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16675/16675_1.JPG",
@@ -821,7 +821,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_017_03.jpg",
+        "src": "assets/nature/nature_017_03.webp",
         "tag": "열매",
         "desc": "꽝꽝나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16675/16675_8.JPG",
@@ -831,7 +831,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_017_04.jpg",
+        "src": "assets/nature/nature_017_04.webp",
         "tag": "줄기·수형",
         "desc": "꽝꽝나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16675/16675_12.JPG",
@@ -850,17 +850,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_018_01.jpg",
+        "src": "assets/nature/nature_018_01.webp",
         "tag": "꽃",
         "desc": "낙상홍 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/P000005422/P000005422_202205_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/P000005422/P000005422_202205_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-04-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_018_02.jpg",
+        "src": "assets/nature/nature_018_02.webp",
         "tag": "잎",
         "desc": "낙상홍 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16700/16700_13.JPG",
@@ -870,7 +870,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_018_03.jpg",
+        "src": "assets/nature/nature_018_03.webp",
         "tag": "열매",
         "desc": "낙상홍 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16700/16700_15.JPG",
@@ -880,7 +880,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_018_04.jpg",
+        "src": "assets/nature/nature_018_04.webp",
         "tag": "잎",
         "desc": "낙상홍 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16700/16700_1.JPG",
@@ -899,7 +899,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_019_01.jpg",
+        "src": "assets/nature/nature_019_01.webp",
         "tag": "꽃",
         "desc": "남천 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Nandina/19025/19025_15.JPG",
@@ -909,7 +909,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_019_02.jpg",
+        "src": "assets/nature/nature_019_02.webp",
         "tag": "잎",
         "desc": "남천 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Nandina/19025/19025_13.JPG",
@@ -919,17 +919,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_019_03.jpg",
+        "src": "assets/nature/nature_019_03.webp",
         "tag": "줄기·수형",
         "desc": "남천 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Nandina/19025/19025_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Nandina/19025/19025_1.webp",
         "author": "국립수목원",
         "date": "2007-11-01",
         "location": "울산",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_019_04.jpg",
+        "src": "assets/nature/nature_019_04.webp",
         "tag": "잎",
         "desc": "남천 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Nandina/19025/19025_9.JPG",
@@ -948,7 +948,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_020_01.jpg",
+        "src": "assets/nature/nature_020_01.webp",
         "tag": "꽃",
         "desc": "노각나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Theaceae/Stewartia/10966/7.JPG",
@@ -958,7 +958,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_020_02.jpg",
+        "src": "assets/nature/nature_020_02.webp",
         "tag": "잎",
         "desc": "노각나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Theaceae/Stewartia/10966/3.JPG",
@@ -968,7 +968,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_020_03.jpg",
+        "src": "assets/nature/nature_020_03.webp",
         "tag": "열매",
         "desc": "노각나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Theaceae/Stewartia/10966/6.JPG",
@@ -978,7 +978,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_020_04.jpg",
+        "src": "assets/nature/nature_020_04.webp",
         "tag": "줄기·수형",
         "desc": "노각나무의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Theaceae/Stewartia/10966/8.JPG",
@@ -997,10 +997,10 @@
     "totalImages": 1,
     "images": [
       {
-        "src": "assets/nature/nature_021_01.jpg",
+        "src": "assets/nature/nature_021_01.webp",
         "tag": "줄기·수형",
         "desc": "노랑말채나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/21874/21874_20260805170727160files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/21874/21874_20260805170727160files.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
@@ -1016,17 +1016,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_022_01.jpg",
+        "src": "assets/nature/nature_022_01.webp",
         "tag": "꽃",
         "desc": "녹나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Cinnamomum/11490/11490_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Cinnamomum/11490/11490_1.webp",
         "author": "국립수목원",
         "date": "2007-05-19",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_022_02.jpg",
+        "src": "assets/nature/nature_022_02.webp",
         "tag": "열매",
         "desc": "녹나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Cinnamomum/11490/11490_3.JPG",
@@ -1036,7 +1036,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_022_03.jpg",
+        "src": "assets/nature/nature_022_03.webp",
         "tag": "줄기·수형",
         "desc": "녹나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Cinnamomum/11490/11490_2020_1.JPG",
@@ -1046,7 +1046,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_022_04.jpg",
+        "src": "assets/nature/nature_022_04.webp",
         "tag": "줄기·수형",
         "desc": "녹나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Cinnamomum/11490/11490_2020_2.JPG",
@@ -1065,17 +1065,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_023_01.jpg",
+        "src": "assets/nature/nature_023_01.webp",
         "tag": "꽃",
         "desc": "눈향나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Juniperus/15049/15049_10.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Juniperus/15049/15049_10.webp",
         "author": "국립수목원",
         "date": "2008-04-15",
         "location": "한라산 평지암대피소-남성대코스 갈림길",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_023_02.jpg",
+        "src": "assets/nature/nature_023_02.webp",
         "tag": "잎",
         "desc": "눈향나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Juniperus/15049/15049_3.JPG",
@@ -1085,7 +1085,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_023_03.jpg",
+        "src": "assets/nature/nature_023_03.webp",
         "tag": "열매",
         "desc": "눈향나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Juniperus/15049/15049_4.JPG",
@@ -1095,7 +1095,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_023_04.jpg",
+        "src": "assets/nature/nature_023_04.webp",
         "tag": "줄기·수형",
         "desc": "눈향나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Juniperus/15049/15049_2020_1.JPG",
@@ -1114,7 +1114,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_024_01.jpg",
+        "src": "assets/nature/nature_024_01.webp",
         "tag": "꽃",
         "desc": "느티나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Zelkova/1046/1.JPG",
@@ -1124,7 +1124,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_024_02.jpg",
+        "src": "assets/nature/nature_024_02.webp",
         "tag": "열매",
         "desc": "느티나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Zelkova/1046/1046_15.JPG",
@@ -1134,7 +1134,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_024_03.jpg",
+        "src": "assets/nature/nature_024_03.webp",
         "tag": "줄기·수형",
         "desc": "느티나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Zelkova/1046/1046_2020_4.JPG",
@@ -1144,7 +1144,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_024_04.jpg",
+        "src": "assets/nature/nature_024_04.webp",
         "tag": "줄기·수형",
         "desc": "느티나무의 수피 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Zelkova/1046/1046_2020_1.JPG",
@@ -1163,7 +1163,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_025_01.jpg",
+        "src": "assets/nature/nature_025_01.webp",
         "tag": "꽃",
         "desc": "능소화의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Campsis/7901/2.JPG",
@@ -1173,7 +1173,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_025_02.jpg",
+        "src": "assets/nature/nature_025_02.webp",
         "tag": "잎",
         "desc": "능소화의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Campsis/7901/3.JPG",
@@ -1183,7 +1183,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_025_03.jpg",
+        "src": "assets/nature/nature_025_03.webp",
         "tag": "열매",
         "desc": "능소화 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Campsis/7901/7901_11.JPG",
@@ -1193,10 +1193,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_025_04.jpg",
+        "src": "assets/nature/nature_025_04.webp",
         "tag": "줄기·수형",
         "desc": "능소화 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Campsis/7901/7901_20230327154621795files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Campsis/7901/7901_20230327154621795files.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
@@ -1212,7 +1212,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_026_01.jpg",
+        "src": "assets/nature/nature_026_01.webp",
         "tag": "꽃",
         "desc": "단풍나무의 꽃 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2235/2235_2020_1.JPG",
@@ -1222,7 +1222,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_026_02.jpg",
+        "src": "assets/nature/nature_026_02.webp",
         "tag": "잎",
         "desc": "단풍나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2235/2235_2020_11.JPG",
@@ -1232,7 +1232,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_026_03.jpg",
+        "src": "assets/nature/nature_026_03.webp",
         "tag": "열매",
         "desc": "단풍나무의 열매 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2235/2235_2020_18.JPG",
@@ -1242,10 +1242,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_026_04.jpg",
+        "src": "assets/nature/nature_026_04.webp",
         "tag": "줄기·수형",
         "desc": "단풍나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2235/2235_20230116100505126files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2235/2235_20230116100505126files.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
@@ -1261,17 +1261,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_027_01.jpg",
+        "src": "assets/nature/nature_027_01.webp",
         "tag": "꽃",
         "desc": "담쟁이덩굴 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Vitaceae/Parthenocissus/P000004084/P000004084_220206_13.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Vitaceae/Parthenocissus/P000004084/P000004084_220206_13.webp",
         "author": "국립수목원(정수영)",
         "date": "2012-05-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_027_02.jpg",
+        "src": "assets/nature/nature_027_02.webp",
         "tag": "잎",
         "desc": "담쟁이덩굴 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Vitaceae/Parthenocissus/11886/5.JPG",
@@ -1281,7 +1281,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_027_03.jpg",
+        "src": "assets/nature/nature_027_03.webp",
         "tag": "열매",
         "desc": "담쟁이덩굴 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Vitaceae/Parthenocissus/11886/11886_4.JPG",
@@ -1291,10 +1291,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_027_04.jpg",
+        "src": "assets/nature/nature_027_04.webp",
         "tag": "줄기·수형",
         "desc": "담쟁이덩굴 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Vitaceae/Parthenocissus/P000004084/P000004084_220206_12.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Vitaceae/Parthenocissus/P000004084/P000004084_220206_12.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-11-01",
         "location": "",
@@ -1310,17 +1310,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_028_01.jpg",
+        "src": "assets/nature/nature_028_01.webp",
         "tag": "꽃",
         "desc": "당매자나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Berberis/P000002778/P000002778_202205_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Berberis/P000002778/P000002778_202205_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-05-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_028_02.jpg",
+        "src": "assets/nature/nature_028_02.webp",
         "tag": "잎",
         "desc": "당매자나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Berberis/6801/2.JPG",
@@ -1330,7 +1330,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_028_03.jpg",
+        "src": "assets/nature/nature_028_03.webp",
         "tag": "열매",
         "desc": "당매자나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Berberis/6801/6801_14.JPG",
@@ -1340,10 +1340,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_028_04.jpg",
+        "src": "assets/nature/nature_028_04.webp",
         "tag": "꽃",
         "desc": "당매자나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Berberis/P000002778/P000002778_202205_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Berberidaceae/Berberis/P000002778/P000002778_202205_2.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-05-08",
         "location": "",
@@ -1359,7 +1359,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_029_01.jpg",
+        "src": "assets/nature/nature_029_01.webp",
         "tag": "잎",
         "desc": "대추나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rhamnaceae/Zizyphus/7107/2.JPG",
@@ -1369,7 +1369,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_029_02.jpg",
+        "src": "assets/nature/nature_029_02.webp",
         "tag": "열매",
         "desc": "대추나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rhamnaceae/Zizyphus/7107/7107_20.JPG",
@@ -1379,7 +1379,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_029_03.jpg",
+        "src": "assets/nature/nature_029_03.webp",
         "tag": "줄기·수형",
         "desc": "대추나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rhamnaceae/Zizyphus/7107/7.JPG",
@@ -1389,7 +1389,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_029_04.jpg",
+        "src": "assets/nature/nature_029_04.webp",
         "tag": "잎",
         "desc": "대추나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rhamnaceae/Zizyphus/7107/7107_12.JPG",
@@ -1408,7 +1408,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_030_01.jpg",
+        "src": "assets/nature/nature_030_01.webp",
         "tag": "꽃",
         "desc": "독일가문비 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Picea/14953/14953_4.JPG",
@@ -1418,7 +1418,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_030_02.jpg",
+        "src": "assets/nature/nature_030_02.webp",
         "tag": "잎",
         "desc": "독일가문비 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Picea/14953/14953_14.JPG",
@@ -1428,7 +1428,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_030_03.jpg",
+        "src": "assets/nature/nature_030_03.webp",
         "tag": "열매",
         "desc": "독일가문비의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Picea/14953/14953_1.JPG",
@@ -1438,7 +1438,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_030_04.jpg",
+        "src": "assets/nature/nature_030_04.webp",
         "tag": "줄기·수형",
         "desc": "독일가문비의 줄기이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Picea/14953/14953_3.JPG",
@@ -1457,7 +1457,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_031_01.jpg",
+        "src": "assets/nature/nature_031_01.webp",
         "tag": "꽃",
         "desc": "돈나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pittosporaceae/Pittosporum/22793/22793_2.JPG",
@@ -1467,17 +1467,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_031_02.jpg",
+        "src": "assets/nature/nature_031_02.webp",
         "tag": "잎",
         "desc": "돈나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pittosporaceae/Pittosporum/P000007212/P000007212_202205_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pittosporaceae/Pittosporum/P000007212/P000007212_202205_2.webp",
         "author": "국립수목원(정수영)",
         "date": "2011-06-01",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_031_03.jpg",
+        "src": "assets/nature/nature_031_03.webp",
         "tag": "열매",
         "desc": "돈나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pittosporaceae/Pittosporum/22793/22793_3.JPG",
@@ -1487,7 +1487,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_031_04.jpg",
+        "src": "assets/nature/nature_031_04.webp",
         "tag": "줄기·수형",
         "desc": "돈나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pittosporaceae/Pittosporum/22793/22793_2020_1.JPG",
@@ -1506,7 +1506,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_032_01.jpg",
+        "src": "assets/nature/nature_032_01.webp",
         "tag": "꽃",
         "desc": "동백나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Theaceae/Camellia/10900/7.JPG",
@@ -1516,7 +1516,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_032_02.jpg",
+        "src": "assets/nature/nature_032_02.webp",
         "tag": "잎",
         "desc": "동백나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Theaceae/Camellia/10900/10900_3.JPG",
@@ -1526,7 +1526,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_032_03.jpg",
+        "src": "assets/nature/nature_032_03.webp",
         "tag": "열매",
         "desc": "동백나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Theaceae/Camellia/10900/10900_21.JPG",
@@ -1536,7 +1536,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_032_04.jpg",
+        "src": "assets/nature/nature_032_04.webp",
         "tag": "줄기·수형",
         "desc": "동백나무의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Theaceae/Camellia/10900/1.JPG",
@@ -1555,7 +1555,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_033_01.jpg",
+        "src": "assets/nature/nature_033_01.webp",
         "tag": "꽃",
         "desc": "등의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Wisteria/12361/1.JPG",
@@ -1565,17 +1565,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_033_02.jpg",
+        "src": "assets/nature/nature_033_02.webp",
         "tag": "잎",
         "desc": "등 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fabaceae/Wisteria/P000004288/P000004288_220206_4.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fabaceae/Wisteria/P000004288/P000004288_220206_4.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-06-22",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_033_03.jpg",
+        "src": "assets/nature/nature_033_03.webp",
         "tag": "열매",
         "desc": "등 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Wisteria/12361/12361_4.JPG",
@@ -1585,7 +1585,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_033_04.jpg",
+        "src": "assets/nature/nature_033_04.webp",
         "tag": "줄기·수형",
         "desc": "등 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Wisteria/12361/12361_5.JPG",
@@ -1604,7 +1604,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_034_01.jpg",
+        "src": "assets/nature/nature_034_01.webp",
         "tag": "꽃",
         "desc": "때죽나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Styracaceae/Styrax/22332/2.JPG",
@@ -1614,7 +1614,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_034_02.jpg",
+        "src": "assets/nature/nature_034_02.webp",
         "tag": "잎",
         "desc": "때죽나무의 잎 뒷면 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Styracaceae/Styrax/22332/22332_2020_2.JPG",
@@ -1624,7 +1624,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_034_03.jpg",
+        "src": "assets/nature/nature_034_03.webp",
         "tag": "열매",
         "desc": "때죽나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Styracaceae/Styrax/22332/6.JPG",
@@ -1634,7 +1634,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_034_04.jpg",
+        "src": "assets/nature/nature_034_04.webp",
         "tag": "줄기·수형",
         "desc": "때죽나무의 줄기이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Styracaceae/Styrax/22332/1.JPG",
@@ -1653,7 +1653,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_035_01.jpg",
+        "src": "assets/nature/nature_035_01.webp",
         "tag": "꽃",
         "desc": "떡갈나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6525/6525_4.JPG",
@@ -1663,7 +1663,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_035_02.jpg",
+        "src": "assets/nature/nature_035_02.webp",
         "tag": "잎",
         "desc": "떡갈나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6525/6525_9.JPG",
@@ -1673,7 +1673,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_035_03.jpg",
+        "src": "assets/nature/nature_035_03.webp",
         "tag": "열매",
         "desc": "떡갈나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6525/6525_10.JPG",
@@ -1683,7 +1683,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_035_04.jpg",
+        "src": "assets/nature/nature_035_04.webp",
         "tag": "줄기·수형",
         "desc": "떡갈나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6525/7.JPG",
@@ -1702,7 +1702,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_036_01.jpg",
+        "src": "assets/nature/nature_036_01.webp",
         "tag": "꽃",
         "desc": "마가목의 꽃핀가지 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbus/17188/17188_2020_1.JPG",
@@ -1712,7 +1712,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_036_02.jpg",
+        "src": "assets/nature/nature_036_02.webp",
         "tag": "잎",
         "desc": "마가목 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbus/17188/17188_9.JPG",
@@ -1722,7 +1722,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_036_03.jpg",
+        "src": "assets/nature/nature_036_03.webp",
         "tag": "열매",
         "desc": "마가목의 열매 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbus/17188/17188_2020_3.JPG",
@@ -1732,7 +1732,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_036_04.jpg",
+        "src": "assets/nature/nature_036_04.webp",
         "tag": "줄기·수형",
         "desc": "마가목의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbus/17188/17188_2020_2.JPG",
@@ -1751,40 +1751,40 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_037_01.jpg",
+        "src": "assets/nature/nature_037_01.webp",
         "tag": "잎",
         "desc": "말채나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/P000002955/P000002955_220206_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/P000002955/P000002955_220206_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2018-06-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_037_02.jpg",
+        "src": "assets/nature/nature_037_02.webp",
         "tag": "줄기·수형",
         "desc": "말채나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7475/7475_20220411135951531files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7475/7475_20220411135951531files.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_037_03.jpg",
+        "src": "assets/nature/nature_037_03.webp",
         "tag": "잎",
         "desc": "말채나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/P000002955/P000002955_220206_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/P000002955/P000002955_220206_2.webp",
         "author": "국립수목원(정수영)",
         "date": "2018-06-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_037_04.jpg",
+        "src": "assets/nature/nature_037_04.webp",
         "tag": "잎",
         "desc": "말채나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/P000002955/P000002955_220206_3.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/P000002955/P000002955_220206_3.webp",
         "author": "국립수목원(정수영)",
         "date": "2018-06-08",
         "location": "",
@@ -1800,7 +1800,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_038_01.jpg",
+        "src": "assets/nature/nature_038_01.webp",
         "tag": "꽃",
         "desc": "매화나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12793/12793_1.JPG",
@@ -1810,7 +1810,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_038_02.jpg",
+        "src": "assets/nature/nature_038_02.webp",
         "tag": "열매",
         "desc": "매화나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12793/12793_21.JPG",
@@ -1820,7 +1820,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_038_03.jpg",
+        "src": "assets/nature/nature_038_03.webp",
         "tag": "꽃",
         "desc": "매화나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12793/12793_7.JPG",
@@ -1830,7 +1830,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_038_04.jpg",
+        "src": "assets/nature/nature_038_04.webp",
         "tag": "꽃",
         "desc": "매화나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12793/12793_9.JPG",
@@ -1849,7 +1849,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_039_01.jpg",
+        "src": "assets/nature/nature_039_01.webp",
         "tag": "꽃",
         "desc": "먼나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16695/16695_7.JPG",
@@ -1859,17 +1859,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_039_02.jpg",
+        "src": "assets/nature/nature_039_02.webp",
         "tag": "열매",
         "desc": "먼나무 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/P000005421/P000005421_202205_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/P000005421/P000005421_202205_2.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-10-11",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_039_03.jpg",
+        "src": "assets/nature/nature_039_03.webp",
         "tag": "줄기·수형",
         "desc": "먼나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16695/16695_2.JPG",
@@ -1879,7 +1879,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_039_04.jpg",
+        "src": "assets/nature/nature_039_04.webp",
         "tag": "줄기·수형",
         "desc": "먼나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16695/16695_3.JPG",
@@ -1898,7 +1898,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_040_01.jpg",
+        "src": "assets/nature/nature_040_01.webp",
         "tag": "꽃",
         "desc": "메타세쿼이아 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxodiaceae/Metasequoia/15007/15007_12.JPG",
@@ -1908,17 +1908,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_040_02.jpg",
+        "src": "assets/nature/nature_040_02.webp",
         "tag": "잎",
         "desc": "메타세콰이아의 잎 이미지 입니다.",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxodiaceae/Metasequoia/15007/15007_5.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxodiaceae/Metasequoia/15007/15007_5.webp",
         "author": "국립수목원",
         "date": "2007-10-23",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_040_03.jpg",
+        "src": "assets/nature/nature_040_03.webp",
         "tag": "열매",
         "desc": "메타세쿼이아 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxodiaceae/Metasequoia/15007/15007_9.JPG",
@@ -1928,7 +1928,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_040_04.jpg",
+        "src": "assets/nature/nature_040_04.webp",
         "tag": "줄기·수형",
         "desc": "메타세콰이아의 줄기이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxodiaceae/Metasequoia/15007/15007_3.JPG",
@@ -1947,7 +1947,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_041_01.jpg",
+        "src": "assets/nature/nature_041_01.webp",
         "tag": "꽃",
         "desc": "모감주나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Sapindaceae/Koelreuteria/22969/2.JPG",
@@ -1957,7 +1957,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_041_02.jpg",
+        "src": "assets/nature/nature_041_02.webp",
         "tag": "잎",
         "desc": "모감주나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Sapindaceae/Koelreuteria/22969/22969_9.JPG",
@@ -1967,7 +1967,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_041_03.jpg",
+        "src": "assets/nature/nature_041_03.webp",
         "tag": "열매",
         "desc": "모감주나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Sapindaceae/Koelreuteria/22969/5.JPG",
@@ -1977,7 +1977,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_041_04.jpg",
+        "src": "assets/nature/nature_041_04.webp",
         "tag": "줄기·수형",
         "desc": "모감주나무의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Sapindaceae/Koelreuteria/22969/7.JPG",
@@ -1996,7 +1996,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_042_01.jpg",
+        "src": "assets/nature/nature_042_01.webp",
         "tag": "꽃",
         "desc": "모과나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Chaenomeles/12404/12404_4.JPG",
@@ -2006,7 +2006,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_042_02.jpg",
+        "src": "assets/nature/nature_042_02.webp",
         "tag": "잎",
         "desc": "모과나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Chaenomeles/12404/12404_5.JPG",
@@ -2016,7 +2016,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_042_03.jpg",
+        "src": "assets/nature/nature_042_03.webp",
         "tag": "열매",
         "desc": "모과나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Chaenomeles/12404/12404_9.JPG",
@@ -2026,7 +2026,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_042_04.jpg",
+        "src": "assets/nature/nature_042_04.webp",
         "tag": "줄기·수형",
         "desc": "모과나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Chaenomeles/12404/12404_2020_1.JPG",
@@ -2045,7 +2045,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_043_01.jpg",
+        "src": "assets/nature/nature_043_01.webp",
         "tag": "꽃",
         "desc": "무궁화의 꽃 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Malvaceae/Hibiscus/12120/12120_2020_1.JPG",
@@ -2055,7 +2055,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_043_02.jpg",
+        "src": "assets/nature/nature_043_02.webp",
         "tag": "잎",
         "desc": "무궁화 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Malvaceae/Hibiscus/12120/12120_5.JPG",
@@ -2065,7 +2065,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_043_03.jpg",
+        "src": "assets/nature/nature_043_03.webp",
         "tag": "열매",
         "desc": "무궁화 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Malvaceae/Hibiscus/12120/2.JPG",
@@ -2075,7 +2075,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_043_04.jpg",
+        "src": "assets/nature/nature_043_04.webp",
         "tag": "줄기·수형",
         "desc": "무궁화 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Malvaceae/Hibiscus/12120/7.JPG",
@@ -2094,7 +2094,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_044_01.jpg",
+        "src": "assets/nature/nature_044_01.webp",
         "tag": "꽃",
         "desc": "물푸레나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Fraxinus/11033/2.JPG",
@@ -2104,7 +2104,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_044_02.jpg",
+        "src": "assets/nature/nature_044_02.webp",
         "tag": "잎",
         "desc": "물푸레나무의 어린잎 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Fraxinus/11033/11033_2020_17.JPG",
@@ -2114,7 +2114,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_044_03.jpg",
+        "src": "assets/nature/nature_044_03.webp",
         "tag": "열매",
         "desc": "물푸레나무의 열매 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Fraxinus/11033/11033_2020_18.JPG",
@@ -2124,7 +2124,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_044_04.jpg",
+        "src": "assets/nature/nature_044_04.webp",
         "tag": "줄기·수형",
         "desc": "물푸레나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Fraxinus/11033/11033_2020_12.JPG",
@@ -2143,7 +2143,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_045_01.jpg",
+        "src": "assets/nature/nature_045_01.webp",
         "tag": "꽃",
         "desc": "미선나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Abeliophyllum/9299/8.JPG",
@@ -2153,7 +2153,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_045_02.jpg",
+        "src": "assets/nature/nature_045_02.webp",
         "tag": "잎",
         "desc": "미선나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Abeliophyllum/9299/9299_29.JPG",
@@ -2163,7 +2163,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_045_03.jpg",
+        "src": "assets/nature/nature_045_03.webp",
         "tag": "열매",
         "desc": "미선나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Abeliophyllum/9299/6.JPG",
@@ -2173,7 +2173,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_045_04.jpg",
+        "src": "assets/nature/nature_045_04.webp",
         "tag": "줄기·수형",
         "desc": "미선나무의 줄기이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Abeliophyllum/9299/3.JPG",
@@ -2192,7 +2192,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_046_01.jpg",
+        "src": "assets/nature/nature_046_01.webp",
         "tag": "꽃",
         "desc": "박태기나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Cercis/22230/22230_8.JPG",
@@ -2202,7 +2202,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_046_02.jpg",
+        "src": "assets/nature/nature_046_02.webp",
         "tag": "잎",
         "desc": "박태기나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Cercis/22230/22230_16.JPG",
@@ -2212,7 +2212,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_046_03.jpg",
+        "src": "assets/nature/nature_046_03.webp",
         "tag": "열매",
         "desc": "박태기나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Cercis/22230/22230_17.JPG",
@@ -2222,7 +2222,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_046_04.jpg",
+        "src": "assets/nature/nature_046_04.webp",
         "tag": "줄기·수형",
         "desc": "박태기나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Cercis/22230/7.JPG",
@@ -2241,7 +2241,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_047_01.jpg",
+        "src": "assets/nature/nature_047_01.webp",
         "tag": "꽃",
         "desc": "소나무의 꽃핀가지 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14994/14994_2020_1.JPG",
@@ -2251,7 +2251,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_047_02.jpg",
+        "src": "assets/nature/nature_047_02.webp",
         "tag": "잎",
         "desc": "소나무의 숲 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14994/14994_2020_8.JPG",
@@ -2261,7 +2261,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_047_03.jpg",
+        "src": "assets/nature/nature_047_03.webp",
         "tag": "열매",
         "desc": "반송 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14994/14994_26.JPG",
@@ -2271,7 +2271,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_047_04.jpg",
+        "src": "assets/nature/nature_047_04.webp",
         "tag": "줄기·수형",
         "desc": "소나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14994/14994_2020_4.JPG",
@@ -2290,7 +2290,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_048_01.jpg",
+        "src": "assets/nature/nature_048_01.webp",
         "tag": "꽃",
         "desc": "배롱나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lythraceae/Lagerstroemia/13753/2.JPG",
@@ -2300,7 +2300,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_048_02.jpg",
+        "src": "assets/nature/nature_048_02.webp",
         "tag": "열매",
         "desc": "배롱나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lythraceae/Lagerstroemia/13753/13753_4.JPG",
@@ -2310,7 +2310,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_048_03.jpg",
+        "src": "assets/nature/nature_048_03.webp",
         "tag": "줄기·수형",
         "desc": "배롱나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lythraceae/Lagerstroemia/13753/13753_2020_4.JPG",
@@ -2320,7 +2320,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_048_04.jpg",
+        "src": "assets/nature/nature_048_04.webp",
         "tag": "꽃",
         "desc": "배롱나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lythraceae/Lagerstroemia/13753/5.JPG",
@@ -2339,40 +2339,40 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_049_01.jpg",
+        "src": "assets/nature/nature_049_01.webp",
         "tag": "꽃",
         "desc": "백당나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/P000005280/P000005280_220206_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/P000005280/P000005280_220206_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2015-05-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_049_02.jpg",
+        "src": "assets/nature/nature_049_02.webp",
         "tag": "잎",
         "desc": "백당나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/1012962/1012962_20230424152331966files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/1012962/1012962_20230424152331966files.webp",
         "author": "국립수목원",
         "date": "2019-07-04",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_049_03.jpg",
+        "src": "assets/nature/nature_049_03.webp",
         "tag": "열매",
         "desc": "백당나무 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/P000005280/P000005280_220206_3.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/P000005280/P000005280_220206_3.webp",
         "author": "국립수목원(정수영)",
         "date": "2017-08-02",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_049_04.jpg",
+        "src": "assets/nature/nature_049_04.webp",
         "tag": "꽃",
         "desc": "백당나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/P000005280/P000005280_220206_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Viburnum/P000005280/P000005280_220206_2.webp",
         "author": "국립수목원(정수영)",
         "date": "2015-05-08",
         "location": "",
@@ -2388,7 +2388,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_050_01.jpg",
+        "src": "assets/nature/nature_050_01.webp",
         "tag": "꽃",
         "desc": "백목련의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11595/1.JPG",
@@ -2398,7 +2398,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_050_02.jpg",
+        "src": "assets/nature/nature_050_02.webp",
         "tag": "잎",
         "desc": "백목련의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11595/3.JPG",
@@ -2408,7 +2408,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_050_03.jpg",
+        "src": "assets/nature/nature_050_03.webp",
         "tag": "열매",
         "desc": "백목련 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11595/11595_12.JPG",
@@ -2418,7 +2418,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_050_04.jpg",
+        "src": "assets/nature/nature_050_04.webp",
         "tag": "줄기·수형",
         "desc": "백목련 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11595/11595_13.JPG",
@@ -2437,7 +2437,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_051_01.jpg",
+        "src": "assets/nature/nature_051_01.webp",
         "tag": "꽃",
         "desc": "백송 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14988/14988_2.JPG",
@@ -2447,7 +2447,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_051_02.jpg",
+        "src": "assets/nature/nature_051_02.webp",
         "tag": "잎",
         "desc": "백송의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14988/14988_3.JPG",
@@ -2457,7 +2457,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_051_03.jpg",
+        "src": "assets/nature/nature_051_03.webp",
         "tag": "줄기·수형",
         "desc": "백송의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14988/14988_1.JPG",
@@ -2467,10 +2467,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_051_04.jpg",
+        "src": "assets/nature/nature_051_04.webp",
         "tag": "꽃",
         "desc": "백송 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/P000004952/P000004952_202205_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/P000004952/P000004952_202205_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2017-03-15",
         "location": "",
@@ -2486,7 +2486,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_052_01.jpg",
+        "src": "assets/nature/nature_052_01.webp",
         "tag": "꽃",
         "desc": "버드나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Salicaceae/Salix/16854/16854_8.JPG",
@@ -2496,7 +2496,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_052_02.jpg",
+        "src": "assets/nature/nature_052_02.webp",
         "tag": "잎",
         "desc": "버드나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Salicaceae/Salix/16854/3.JPG",
@@ -2506,17 +2506,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_052_03.jpg",
+        "src": "assets/nature/nature_052_03.webp",
         "tag": "열매",
         "desc": "버드나무 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Salicaceae/Salix/P000005478/P000005478_202205_7.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Salicaceae/Salix/P000005478/P000005478_202205_7.webp",
         "author": "국립수목원(정수영)",
         "date": "2017-10-16",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_052_04.jpg",
+        "src": "assets/nature/nature_052_04.webp",
         "tag": "줄기·수형",
         "desc": "버드나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Salicaceae/Salix/16854/16854_2020_1.JPG",
@@ -2535,7 +2535,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_053_01.jpg",
+        "src": "assets/nature/nature_053_01.webp",
         "tag": "꽃",
         "desc": "벽오동 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Sterculiaceae/Firmiana/7112/7112_7.JPG",
@@ -2545,17 +2545,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_053_02.jpg",
+        "src": "assets/nature/nature_053_02.webp",
         "tag": "잎",
         "desc": "벽오동 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Sterculiaceae/Firmiana/P000002885/P000002885_202205_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Sterculiaceae/Firmiana/P000002885/P000002885_202205_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2015-06-09",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_053_03.jpg",
+        "src": "assets/nature/nature_053_03.webp",
         "tag": "열매",
         "desc": "벽오동 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Sterculiaceae/Firmiana/7112/7112_10.JPG",
@@ -2565,7 +2565,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_053_04.jpg",
+        "src": "assets/nature/nature_053_04.webp",
         "tag": "줄기·수형",
         "desc": "벽오동 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Sterculiaceae/Firmiana/7112/1.JPG",
@@ -2584,7 +2584,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_054_01.jpg",
+        "src": "assets/nature/nature_054_01.webp",
         "tag": "꽃",
         "desc": "병꽃나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Weigela/16253/16253_2020_10.JPG",
@@ -2594,27 +2594,27 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_054_02.jpg",
+        "src": "assets/nature/nature_054_02.webp",
         "tag": "잎",
         "desc": "병꽃나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Weigela/P000005298/P000005298_220206_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Weigela/P000005298/P000005298_220206_2.webp",
         "author": "국립수목원(정수영)",
         "date": "2011-06-16",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_054_03.jpg",
+        "src": "assets/nature/nature_054_03.webp",
         "tag": "줄기·수형",
         "desc": "병꽃나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Weigela/16253/16253_20221114170318028files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Weigela/16253/16253_20221114170318028files.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_054_04.jpg",
+        "src": "assets/nature/nature_054_04.webp",
         "tag": "꽃",
         "desc": "병꽃나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Weigela/16253/2.JPG",
@@ -2633,7 +2633,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_055_01.jpg",
+        "src": "assets/nature/nature_055_01.webp",
         "tag": "꽃",
         "desc": "보리수나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Elaeagnaceae/Elaeagnus/11420/7.JPG",
@@ -2643,17 +2643,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_055_02.jpg",
+        "src": "assets/nature/nature_055_02.webp",
         "tag": "열매",
         "desc": "보리수나무 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Elaeagnaceae/Elaeagnus/P000004001/P000004001_202205_11.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Elaeagnaceae/Elaeagnus/P000004001/P000004001_202205_11.webp",
         "author": "국립수목원(정수영)",
         "date": "2018-08-14",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_055_03.jpg",
+        "src": "assets/nature/nature_055_03.webp",
         "tag": "줄기·수형",
         "desc": "보리수나무의 줄기이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Elaeagnaceae/Elaeagnus/11420/2.JPG",
@@ -2663,7 +2663,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_055_04.jpg",
+        "src": "assets/nature/nature_055_04.webp",
         "tag": "꽃",
         "desc": "보리수나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Elaeagnaceae/Elaeagnus/11420/8.JPG",
@@ -2682,7 +2682,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_056_01.jpg",
+        "src": "assets/nature/nature_056_01.webp",
         "tag": "꽃",
         "desc": "복사나무의 꽃핀가지 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12857/12857_2020_1.JPG",
@@ -2692,7 +2692,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_056_02.jpg",
+        "src": "assets/nature/nature_056_02.webp",
         "tag": "잎",
         "desc": "복사나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12857/6.JPG",
@@ -2702,17 +2702,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_056_03.jpg",
+        "src": "assets/nature/nature_056_03.webp",
         "tag": "열매",
         "desc": "복사나무 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12857/12857_20160825145510799files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12857/12857_20160825145510799files.webp",
         "author": "국립수목원(정수영)",
         "date": "2014-08-31",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_056_04.jpg",
+        "src": "assets/nature/nature_056_04.webp",
         "tag": "줄기·수형",
         "desc": "복사나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12857/12857_2020_3.JPG",
@@ -2731,7 +2731,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_057_01.jpg",
+        "src": "assets/nature/nature_057_01.webp",
         "tag": "꽃",
         "desc": "복자기 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2291/2291_4.JPG",
@@ -2741,17 +2741,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_057_02.jpg",
+        "src": "assets/nature/nature_057_02.webp",
         "tag": "잎",
         "desc": "복자기의 잎 이미지 입니다.",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2291/2291_7.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2291/2291_7.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_057_03.jpg",
+        "src": "assets/nature/nature_057_03.webp",
         "tag": "열매",
         "desc": "복자기의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2291/6.JPG",
@@ -2761,7 +2761,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_057_04.jpg",
+        "src": "assets/nature/nature_057_04.webp",
         "tag": "줄기·수형",
         "desc": "복자기의 수피이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2291/5.JPG",
@@ -2780,7 +2780,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_058_01.jpg",
+        "src": "assets/nature/nature_058_01.webp",
         "tag": "꽃",
         "desc": "붉가시나무의 꽃봉오리 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6505/6505_2.JPG",
@@ -2790,17 +2790,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_058_02.jpg",
+        "src": "assets/nature/nature_058_02.webp",
         "tag": "잎",
         "desc": "붉가시나무의 잎 이미지 입니다.",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6505/6505_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6505/6505_1.webp",
         "author": "주준호",
         "date": "",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_058_03.jpg",
+        "src": "assets/nature/nature_058_03.webp",
         "tag": "열매",
         "desc": "붉가시나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6505/3.JPG",
@@ -2810,7 +2810,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_058_04.jpg",
+        "src": "assets/nature/nature_058_04.webp",
         "tag": "열매",
         "desc": "붉가시나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6505/6.JPG",
@@ -2829,7 +2829,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_059_01.jpg",
+        "src": "assets/nature/nature_059_01.webp",
         "tag": "꽃",
         "desc": "사철나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2175/2175_4.JPG",
@@ -2839,17 +2839,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_059_02.jpg",
+        "src": "assets/nature/nature_059_02.webp",
         "tag": "잎",
         "desc": "사철나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2175/2175_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2175/2175_2.webp",
         "author": "국립수목원",
         "date": "2008-07-09",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_059_03.jpg",
+        "src": "assets/nature/nature_059_03.webp",
         "tag": "열매",
         "desc": "사철나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2175/2175_14.JPG",
@@ -2859,7 +2859,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_059_04.jpg",
+        "src": "assets/nature/nature_059_04.webp",
         "tag": "잎",
         "desc": "사철나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2175/2175_5.JPG",
@@ -2878,17 +2878,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_060_01.jpg",
+        "src": "assets/nature/nature_060_01.webp",
         "tag": "꽃",
         "desc": "산딸나무의 꽃 이미지 입니다.",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7452/7452_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7452/7452_2.webp",
         "author": "아치플라워(양형호)",
         "date": "2005-06-05",
         "location": "무의도",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_060_02.jpg",
+        "src": "assets/nature/nature_060_02.webp",
         "tag": "잎",
         "desc": "산딸나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7452/3.JPG",
@@ -2898,7 +2898,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_060_03.jpg",
+        "src": "assets/nature/nature_060_03.webp",
         "tag": "열매",
         "desc": "산딸나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7452/7452_11.JPG",
@@ -2908,7 +2908,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_060_04.jpg",
+        "src": "assets/nature/nature_060_04.webp",
         "tag": "줄기·수형",
         "desc": "산딸나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7452/7452_17.JPG",
@@ -2927,7 +2927,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_061_01.jpg",
+        "src": "assets/nature/nature_061_01.webp",
         "tag": "꽃",
         "desc": "산벚나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12904/1.JPG",
@@ -2937,7 +2937,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_061_02.jpg",
+        "src": "assets/nature/nature_061_02.webp",
         "tag": "잎",
         "desc": "산벚나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12904/3.JPG",
@@ -2947,7 +2947,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_061_03.jpg",
+        "src": "assets/nature/nature_061_03.webp",
         "tag": "열매",
         "desc": "산벚나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12904/6.JPG",
@@ -2957,7 +2957,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_061_04.jpg",
+        "src": "assets/nature/nature_061_04.webp",
         "tag": "줄기·수형",
         "desc": "산벚나무의 수피이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12904/5.JPG",
@@ -2976,7 +2976,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_062_01.jpg",
+        "src": "assets/nature/nature_062_01.webp",
         "tag": "꽃",
         "desc": "산사나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Crataegus/12434/2.JPG",
@@ -2986,17 +2986,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_062_02.jpg",
+        "src": "assets/nature/nature_062_02.webp",
         "tag": "잎",
         "desc": "산사나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Crataegus/P000004299/P000004299_220206_5.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Crataegus/P000004299/P000004299_220206_5.webp",
         "author": "국립수목원(정수영)",
         "date": "2017-06-21",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_062_03.jpg",
+        "src": "assets/nature/nature_062_03.webp",
         "tag": "열매",
         "desc": "산사나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Crataegus/12434/12434_6.JPG",
@@ -3006,7 +3006,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_062_04.jpg",
+        "src": "assets/nature/nature_062_04.webp",
         "tag": "줄기·수형",
         "desc": "산사나무의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Crataegus/12434/1.JPG",
@@ -3025,7 +3025,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_063_01.jpg",
+        "src": "assets/nature/nature_063_01.webp",
         "tag": "꽃",
         "desc": "산수유의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7472/1.JPG",
@@ -3035,7 +3035,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_063_02.jpg",
+        "src": "assets/nature/nature_063_02.webp",
         "tag": "잎",
         "desc": "산수유의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7472/3.JPG",
@@ -3045,7 +3045,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_063_03.jpg",
+        "src": "assets/nature/nature_063_03.webp",
         "tag": "열매",
         "desc": "산수유의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7472/6.JPG",
@@ -3055,10 +3055,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_063_04.jpg",
+        "src": "assets/nature/nature_063_04.webp",
         "tag": "줄기·수형",
         "desc": "산수유 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7472/7472_20230530155421464files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7472/7472_20230530155421464files.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
@@ -3074,7 +3074,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_064_01.jpg",
+        "src": "assets/nature/nature_064_01.webp",
         "tag": "꽃",
         "desc": "산철쭉의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7564/2.JPG",
@@ -3084,7 +3084,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_064_02.jpg",
+        "src": "assets/nature/nature_064_02.webp",
         "tag": "잎",
         "desc": "산철쭉 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7564/7564_6.JPG",
@@ -3094,7 +3094,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_064_03.jpg",
+        "src": "assets/nature/nature_064_03.webp",
         "tag": "열매",
         "desc": "산철쭉 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7564/7564_4.JPG",
@@ -3104,10 +3104,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_064_04.jpg",
+        "src": "assets/nature/nature_064_04.webp",
         "tag": "줄기·수형",
         "desc": "산철쭉 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7564/7564_10.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7564/7564_10.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
@@ -3123,7 +3123,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_065_01.jpg",
+        "src": "assets/nature/nature_065_01.webp",
         "tag": "꽃",
         "desc": "살구나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/16652/16652_8.JPG",
@@ -3133,17 +3133,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_065_02.jpg",
+        "src": "assets/nature/nature_065_02.webp",
         "tag": "잎",
         "desc": "살구나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/16652/16652_4.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/16652/16652_4.webp",
         "author": "아치플라워(양형호)",
         "date": "2006-06-22",
         "location": "분당",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_065_03.jpg",
+        "src": "assets/nature/nature_065_03.webp",
         "tag": "열매",
         "desc": "살구나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/16652/16652_7.JPG",
@@ -3153,7 +3153,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_065_04.jpg",
+        "src": "assets/nature/nature_065_04.webp",
         "tag": "줄기·수형",
         "desc": "살구나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/33557/33557_2020_1.JPG",
@@ -3172,7 +3172,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_066_01.jpg",
+        "src": "assets/nature/nature_066_01.webp",
         "tag": "꽃",
         "desc": "상수리나무의 꽃 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6512/6512_2020_1.JPG",
@@ -3182,17 +3182,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_066_02.jpg",
+        "src": "assets/nature/nature_066_02.webp",
         "tag": "잎",
         "desc": "상수리나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/P000002711/P000002711_220206_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/P000002711/P000002711_220206_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2020-06-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_066_03.jpg",
+        "src": "assets/nature/nature_066_03.webp",
         "tag": "열매",
         "desc": "상수리나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6512/6512_10.JPG",
@@ -3202,7 +3202,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_066_04.jpg",
+        "src": "assets/nature/nature_066_04.webp",
         "tag": "줄기·수형",
         "desc": "상수리나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6512/7.JPG",
@@ -3221,7 +3221,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_067_01.jpg",
+        "src": "assets/nature/nature_067_01.webp",
         "tag": "꽃",
         "desc": "생강나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Lindera/11529/11529_7.JPG",
@@ -3231,7 +3231,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_067_02.jpg",
+        "src": "assets/nature/nature_067_02.webp",
         "tag": "잎",
         "desc": "생강나무의 잎 뒷면 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Lindera/11529/11529_2020_1.JPG",
@@ -3241,7 +3241,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_067_03.jpg",
+        "src": "assets/nature/nature_067_03.webp",
         "tag": "열매",
         "desc": "생강나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Lindera/11529/11529_4.JPG",
@@ -3251,10 +3251,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_067_04.jpg",
+        "src": "assets/nature/nature_067_04.webp",
         "tag": "줄기·수형",
         "desc": "생강나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Lindera/P000004025/P000004025_202205_30.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Lindera/P000004025/P000004025_202205_30.webp",
         "author": "국립수목원(정수영)",
         "date": "2012-02-26",
         "location": "",
@@ -3270,37 +3270,37 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_068_01.jpg",
+        "src": "assets/nature/nature_068_01.webp",
         "tag": "꽃",
         "desc": "서어나무의 꽃 이미지 입니다.",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Carpinus/918/918_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Carpinus/918/918_2.webp",
         "author": "국립수목원",
         "date": "",
         "location": "두류공원",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_068_02.jpg",
+        "src": "assets/nature/nature_068_02.webp",
         "tag": "잎",
         "desc": "서어나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Carpinus/918/1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Carpinus/918/1.webp",
         "author": "한반도식물연구회(한영우)",
         "date": "2011-06-15",
         "location": "노추산",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_068_03.jpg",
+        "src": "assets/nature/nature_068_03.webp",
         "tag": "줄기·수형",
         "desc": "서어나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Carpinus/918/5.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Carpinus/918/5.webp",
         "author": "한반도식물연구회(한영우)",
         "date": "2007-02-10",
         "location": "설악산",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_068_04.jpg",
+        "src": "assets/nature/nature_068_04.webp",
         "tag": "꽃",
         "desc": "서어나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Carpinus/918/918_19.JPG",
@@ -3319,7 +3319,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_069_01.jpg",
+        "src": "assets/nature/nature_069_01.webp",
         "tag": "잎",
         "desc": "석류나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Punicaceae/Punica/19749/19749_7.JPG",
@@ -3329,7 +3329,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_069_02.jpg",
+        "src": "assets/nature/nature_069_02.webp",
         "tag": "열매",
         "desc": "석류나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Punicaceae/Punica/19749/19749_3.JPG",
@@ -3339,7 +3339,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_069_03.jpg",
+        "src": "assets/nature/nature_069_03.webp",
         "tag": "잎",
         "desc": "석류나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Punicaceae/Punica/19749/19749_1.JPG",
@@ -3349,7 +3349,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_069_04.jpg",
+        "src": "assets/nature/nature_069_04.webp",
         "tag": "잎",
         "desc": "석류나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Punicaceae/Punica/19749/2.JPG",
@@ -3368,7 +3368,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_070_01.jpg",
+        "src": "assets/nature/nature_070_01.webp",
         "tag": "꽃",
         "desc": "소나무의 꽃핀가지 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14994/14994_2020_1.JPG",
@@ -3378,7 +3378,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_070_02.jpg",
+        "src": "assets/nature/nature_070_02.webp",
         "tag": "잎",
         "desc": "소나무의 숲 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14994/14994_2020_8.JPG",
@@ -3388,7 +3388,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_070_03.jpg",
+        "src": "assets/nature/nature_070_03.webp",
         "tag": "열매",
         "desc": "소나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14994/14994_26.JPG",
@@ -3398,7 +3398,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_070_04.jpg",
+        "src": "assets/nature/nature_070_04.webp",
         "tag": "줄기·수형",
         "desc": "소나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14994/14994_2020_4.JPG",
@@ -3417,7 +3417,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_071_01.jpg",
+        "src": "assets/nature/nature_071_01.webp",
         "tag": "꽃",
         "desc": "수국의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Saxifragaceae/Hydrangea/15573/5.JPG",
@@ -3427,7 +3427,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_071_02.jpg",
+        "src": "assets/nature/nature_071_02.webp",
         "tag": "잎",
         "desc": "수국의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Saxifragaceae/Hydrangea/15573/2.JPG",
@@ -3437,7 +3437,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_071_03.jpg",
+        "src": "assets/nature/nature_071_03.webp",
         "tag": "꽃",
         "desc": "수국의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Saxifragaceae/Hydrangea/15573/1.JPG",
@@ -3447,7 +3447,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_071_04.jpg",
+        "src": "assets/nature/nature_071_04.webp",
         "tag": "꽃",
         "desc": "수국의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Saxifragaceae/Hydrangea/15573/3.JPG",
@@ -3466,7 +3466,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_072_01.jpg",
+        "src": "assets/nature/nature_072_01.webp",
         "tag": "꽃",
         "desc": "수수꽃다리의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Syringa/9396/1.JPG",
@@ -3476,7 +3476,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_072_02.jpg",
+        "src": "assets/nature/nature_072_02.webp",
         "tag": "줄기·수형",
         "desc": "수수꽃다리 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Syringa/9396/9396_19.JPG",
@@ -3486,7 +3486,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_072_03.jpg",
+        "src": "assets/nature/nature_072_03.webp",
         "tag": "꽃",
         "desc": "수수꽃다리의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Syringa/9396/2.JPG",
@@ -3496,7 +3496,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_072_04.jpg",
+        "src": "assets/nature/nature_072_04.webp",
         "tag": "꽃",
         "desc": "수수꽃다리의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Syringa/9396/7.JPG",
@@ -3515,7 +3515,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_073_01.jpg",
+        "src": "assets/nature/nature_073_01.webp",
         "tag": "꽃",
         "desc": "쉬땅나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbaria/13232/1.JPG",
@@ -3525,7 +3525,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_073_02.jpg",
+        "src": "assets/nature/nature_073_02.webp",
         "tag": "잎",
         "desc": "쉬땅나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbaria/13232/3.JPG",
@@ -3535,7 +3535,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_073_03.jpg",
+        "src": "assets/nature/nature_073_03.webp",
         "tag": "열매",
         "desc": "쉬땅나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbaria/13232/13232_9.JPG",
@@ -3545,7 +3545,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_073_04.jpg",
+        "src": "assets/nature/nature_073_04.webp",
         "tag": "줄기·수형",
         "desc": "쉬땅나무의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbaria/13232/5.JPG",
@@ -3564,17 +3564,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_074_01.jpg",
+        "src": "assets/nature/nature_074_01.webp",
         "tag": "꽃",
         "desc": "스트로브잣나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/P000004949/P000004949_202205_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/P000004949/P000004949_202205_2.webp",
         "author": "국립수목원(정수영)",
         "date": "2012-04-28",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_074_02.jpg",
+        "src": "assets/nature/nature_074_02.webp",
         "tag": "잎",
         "desc": "스트로브잣나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14983/14983_3.JPG",
@@ -3584,7 +3584,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_074_03.jpg",
+        "src": "assets/nature/nature_074_03.webp",
         "tag": "열매",
         "desc": "스트로브잣나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14983/14983_7.JPG",
@@ -3594,7 +3594,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_074_04.jpg",
+        "src": "assets/nature/nature_074_04.webp",
         "tag": "줄기·수형",
         "desc": "스트로브잣나무의 수피이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14983/14983_5.JPG",
@@ -3613,7 +3613,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_075_01.jpg",
+        "src": "assets/nature/nature_075_01.webp",
         "tag": "꽃",
         "desc": "신갈나무의 꽃 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6556/6556_2020_2.JPG",
@@ -3623,7 +3623,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_075_02.jpg",
+        "src": "assets/nature/nature_075_02.webp",
         "tag": "잎",
         "desc": "신갈나무의 잎 뒷면 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6556/6556_2020_19.JPG",
@@ -3633,7 +3633,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_075_03.jpg",
+        "src": "assets/nature/nature_075_03.webp",
         "tag": "열매",
         "desc": "신갈나무의 열매 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6556/6556_2020_18.JPG",
@@ -3643,7 +3643,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_075_04.jpg",
+        "src": "assets/nature/nature_075_04.webp",
         "tag": "줄기·수형",
         "desc": "신갈나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6556/6556_2020_12.JPG",
@@ -3662,7 +3662,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_076_01.jpg",
+        "src": "assets/nature/nature_076_01.webp",
         "tag": "꽃",
         "desc": "신나무의 꽃 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2280/2280_2020_1.JPG",
@@ -3672,7 +3672,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_076_02.jpg",
+        "src": "assets/nature/nature_076_02.webp",
         "tag": "잎",
         "desc": "신나무의 잎 뒷면 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2280/2280_2020_8.JPG",
@@ -3682,7 +3682,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_076_03.jpg",
+        "src": "assets/nature/nature_076_03.webp",
         "tag": "열매",
         "desc": "신나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2280/2.JPG",
@@ -3692,10 +3692,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_076_04.jpg",
+        "src": "assets/nature/nature_076_04.webp",
         "tag": "줄기·수형",
         "desc": "신나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2280/2280_20221011153621586files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/2280/2280_20221011153621586files.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
@@ -3711,7 +3711,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_077_01.jpg",
+        "src": "assets/nature/nature_077_01.webp",
         "tag": "꽃",
         "desc": "아까시나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Robinia/1959/2.JPG",
@@ -3721,7 +3721,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_077_02.jpg",
+        "src": "assets/nature/nature_077_02.webp",
         "tag": "잎",
         "desc": "아까시나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Robinia/1959/1.JPG",
@@ -3731,7 +3731,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_077_03.jpg",
+        "src": "assets/nature/nature_077_03.webp",
         "tag": "열매",
         "desc": "아까시나무의 열매 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Robinia/1959/1959_2020_6.JPG",
@@ -3741,7 +3741,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_077_04.jpg",
+        "src": "assets/nature/nature_077_04.webp",
         "tag": "줄기·수형",
         "desc": "아까시나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Robinia/1959/1959_2020_4.JPG",
@@ -3760,7 +3760,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_078_01.jpg",
+        "src": "assets/nature/nature_078_01.webp",
         "tag": "꽃",
         "desc": "앵도나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12916/2.JPG",
@@ -3770,17 +3770,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_078_02.jpg",
+        "src": "assets/nature/nature_078_02.webp",
         "tag": "잎",
         "desc": "앵도나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/P000004399/P000004399_220206_16.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/P000004399/P000004399_220206_16.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-06-14",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_078_03.jpg",
+        "src": "assets/nature/nature_078_03.webp",
         "tag": "열매",
         "desc": "앵도나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12916/4.JPG",
@@ -3790,10 +3790,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_078_04.jpg",
+        "src": "assets/nature/nature_078_04.webp",
         "tag": "줄기·수형",
         "desc": "앵도나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12916/12916_21.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12916/12916_21.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
@@ -3809,7 +3809,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_079_01.jpg",
+        "src": "assets/nature/nature_079_01.webp",
         "tag": "꽃",
         "desc": "오동나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Bignoniaceae/Paulownia/9580/2.JPG",
@@ -3819,17 +3819,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_079_02.jpg",
+        "src": "assets/nature/nature_079_02.webp",
         "tag": "잎",
         "desc": "오동나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Scrophulariaceae/Paulownia/P000003547/P000003547_220206_5.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Scrophulariaceae/Paulownia/P000003547/P000003547_220206_5.webp",
         "author": "국립수목원(정수영)",
         "date": "2011-06-02",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_079_03.jpg",
+        "src": "assets/nature/nature_079_03.webp",
         "tag": "열매",
         "desc": "오동나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Scrophulariaceae/Paulownia/9580/9580_4.JPG",
@@ -3839,7 +3839,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_079_04.jpg",
+        "src": "assets/nature/nature_079_04.webp",
         "tag": "줄기·수형",
         "desc": "오동나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Scrophulariaceae/Paulownia/9580/7.JPG",
@@ -3858,7 +3858,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_080_01.jpg",
+        "src": "assets/nature/nature_080_01.webp",
         "tag": "꽃",
         "desc": "왕벚나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12944/2.JPG",
@@ -3868,17 +3868,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_080_02.jpg",
+        "src": "assets/nature/nature_080_02.webp",
         "tag": "잎",
         "desc": "왕벚나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/P000004404/P000004404_220206_3.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/P000004404/P000004404_220206_3.webp",
         "author": "국립수목원(정수영)",
         "date": "2015-06-02",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_080_03.jpg",
+        "src": "assets/nature/nature_080_03.webp",
         "tag": "열매",
         "desc": "왕벚나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12944/6.JPG",
@@ -3888,7 +3888,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_080_04.jpg",
+        "src": "assets/nature/nature_080_04.webp",
         "tag": "줄기·수형",
         "desc": "왕벚나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Prunus/12944/12944_2020_5.JPG",
@@ -3907,17 +3907,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_081_01.jpg",
+        "src": "assets/nature/nature_081_01.webp",
         "tag": "꽃",
         "desc": "은행나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ginkgoaceae/Ginkgo/14898/14898_2.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ginkgoaceae/Ginkgo/14898/14898_2.webp",
         "author": "국립수목원",
         "date": "2009-04-24",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_081_02.jpg",
+        "src": "assets/nature/nature_081_02.webp",
         "tag": "잎",
         "desc": "은행나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ginkgoaceae/Ginkgo/14898/14898_29.JPG",
@@ -3927,20 +3927,20 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_081_03.jpg",
+        "src": "assets/nature/nature_081_03.webp",
         "tag": "열매",
         "desc": "은행나무 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ginkgoaceae/Ginkgo/14898/14898_13.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ginkgoaceae/Ginkgo/14898/14898_13.webp",
         "author": "국립수목원",
         "date": "2006-09-29",
         "location": "용문사",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_081_04.jpg",
+        "src": "assets/nature/nature_081_04.webp",
         "tag": "줄기·수형",
         "desc": "은행나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ginkgoaceae/Ginkgo/P000004915/P000004915_220206_6.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ginkgoaceae/Ginkgo/P000004915/P000004915_220206_6.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-11-01",
         "location": "",
@@ -3956,7 +3956,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_082_01.jpg",
+        "src": "assets/nature/nature_082_01.webp",
         "tag": "꽃",
         "desc": "이팝나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Chionanthus/10998/2.JPG",
@@ -3966,7 +3966,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_082_02.jpg",
+        "src": "assets/nature/nature_082_02.webp",
         "tag": "잎",
         "desc": "이팝나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Chionanthus/10998/8.JPG",
@@ -3976,7 +3976,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_082_03.jpg",
+        "src": "assets/nature/nature_082_03.webp",
         "tag": "열매",
         "desc": "이팝나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Chionanthus/10998/6.JPG",
@@ -3986,7 +3986,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_082_04.jpg",
+        "src": "assets/nature/nature_082_04.webp",
         "tag": "줄기·수형",
         "desc": "이팝나무의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Chionanthus/10998/1.JPG",
@@ -4005,7 +4005,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_083_01.jpg",
+        "src": "assets/nature/nature_083_01.webp",
         "tag": "꽃",
         "desc": "인동덩굴의 꽃 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Lonicera/16266/16266_2020_1.JPG",
@@ -4015,17 +4015,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_083_02.jpg",
+        "src": "assets/nature/nature_083_02.webp",
         "tag": "잎",
         "desc": "인동덩굴 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Lonicera/16266/16266_9.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Lonicera/16266/16266_9.webp",
         "author": "국립수목원",
         "date": "2009-06-23",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_083_03.jpg",
+        "src": "assets/nature/nature_083_03.webp",
         "tag": "열매",
         "desc": "인동덩굴 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Lonicera/16266/16266_20.JPG",
@@ -4035,7 +4035,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_083_04.jpg",
+        "src": "assets/nature/nature_083_04.webp",
         "tag": "줄기·수형",
         "desc": "인동덩굴 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Caprifoliaceae/Lonicera/16266/16266_14.JPG",
@@ -4054,7 +4054,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_084_01.jpg",
+        "src": "assets/nature/nature_084_01.webp",
         "tag": "꽃",
         "desc": "일본목련 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11646/11646_8.JPG",
@@ -4064,7 +4064,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_084_02.jpg",
+        "src": "assets/nature/nature_084_02.webp",
         "tag": "잎",
         "desc": "일본목련 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11646/11646_13.JPG",
@@ -4074,7 +4074,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_084_03.jpg",
+        "src": "assets/nature/nature_084_03.webp",
         "tag": "열매",
         "desc": "일본목련 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11646/11646_5.JPG",
@@ -4084,7 +4084,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_084_04.jpg",
+        "src": "assets/nature/nature_084_04.webp",
         "tag": "줄기·수형",
         "desc": "일본목련 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11646/1.JPG",
@@ -4103,17 +4103,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_085_01.jpg",
+        "src": "assets/nature/nature_085_01.webp",
         "tag": "꽃",
         "desc": "자귀나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fabaceae/Albizia/P000004212/P000004212_220206_4.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fabaceae/Albizia/P000004212/P000004212_220206_4.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-05-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_085_02.jpg",
+        "src": "assets/nature/nature_085_02.webp",
         "tag": "잎",
         "desc": "자귀나무의 잎 뒷면 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Albizia/12230/12230_2020_1.JPG",
@@ -4123,7 +4123,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_085_03.jpg",
+        "src": "assets/nature/nature_085_03.webp",
         "tag": "열매",
         "desc": "자귀나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Albizia/12230/12230_20.JPG",
@@ -4133,7 +4133,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_085_04.jpg",
+        "src": "assets/nature/nature_085_04.webp",
         "tag": "줄기·수형",
         "desc": "자귀나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Albizia/12230/7.JPG",
@@ -4152,7 +4152,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_086_01.jpg",
+        "src": "assets/nature/nature_086_01.webp",
         "tag": "꽃",
         "desc": "자작나무의 꽃 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Betula/895/895_2020_1.JPG",
@@ -4162,7 +4162,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_086_02.jpg",
+        "src": "assets/nature/nature_086_02.webp",
         "tag": "잎",
         "desc": "자작나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Betula/895/895_8.JPG",
@@ -4172,7 +4172,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_086_03.jpg",
+        "src": "assets/nature/nature_086_03.webp",
         "tag": "열매",
         "desc": "자작나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Betula/895/895_22.JPG",
@@ -4182,7 +4182,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_086_04.jpg",
+        "src": "assets/nature/nature_086_04.webp",
         "tag": "줄기·수형",
         "desc": "자작나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Betulaceae/Betula/895/895_2020_4.JPG",
@@ -4201,7 +4201,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_087_01.jpg",
+        "src": "assets/nature/nature_087_01.webp",
         "tag": "꽃",
         "desc": "작살나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Verbenaceae/Callicarpa/17297/2.JPG",
@@ -4211,7 +4211,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_087_02.jpg",
+        "src": "assets/nature/nature_087_02.webp",
         "tag": "잎",
         "desc": "작살나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Verbenaceae/Callicarpa/17297/17297_4.JPG",
@@ -4221,17 +4221,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_087_03.jpg",
+        "src": "assets/nature/nature_087_03.webp",
         "tag": "열매",
         "desc": "작살나무 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Verbenaceae/Callicarpa/P000005606/P000005606_202205_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Verbenaceae/Callicarpa/P000005606/P000005606_202205_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2018-09-25",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_087_04.jpg",
+        "src": "assets/nature/nature_087_04.webp",
         "tag": "줄기·수형",
         "desc": "작살나무의 줄기이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Verbenaceae/Callicarpa/17297/1.JPG",
@@ -4250,7 +4250,7 @@
     "totalImages": 5,
     "images": [
       {
-        "src": "assets/nature/nature_088_01.jpg",
+        "src": "assets/nature/nature_088_01.webp",
         "tag": "꽃",
         "desc": "잣나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14973/14973_12.JPG",
@@ -4260,7 +4260,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_088_02.jpg",
+        "src": "assets/nature/nature_088_02.webp",
         "tag": "잎",
         "desc": "잣나무의 수배우체 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14973/14973_2.JPG",
@@ -4270,7 +4270,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_088_03.jpg",
+        "src": "assets/nature/nature_088_03.webp",
         "tag": "열매",
         "desc": "잣나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14973/14973_6.JPG",
@@ -4280,7 +4280,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_088_04.jpg",
+        "src": "assets/nature/nature_088_04.webp",
         "tag": "줄기·수형",
         "desc": "잣나무의 줄기이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14973/14973_1.JPG",
@@ -4290,7 +4290,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_088_05.jpg",
+        "src": "assets/nature/nature_088_05.webp",
         "tag": "기타",
         "desc": "잣나무의 뿌리 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Pinus/14973/14973_2020_1.JPG",
@@ -4309,7 +4309,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_089_01.jpg",
+        "src": "assets/nature/nature_089_01.webp",
         "tag": "꽃",
         "desc": "전나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Abies/14923/14923_7.JPG",
@@ -4319,7 +4319,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_089_02.jpg",
+        "src": "assets/nature/nature_089_02.webp",
         "tag": "잎",
         "desc": "전나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Abies/14923/14923_28.JPG",
@@ -4329,7 +4329,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_089_03.jpg",
+        "src": "assets/nature/nature_089_03.webp",
         "tag": "열매",
         "desc": "전나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Abies/14923/14923_12.JPG",
@@ -4339,7 +4339,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_089_04.jpg",
+        "src": "assets/nature/nature_089_04.webp",
         "tag": "줄기·수형",
         "desc": "전나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Pinaceae/Abies/14923/14923_21.JPG",
@@ -4358,7 +4358,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_090_01.jpg",
+        "src": "assets/nature/nature_090_01.webp",
         "tag": "꽃",
         "desc": "조릿대의 군락 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Gramineae/Sasa/21871/21871_2020_1.JPG",
@@ -4368,7 +4368,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_090_02.jpg",
+        "src": "assets/nature/nature_090_02.webp",
         "tag": "잎",
         "desc": "조릿대 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Gramineae/Sasa/21871/21871_3.JPG",
@@ -4378,7 +4378,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_090_03.jpg",
+        "src": "assets/nature/nature_090_03.webp",
         "tag": "열매",
         "desc": "조릿대의 군락 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Gramineae/Sasa/21871/21871_2020_3.JPG",
@@ -4388,7 +4388,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_090_04.jpg",
+        "src": "assets/nature/nature_090_04.webp",
         "tag": "줄기·수형",
         "desc": "조릿대의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Gramineae/Sasa/21871/5.JPG",
@@ -4407,7 +4407,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_091_01.jpg",
+        "src": "assets/nature/nature_091_01.webp",
         "tag": "꽃",
         "desc": "졸참나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6591/6591_15.JPG",
@@ -4417,17 +4417,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_091_02.jpg",
+        "src": "assets/nature/nature_091_02.webp",
         "tag": "잎",
         "desc": "졸참나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/P000002731/P000002731_220206_7.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/P000002731/P000002731_220206_7.webp",
         "author": "국립수목원(정수영)",
         "date": "2018-07-30",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_091_03.jpg",
+        "src": "assets/nature/nature_091_03.webp",
         "tag": "열매",
         "desc": "졸참나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6591/6591_12.JPG",
@@ -4437,7 +4437,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_091_04.jpg",
+        "src": "assets/nature/nature_091_04.webp",
         "tag": "줄기·수형",
         "desc": "졸참나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Fagaceae/Quercus/6591/6591_2020_3.JPG",
@@ -4456,7 +4456,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_092_01.jpg",
+        "src": "assets/nature/nature_092_01.webp",
         "tag": "꽃",
         "desc": "주목 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxaceae/Taxus/14902/14902_14.JPG",
@@ -4466,7 +4466,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_092_02.jpg",
+        "src": "assets/nature/nature_092_02.webp",
         "tag": "잎",
         "desc": "주목의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxaceae/Taxus/14902/14902_1.JPG",
@@ -4476,7 +4476,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_092_03.jpg",
+        "src": "assets/nature/nature_092_03.webp",
         "tag": "열매",
         "desc": "주목의 열매 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxaceae/Taxus/14902/14902_2020_3.JPG",
@@ -4486,7 +4486,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_092_04.jpg",
+        "src": "assets/nature/nature_092_04.webp",
         "tag": "줄기·수형",
         "desc": "주목의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Taxaceae/Taxus/14902/14902_2020_2.JPG",
@@ -4505,7 +4505,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_093_01.jpg",
+        "src": "assets/nature/nature_093_01.webp",
         "tag": "꽃",
         "desc": "중국단풍 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/18760/18760_1.JPG",
@@ -4515,7 +4515,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_093_02.jpg",
+        "src": "assets/nature/nature_093_02.webp",
         "tag": "잎",
         "desc": "중국단풍 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/18760/18760_2.JPG",
@@ -4525,7 +4525,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_093_03.jpg",
+        "src": "assets/nature/nature_093_03.webp",
         "tag": "열매",
         "desc": "중국단풍의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/18760/3.JPG",
@@ -4535,7 +4535,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_093_04.jpg",
+        "src": "assets/nature/nature_093_04.webp",
         "tag": "열매",
         "desc": "중국단풍 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aceraceae/Acer/18760/18760_4.JPG",
@@ -4554,7 +4554,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_094_01.jpg",
+        "src": "assets/nature/nature_094_01.webp",
         "tag": "꽃",
         "desc": "쥐똥나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Ligustrum/11092/2.JPG",
@@ -4564,7 +4564,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_094_02.jpg",
+        "src": "assets/nature/nature_094_02.webp",
         "tag": "잎",
         "desc": "쥐똥나무의 잎 뒷면 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Ligustrum/11092/11092_2020_4.JPG",
@@ -4574,7 +4574,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_094_03.jpg",
+        "src": "assets/nature/nature_094_03.webp",
         "tag": "열매",
         "desc": "쥐똥나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Ligustrum/11092/6.JPG",
@@ -4584,7 +4584,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_094_04.jpg",
+        "src": "assets/nature/nature_094_04.webp",
         "tag": "줄기·수형",
         "desc": "쥐똥나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Oleaceae/Ligustrum/11092/11092_2020_3.JPG",
@@ -4603,7 +4603,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_095_01.jpg",
+        "src": "assets/nature/nature_095_01.webp",
         "tag": "꽃",
         "desc": "진달래의 군락 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7515/7515_2020_2.JPG",
@@ -4613,17 +4613,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_095_02.jpg",
+        "src": "assets/nature/nature_095_02.webp",
         "tag": "잎",
         "desc": "진달래 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/P000002972/P000002972_220206_15.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/P000002972/P000002972_220206_15.webp",
         "author": "국립수목원(정수영)",
         "date": "2017-06-21",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_095_03.jpg",
+        "src": "assets/nature/nature_095_03.webp",
         "tag": "열매",
         "desc": "진달래 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7515/7515_15.JPG",
@@ -4633,7 +4633,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_095_04.jpg",
+        "src": "assets/nature/nature_095_04.webp",
         "tag": "줄기·수형",
         "desc": "진달래의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7515/7515_2020_40.JPG",
@@ -4652,7 +4652,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_096_01.jpg",
+        "src": "assets/nature/nature_096_01.webp",
         "tag": "꽃",
         "desc": "쪽동백나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Styracaceae/Styrax/16720/1.JPG",
@@ -4662,7 +4662,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_096_02.jpg",
+        "src": "assets/nature/nature_096_02.webp",
         "tag": "열매",
         "desc": "쪽동백나무의 열매 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Styracaceae/Styrax/16720/16720_2020_1.JPG",
@@ -4672,7 +4672,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_096_03.jpg",
+        "src": "assets/nature/nature_096_03.webp",
         "tag": "줄기·수형",
         "desc": "쪽동백나무의 수피이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Styracaceae/Styrax/16720/5.JPG",
@@ -4682,7 +4682,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_096_04.jpg",
+        "src": "assets/nature/nature_096_04.webp",
         "tag": "꽃",
         "desc": "쪽동백나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Styracaceae/Styrax/16720/3.JPG",
@@ -4701,7 +4701,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_097_01.jpg",
+        "src": "assets/nature/nature_097_01.webp",
         "tag": "꽃",
         "desc": "참느릅나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Ulmus/1038/1038_14.JPG",
@@ -4711,7 +4711,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_097_02.jpg",
+        "src": "assets/nature/nature_097_02.webp",
         "tag": "열매",
         "desc": "참느릅나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Ulmus/1038/6.JPG",
@@ -4721,7 +4721,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_097_03.jpg",
+        "src": "assets/nature/nature_097_03.webp",
         "tag": "열매",
         "desc": "참느릅나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Ulmus/1038/1038_13.JPG",
@@ -4731,7 +4731,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_097_04.jpg",
+        "src": "assets/nature/nature_097_04.webp",
         "tag": "열매",
         "desc": "참느릅나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Ulmus/1038/1038_9.JPG",
@@ -4750,7 +4750,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_098_01.jpg",
+        "src": "assets/nature/nature_098_01.webp",
         "tag": "꽃",
         "desc": "철쭉의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7542/1.JPG",
@@ -4760,7 +4760,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_098_02.jpg",
+        "src": "assets/nature/nature_098_02.webp",
         "tag": "잎",
         "desc": "철쭉의 잎 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7542/7542_2020_9.JPG",
@@ -4770,7 +4770,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_098_03.jpg",
+        "src": "assets/nature/nature_098_03.webp",
         "tag": "줄기·수형",
         "desc": "철쭉의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7542/7542_2020_8.JPG",
@@ -4780,7 +4780,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_098_04.jpg",
+        "src": "assets/nature/nature_098_04.webp",
         "tag": "꽃",
         "desc": "철쭉의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ericaceae/Rhododendron/7542/2.JPG",
@@ -4799,7 +4799,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_099_01.jpg",
+        "src": "assets/nature/nature_099_01.webp",
         "tag": "꽃",
         "desc": "측백나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Thuja/15029/15029_7.JPG",
@@ -4809,17 +4809,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_099_02.jpg",
+        "src": "assets/nature/nature_099_02.webp",
         "tag": "잎",
         "desc": "측백나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Platycladus/P000051771/P000051771_220206_19.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Platycladus/P000051771/P000051771_220206_19.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-06-04",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_099_03.jpg",
+        "src": "assets/nature/nature_099_03.webp",
         "tag": "열매",
         "desc": "측백나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Thuja/15029/15029_6.JPG",
@@ -4829,7 +4829,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_099_04.jpg",
+        "src": "assets/nature/nature_099_04.webp",
         "tag": "줄기·수형",
         "desc": "측백나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Thuja/15029/15029_9.JPG",
@@ -4848,7 +4848,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_100_01.jpg",
+        "src": "assets/nature/nature_100_01.webp",
         "tag": "꽃",
         "desc": "층층나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7444/2.JPG",
@@ -4858,7 +4858,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_100_02.jpg",
+        "src": "assets/nature/nature_100_02.webp",
         "tag": "잎",
         "desc": "층층나무의 어린잎 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7444/7444_2020_5.JPG",
@@ -4868,17 +4868,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_100_03.jpg",
+        "src": "assets/nature/nature_100_03.webp",
         "tag": "열매",
         "desc": "층층나무 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7444/7444_4.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7444/7444_4.webp",
         "author": "국립수목원",
         "date": "2008-08-17",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_100_04.jpg",
+        "src": "assets/nature/nature_100_04.webp",
         "tag": "줄기·수형",
         "desc": "층층나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7444/7444_2020_4.JPG",
@@ -4897,7 +4897,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_101_01.jpg",
+        "src": "assets/nature/nature_101_01.webp",
         "tag": "꽃",
         "desc": "칠엽수의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hippocastanaceae/Aesculus/11472/2.JPG",
@@ -4907,7 +4907,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_101_02.jpg",
+        "src": "assets/nature/nature_101_02.webp",
         "tag": "잎",
         "desc": "칠엽수의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hippocastanaceae/Aesculus/11472/7.JPG",
@@ -4917,7 +4917,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_101_03.jpg",
+        "src": "assets/nature/nature_101_03.webp",
         "tag": "열매",
         "desc": "칠엽수의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hippocastanaceae/Aesculus/11472/6.JPG",
@@ -4927,7 +4927,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_101_04.jpg",
+        "src": "assets/nature/nature_101_04.webp",
         "tag": "줄기·수형",
         "desc": "칠엽수의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hippocastanaceae/Aesculus/11472/1.JPG",
@@ -4946,7 +4946,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_102_01.jpg",
+        "src": "assets/nature/nature_102_01.webp",
         "tag": "잎",
         "desc": "태산목의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11613/6.JPG",
@@ -4956,7 +4956,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_102_02.jpg",
+        "src": "assets/nature/nature_102_02.webp",
         "tag": "줄기·수형",
         "desc": "태산목 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11613/11613_12.JPG",
@@ -4966,7 +4966,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_102_03.jpg",
+        "src": "assets/nature/nature_102_03.webp",
         "tag": "잎",
         "desc": "태산목 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11613/11613_2.JPG",
@@ -4976,7 +4976,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_102_04.jpg",
+        "src": "assets/nature/nature_102_04.webp",
         "tag": "잎",
         "desc": "태산목 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Magnolia/11613/11613_10.JPG",
@@ -4995,7 +4995,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_103_01.jpg",
+        "src": "assets/nature/nature_103_01.webp",
         "tag": "꽃",
         "desc": "탱자나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rutaceae/Poncirus/12141/2.JPG",
@@ -5005,7 +5005,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_103_02.jpg",
+        "src": "assets/nature/nature_103_02.webp",
         "tag": "잎",
         "desc": "탱자나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rutaceae/Poncirus/12141/12141_13.JPG",
@@ -5015,7 +5015,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_103_03.jpg",
+        "src": "assets/nature/nature_103_03.webp",
         "tag": "열매",
         "desc": "탱자나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rutaceae/Poncirus/12141/4.JPG",
@@ -5025,10 +5025,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_103_04.jpg",
+        "src": "assets/nature/nature_103_04.webp",
         "tag": "줄기·수형",
         "desc": "탱자나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rutaceae/Poncirus/12141/12141_5.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rutaceae/Poncirus/12141/12141_5.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
@@ -5044,7 +5044,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_104_01.jpg",
+        "src": "assets/nature/nature_104_01.webp",
         "tag": "꽃",
         "desc": "튜울립나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Liriodendron/11588/2.JPG",
@@ -5054,17 +5054,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_104_02.jpg",
+        "src": "assets/nature/nature_104_02.webp",
         "tag": "잎",
         "desc": "백합나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Liriodendron/P000004033/P000004033_202205_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Liriodendron/P000004033/P000004033_202205_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2017-07-14",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_104_03.jpg",
+        "src": "assets/nature/nature_104_03.webp",
         "tag": "열매",
         "desc": "백합나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Liriodendron/11588/11588_11.JPG",
@@ -5074,10 +5074,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_104_04.jpg",
+        "src": "assets/nature/nature_104_04.webp",
         "tag": "줄기·수형",
         "desc": "백합나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Liriodendron/11588/11588_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Magnoliaceae/Liriodendron/11588/11588_1.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
@@ -5093,7 +5093,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_105_01.jpg",
+        "src": "assets/nature/nature_105_01.webp",
         "tag": "꽃",
         "desc": "팔손이의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Araliaceae/Fatsia/7250/2.JPG",
@@ -5103,7 +5103,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_105_02.jpg",
+        "src": "assets/nature/nature_105_02.webp",
         "tag": "잎",
         "desc": "팔손이의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Araliaceae/Fatsia/7250/1.JPG",
@@ -5113,7 +5113,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_105_03.jpg",
+        "src": "assets/nature/nature_105_03.webp",
         "tag": "열매",
         "desc": "팔손이의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Araliaceae/Fatsia/7250/5.JPG",
@@ -5123,7 +5123,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_105_04.jpg",
+        "src": "assets/nature/nature_105_04.webp",
         "tag": "줄기·수형",
         "desc": "팔손이 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Araliaceae/Fatsia/7250/7250_4.JPG",
@@ -5142,7 +5142,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_106_01.jpg",
+        "src": "assets/nature/nature_106_01.webp",
         "tag": "꽃",
         "desc": "팥배나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbus/22495/7.JPG",
@@ -5152,7 +5152,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_106_02.jpg",
+        "src": "assets/nature/nature_106_02.webp",
         "tag": "잎",
         "desc": "팥배나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbus/22495/3.JPG",
@@ -5162,7 +5162,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_106_03.jpg",
+        "src": "assets/nature/nature_106_03.webp",
         "tag": "열매",
         "desc": "팥배나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbus/22495/4.JPG",
@@ -5172,7 +5172,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_106_04.jpg",
+        "src": "assets/nature/nature_106_04.webp",
         "tag": "줄기·수형",
         "desc": "팥배나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Sorbus/22495/22495_2020_1.JPG",
@@ -5191,7 +5191,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_107_01.jpg",
+        "src": "assets/nature/nature_107_01.webp",
         "tag": "꽃",
         "desc": "팽나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Celtis/1008/1008_13.JPG",
@@ -5201,7 +5201,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_107_02.jpg",
+        "src": "assets/nature/nature_107_02.webp",
         "tag": "잎",
         "desc": "팽나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Celtis/1008/1008_3.JPG",
@@ -5211,7 +5211,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_107_03.jpg",
+        "src": "assets/nature/nature_107_03.webp",
         "tag": "열매",
         "desc": "팽나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Celtis/1008/6.JPG",
@@ -5221,7 +5221,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_107_04.jpg",
+        "src": "assets/nature/nature_107_04.webp",
         "tag": "줄기·수형",
         "desc": "팽나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Ulmaceae/Celtis/1008/1008_2020_5.JPG",
@@ -5240,7 +5240,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_108_01.jpg",
+        "src": "assets/nature/nature_108_01.webp",
         "tag": "꽃",
         "desc": "풍년화의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Hamamelis/22743/22743_2.JPG",
@@ -5250,7 +5250,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_108_02.jpg",
+        "src": "assets/nature/nature_108_02.webp",
         "tag": "열매",
         "desc": "풍년화 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Hamamelis/22743/22743_6.JPG",
@@ -5260,20 +5260,20 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_108_03.jpg",
+        "src": "assets/nature/nature_108_03.webp",
         "tag": "줄기·수형",
         "desc": "풍년화 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Hamamelis/22743/22743_3.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Hamamelis/22743/22743_3.webp",
         "author": "국립수목원",
         "date": "",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_108_04.jpg",
+        "src": "assets/nature/nature_108_04.webp",
         "tag": "꽃",
         "desc": "풍년화 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Hamamelis/P000007192/P000007192_220206_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Hamamelis/P000007192/P000007192_220206_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2017-03-16",
         "location": "",
@@ -5289,17 +5289,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_109_01.jpg",
+        "src": "assets/nature/nature_109_01.webp",
         "tag": "꽃",
         "desc": "피나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Tiliaceae/Tilia/P000003461/P000003461_220206_14.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Tiliaceae/Tilia/P000003461/P000003461_220206_14.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-04-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_109_02.jpg",
+        "src": "assets/nature/nature_109_02.webp",
         "tag": "잎",
         "desc": "피나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Tiliaceae/Tilia/9266/1.JPG",
@@ -5309,7 +5309,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_109_03.jpg",
+        "src": "assets/nature/nature_109_03.webp",
         "tag": "열매",
         "desc": "피나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Tiliaceae/Tilia/9266/9266_6.JPG",
@@ -5319,7 +5319,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_109_04.jpg",
+        "src": "assets/nature/nature_109_04.webp",
         "tag": "줄기·수형",
         "desc": "피나무의 수피 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Tiliaceae/Tilia/9266/9266_2020_1.JPG",
@@ -5338,7 +5338,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_110_01.jpg",
+        "src": "assets/nature/nature_110_01.webp",
         "tag": "꽃",
         "desc": "피라칸다 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Pyracantha/12952/12952_11.JPG",
@@ -5348,7 +5348,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_110_02.jpg",
+        "src": "assets/nature/nature_110_02.webp",
         "tag": "잎",
         "desc": "피라칸다 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Pyracantha/12952/12952_2.JPG",
@@ -5358,7 +5358,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_110_03.jpg",
+        "src": "assets/nature/nature_110_03.webp",
         "tag": "열매",
         "desc": "피라칸다의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Pyracantha/12952/3.JPG",
@@ -5368,7 +5368,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_110_04.jpg",
+        "src": "assets/nature/nature_110_04.webp",
         "tag": "줄기·수형",
         "desc": "피라칸다의 줄기이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Pyracantha/12952/1.JPG",
@@ -5387,7 +5387,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_111_01.jpg",
+        "src": "assets/nature/nature_111_01.webp",
         "tag": "꽃",
         "desc": "해당화 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Rosa/13169/13169_29.JPG",
@@ -5397,7 +5397,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_111_02.jpg",
+        "src": "assets/nature/nature_111_02.webp",
         "tag": "잎",
         "desc": "해당화의 잎 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Rosa/13169/13169_2020_1.JPG",
@@ -5407,17 +5407,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_111_03.jpg",
+        "src": "assets/nature/nature_111_03.webp",
         "tag": "열매",
         "desc": "해당화 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Rosa/P000004451/P000004451_220206_11.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Rosa/P000004451/P000004451_220206_11.webp",
         "author": "국립수목원(정수영)",
         "date": "2015-08-12",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_111_04.jpg",
+        "src": "assets/nature/nature_111_04.webp",
         "tag": "줄기·수형",
         "desc": "해당화 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Rosaceae/Rosa/13169/4.JPG",
@@ -5436,7 +5436,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_112_01.jpg",
+        "src": "assets/nature/nature_112_01.webp",
         "tag": "꽃",
         "desc": "향나무의 수배우체 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Juniperus/15044/15044_2.JPG",
@@ -5446,7 +5446,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_112_02.jpg",
+        "src": "assets/nature/nature_112_02.webp",
         "tag": "잎",
         "desc": "향나무의 잎 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Juniperus/15044/15044_8.JPG",
@@ -5456,7 +5456,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_112_03.jpg",
+        "src": "assets/nature/nature_112_03.webp",
         "tag": "열매",
         "desc": "향나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Juniperus/15044/15044_6.JPG",
@@ -5466,7 +5466,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_112_04.jpg",
+        "src": "assets/nature/nature_112_04.webp",
         "tag": "줄기·수형",
         "desc": "향나무의 수형 사진입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cupressaceae/Juniperus/15044/15044_2020_1.JPG",
@@ -5485,27 +5485,27 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_113_01.jpg",
+        "src": "assets/nature/nature_113_01.webp",
         "tag": "꽃",
         "desc": "호두나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Juglandaceae/Juglans/22968/22968_9.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Juglandaceae/Juglans/22968/22968_9.webp",
         "author": "국립수목원",
         "date": "2007-05-04",
         "location": "신구대학캠퍼스",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_113_02.jpg",
+        "src": "assets/nature/nature_113_02.webp",
         "tag": "잎",
         "desc": "호두나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Juglandaceae/Juglans/22968/22968_10.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Juglandaceae/Juglans/22968/22968_10.webp",
         "author": "국립수목원",
         "date": "2007-07-28",
         "location": "충남청양-칠갑산",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_113_03.jpg",
+        "src": "assets/nature/nature_113_03.webp",
         "tag": "열매",
         "desc": "호두나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Juglandaceae/Juglans/22968/22968_13.JPG",
@@ -5515,7 +5515,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_113_04.jpg",
+        "src": "assets/nature/nature_113_04.webp",
         "tag": "줄기·수형",
         "desc": "호두나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Juglandaceae/Juglans/22968/22968_14.JPG",
@@ -5534,7 +5534,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_114_01.jpg",
+        "src": "assets/nature/nature_114_01.webp",
         "tag": "꽃",
         "desc": "호랑가시나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16663/16663_4.JPG",
@@ -5544,7 +5544,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_114_02.jpg",
+        "src": "assets/nature/nature_114_02.webp",
         "tag": "잎",
         "desc": "호랑가시나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16663/16663_5.JPG",
@@ -5554,7 +5554,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_114_03.jpg",
+        "src": "assets/nature/nature_114_03.webp",
         "tag": "열매",
         "desc": "호랑가시나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16663/16663_7.JPG",
@@ -5564,7 +5564,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_114_04.jpg",
+        "src": "assets/nature/nature_114_04.webp",
         "tag": "줄기·수형",
         "desc": "호랑가시나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Aquifoliaceae/Ilex/16663/16663_11.JPG",
@@ -5583,17 +5583,17 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_115_01.jpg",
+        "src": "assets/nature/nature_115_01.webp",
         "tag": "꽃",
         "desc": "화살나무 꽃 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2080/2080_20160811104636386files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2080/2080_20160811104636386files.webp",
         "author": "국립수목원(정수영)",
         "date": "2012-05-08",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_115_02.jpg",
+        "src": "assets/nature/nature_115_02.webp",
         "tag": "잎",
         "desc": "화살나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2080/2080_13.JPG",
@@ -5603,20 +5603,20 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_115_03.jpg",
+        "src": "assets/nature/nature_115_03.webp",
         "tag": "열매",
         "desc": "화살나무 열매 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2080/2080_20160811104737646files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2080/2080_20160811104737646files.webp",
         "author": "국립수목원(정수영)",
         "date": "2014-08-26",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_115_04.jpg",
+        "src": "assets/nature/nature_115_04.webp",
         "tag": "줄기·수형",
         "desc": "화살나무 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2080/2080_20160811104657245files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Celastraceae/Euonymus/2080/2080_20160811104657245files.webp",
         "author": "국립수목원(정수영)",
         "date": "2013-11-01",
         "location": "",
@@ -5632,7 +5632,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_116_01.jpg",
+        "src": "assets/nature/nature_116_01.webp",
         "tag": "꽃",
         "desc": "회양목의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Buxaceae/Buxus/2054/2.JPG",
@@ -5642,17 +5642,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_116_02.jpg",
+        "src": "assets/nature/nature_116_02.webp",
         "tag": "잎",
         "desc": "회양목 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Buxaceae/Buxus/2054/2054_20230417141644836files.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Buxaceae/Buxus/2054/2054_20230417141644836files.webp",
         "author": "국립수목원",
         "date": "2020-06-21",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_116_03.jpg",
+        "src": "assets/nature/nature_116_03.webp",
         "tag": "열매",
         "desc": "회양목의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Buxaceae/Buxus/2054/4.JPG",
@@ -5662,7 +5662,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_116_04.jpg",
+        "src": "assets/nature/nature_116_04.webp",
         "tag": "줄기·수형",
         "desc": "회양목의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Buxaceae/Buxus/2054/1.JPG",
@@ -5681,7 +5681,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_117_01.jpg",
+        "src": "assets/nature/nature_117_01.webp",
         "tag": "꽃",
         "desc": "회화나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Sophora/22359/22359_16.JPG",
@@ -5691,7 +5691,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_117_02.jpg",
+        "src": "assets/nature/nature_117_02.webp",
         "tag": "잎",
         "desc": "회화나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Sophora/22359/22359_11.JPG",
@@ -5701,7 +5701,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_117_03.jpg",
+        "src": "assets/nature/nature_117_03.webp",
         "tag": "열매",
         "desc": "회화나무 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Sophora/22359/2.JPG",
@@ -5711,7 +5711,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_117_04.jpg",
+        "src": "assets/nature/nature_117_04.webp",
         "tag": "줄기·수형",
         "desc": "회화나무 줄기·수형 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Leguminosae/Sophora/22359/4.JPG",
@@ -5730,7 +5730,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_118_01.jpg",
+        "src": "assets/nature/nature_118_01.webp",
         "tag": "꽃",
         "desc": "후박나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Machilus/11556/11556_5.JPG",
@@ -5740,17 +5740,17 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_118_02.jpg",
+        "src": "assets/nature/nature_118_02.webp",
         "tag": "잎",
         "desc": "후박나무 잎 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Machilus/11556/11556_3.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Machilus/11556/11556_3.webp",
         "author": "국립수목원",
         "date": "2009-06-22",
         "location": "",
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_118_03.jpg",
+        "src": "assets/nature/nature_118_03.webp",
         "tag": "줄기·수형",
         "desc": "후박나무의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Machilus/11556/1.JPG",
@@ -5760,7 +5760,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_118_04.jpg",
+        "src": "assets/nature/nature_118_04.webp",
         "tag": "꽃",
         "desc": "후박나무 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Lauraceae/Machilus/11556/11556_6.JPG",
@@ -5779,7 +5779,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_119_01.jpg",
+        "src": "assets/nature/nature_119_01.webp",
         "tag": "꽃",
         "desc": "흰말채나무의 꽃 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7424/2.JPG",
@@ -5789,7 +5789,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_119_02.jpg",
+        "src": "assets/nature/nature_119_02.webp",
         "tag": "잎",
         "desc": "흰말채나무 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7424/7424_16.JPG",
@@ -5799,7 +5799,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_119_03.jpg",
+        "src": "assets/nature/nature_119_03.webp",
         "tag": "열매",
         "desc": "흰말채나무의 열매 이미지 입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7424/3.JPG",
@@ -5809,7 +5809,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_119_04.jpg",
+        "src": "assets/nature/nature_119_04.webp",
         "tag": "줄기·수형",
         "desc": "흰말채나무의 전체이미지입니다.",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Cornaceae/Cornus/7424/1.JPG",
@@ -5828,7 +5828,7 @@
     "totalImages": 4,
     "images": [
       {
-        "src": "assets/nature/nature_120_01.jpg",
+        "src": "assets/nature/nature_120_01.webp",
         "tag": "꽃",
         "desc": "히어리 꽃 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Corylopsis/6947/6947_2.JPG",
@@ -5838,7 +5838,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_120_02.jpg",
+        "src": "assets/nature/nature_120_02.webp",
         "tag": "잎",
         "desc": "히어리 잎 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Corylopsis/6947/6947_9.JPG",
@@ -5848,7 +5848,7 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_120_03.jpg",
+        "src": "assets/nature/nature_120_03.webp",
         "tag": "열매",
         "desc": "히어리 열매 형태",
         "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Corylopsis/6947/6947_31.JPG",
@@ -5858,10 +5858,10 @@
         "source": "국가생물종지식정보시스템"
       },
       {
-        "src": "assets/nature/nature_120_04.jpg",
+        "src": "assets/nature/nature_120_04.webp",
         "tag": "줄기·수형",
         "desc": "히어리 줄기·수형 형태",
-        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Corylopsis/P000002839/P000002839_220206_1.jpg",
+        "origUrl": "https://www.nature.go.kr/fileUpload/plants/basic/Hamamelidaceae/Corylopsis/P000002839/P000002839_220206_1.webp",
         "author": "국립수목원(정수영)",
         "date": "2019-02-20",
         "location": "",
