@@ -60,10 +60,13 @@ NPM 설치나 빌드 과정 없이 바로 개발을 시작할 수 있습니다.
 git clone https://github.com/unizune/tree120.git
 cd tree120
 
-# 2. 로컬 웹 서버 실행 (Python 3 내장 서버 사용)
+# 2. 로컬 브랜치 보호 Git 훅 활성화 (main 직접 커밋/푸시 방지)
+./tools/install_hooks.sh
+
+# 3. 로컬 웹 서버 실행 (Python 3 내장 서버 사용)
 python3 -m http.server 8080 -d web
 
-# 3. 브라우저 접속
+# 4. 브라우저 접속
 # http://localhost:8080
 ```
 
@@ -71,23 +74,34 @@ python3 -m http.server 8080 -d web
 
 ---
 
-## 4. Git 브랜치 전략 및 워크플로우
+## 4. Git 브랜치 전략 및 워크플로우 (PR-Gated GitHub Flow)
 
-### 4.1. 메인 저장소 관리자
-- 본 프로젝트는 오버헤드를 최소화하기 위해 **`main` 단독 브랜치 (Trunk-based)**로 운용합니다.
-- `main` 브랜치에 코드가 푸시되면 자동으로 GitHub Pages에 웹앱이 무중단 배포됩니다.
+본 프로젝트는 `main` 브랜치를 영구적인 무장애 배포 브랜치(Evergreen)로 유지하기 위해 **PR-Gated GitHub Flow**를 전면 적용합니다. (상세 설계 근거: [`docs/branching-strategy-spec.md`](docs/branching-strategy-spec.md))
 
-### 4.2. 외부 기여자 (Pull Request)
-1. 본 저장소를 개인 GitHub 계정으로 **Fork**합니다.
-2. 기능별 작업 브랜치를 생성합니다:
+> [!IMPORTANT]
+> **`main` 브랜치 직접 커밋/푸시 절대 금지**:  
+> 저장소 관리자와 외부 기여자 모두 예외 없이 `main`에 직접 푸시할 수 없습니다. 모든 변경 사항은 반드시 작업 브랜치에서 PR을 오픈하고, GitHub Actions **`CI Quality Gate`**를 통과한 후 **Squash Merge**로 반영되어야 합니다.
+
+### 4.1. 표준 작업 절차 (Step-by-Step)
+1. **작업 브랜치 생성**:
    ```bash
-   git checkout -b feature/quiz-hint-option
-   # 또는 버그 수정 시
-   git checkout -b fix/mobile-overlay-scroll
+   git checkout main && git pull origin main
+   git checkout -b feat/your-feature-name
+   # 또는 버그 수정 시: git checkout -b fix/issue-name
    ```
-3. 작업을 완료하고 검증 명령을 통과한 후 커밋합니다.
-4. 개인 Fork 저장소에 푸시 후, `main` 브랜치를 대상으로 **Pull Request (PR)**를 생성합니다.
-5. PR 설명에 변경 이유와 테스트 결과를 상세히 기재합니다.
+2. **코드 및 데이터 수정 후 로컬 검증**:
+   - `npm run verify:fast` (ESLint + Stylelint + verify_ui 39개 불변식)
+   - `npm run verify:e2e` (Playwright E2E 검증)
+3. **커밋 및 원격 브랜치 푸시**:
+   - `git add .`
+   - `git commit -m "feat(scope): 변경 내용"` (Conventional Commits 준수)
+   - `git push origin feat/your-feature-name`
+4. **Pull Request (PR) 생성**:
+   - GitHub 웹 또는 `gh pr create` 명령으로 PR을 오픈합니다.
+   - PR 템플릿의 설계 근거 문서 링크와 체크리스트를 작성합니다.
+5. **CI Quality Gate 자동 검증 통과 및 Squash Merge**:
+   - `.github/workflows/ci.yml`의 모든 자동화 검증이 Pass되면 검토 후 Squash Merge합니다.
+   - 머지 완료 후 작업 브랜치는 자동 삭제됩니다.
 
 ---
 

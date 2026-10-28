@@ -27,10 +27,13 @@
 ├── playwright.config.js              # 실제 헤드리스 브라우저 E2E 하네스 설정
 ├── .gitignore                        # Git 추적 제외 목록 (dist, node_modules, OS 임시 파일 등)
 ├── .github/workflows/                # GitHub Actions CI/CD 워크플로우
+│   ├── ci.yml                        # PR 자동 품질 게이트 (린트·데이터동기화·E2E·아키텍처 검증)
 │   ├── deploy-pages.yml              # GitHub Pages 웹앱 자동 배포 워크플로우
 │   └── release.yml                   # 태그 푸시 시 오프라인 패키지 자동 빌드 & 릴리즈
+├── .github/pull_request_template.md  # PR 표준 템플릿 (근거문서·사전품질체크리스트)
 ├── docs/                             # 모든 기능·규칙·설계 변경 근거 및 학습 문서 아카이브
 │   ├── README.md                     # 문서화 원칙(Documentation-First) 및 문서 인덱스
+│   ├── branching-strategy-spec.md    # 브랜치 보호 전략 및 PR 기반 개발 워크플로우 명세
 │   ├── webp-migration-spec.md        # 수목 도감 사진 WebP 전면 전환 엔지니어링 명세
 │   ├── harness-engineering-spec.md   # AI 에이전틱 2-Tier 하네스 엔지니어링 아키텍처 명세
 │   ├── spa-usability-spec.md         # 모던 SPA 6대 핵심 사용성 원칙 및 라우팅/세션 보호 설계 명세
@@ -254,10 +257,11 @@ chmod +x tools/build_package.sh
 
 > **참고**: 외부 기여자 및 세부 커밋 컨벤션, PR 절차는 [CONTRIBUTING.md](CONTRIBUTING.md)에 상세히 정의되어 있습니다.
 
-### 8.1. 브랜치 전략: `main` 단독 브랜치 운용 (Trunk-based)
-- 본 프로젝트는 오버헤드를 최소화하기 위해 **`main` 단독 브랜치**로 운용합니다.
-- `main` 브랜치에 코드가 푸시되면 자동으로 GitHub Pages에 웹앱이 배포됩니다.
-- 대규모 리팩토링이나 실험적인 대규모 개편 시에만 임시 `feature/*` 브랜치를 생성하고, 작업 완료 후 `main`에 병합합니다.
+### 8.1. 브랜치 전략: PR-Gated GitHub Flow (`main` 직접 커밋 금지 + Feature 브랜치 & PR 필수)
+- **`main` 브랜치는 항상 프로덕션 배포 가능한 Evergreen 브랜치**입니다.
+- **`main` 브랜치 직접 커밋 및 직접 푸시는 절대 금지**되며, 로컬 Git Hook(`pre-commit`, `pre-push`)과 GitHub 원격 Branch Protection에 의해 이중 차단됩니다.
+- 모든 작업(기능 추가, 버그 수정, 데이터 교정, 문서 작성)은 반드시 최신 `main`에서 분기한 **단기 작업 브랜치(`feat/*`, `fix/*`, `data/*`, `docs/*` 등)**에서 수행합니다.
+- 변경 작업 완료 후 GitHub Pull Request(PR)를 생성하고, 자동화된 **`CI Quality Gate` 통과 후 Squash Merge**로 `main`에 반영합니다. (상세 명세: [`docs/branching-strategy-spec.md`](docs/branching-strategy-spec.md))
 
 ### 8.2. 커밋 메시지 컨벤션 (Conventional Commits)
 커밋 메시지는 반드시 아래 형식을 준수하여 원자적(Atomic) 단위로 작성합니다:
@@ -286,14 +290,26 @@ chmod +x tools/build_package.sh
 
 ### 9.1. 온라인 웹앱 배포 (GitHub Pages)
 - **워크플로우**: [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
-- **동작 방식**: `main` 브랜치에 `web/**` 변경 사항이 푸시되면, GitHub Actions가 `web/` 디렉토리를 아티팩트로 추출하여 GitHub Pages(`https://unizune.github.io/tree120/`)에 즉시 무중단 배포합니다.
-- **일상 개발 흐름**:
+- **동작 방식**: PR이 검증을 마치고 `main` 브랜치에 병합되면, GitHub Actions가 `web/` 디렉토리를 아티팩트로 추출하여 GitHub Pages(`https://unizune.github.io/tree120/`)에 즉시 무중단 배포합니다.
+- **표준 개발 및 배포 흐름**:
   ```bash
-  # 코드 수정 후
+  # 1. main 최신화 및 피처 브랜치 생성
+  git checkout main && git pull origin main
+  git checkout -b feat/study-search-shortcut
+
+  # 2. 코드 수정 및 하네스 검증
+  npm run verify:fast
+
+  # 3. 커밋 및 원격 브랜치 푸시
   git add .
-  git commit -m "fix(study): 도감 모달 확대 닫기 버그 수정"
-  git push origin main
-  # -> GitHub Pages 자동 반영 완료
+  git commit -m "feat(study): 도감 모달 확대 닫기 버그 수정"
+  git push origin feat/study-search-shortcut
+
+  # 4. PR 생성 및 CI Quality Gate 통과 확인 후 Squash Merge
+  gh pr create --fill
+  gh pr checks
+  gh pr merge --squash --delete-branch
+  # -> main 병합 완료 및 GitHub Pages 자동 반영
   ```
 
 ### 9.2. 오프라인 패키지 배포 (GitHub Releases)
@@ -301,7 +317,8 @@ chmod +x tools/build_package.sh
 - **동작 방식**: 버전 태그(`v*.*.*`) 푸시 시, GitHub 가상머신이 `tools/build_package.sh`를 실행하여 126MB 배포용 ZIP 패키지를 빌드하고 [GitHub Releases](../../releases)에 자산으로 자동 등록합니다.
 - **새 버전 릴리즈 흐름**:
   ```bash
-  # 버전 태그 생성 및 푸시
+  # 버전 태그 생성 및 푸시 (main 브랜치 최신 상태에서 실행)
+  git checkout main && git pull origin main
   git tag v1.0.1
   git push origin v1.0.1
   # -> GitHub Releases에 "조경기능사_수목감별120_학습패키지.zip" 자동 등록 완료
@@ -325,8 +342,8 @@ chmod +x tools/build_package.sh
    - 126MB ZIP 파일이나 `dist/` 빌드 산출물, 비디오 프레임 추출 임시 파일(`research/frames/`)은 절대로 Git 저장소에 커밋하지 마십시오. 대용량 배포 파일은 GitHub Releases를 통해 관리합니다.
 6. **커밋 메시지 컨벤션 준수**:
    - 변경 사항 커밋 시 반드시 [CONTRIBUTING.md](CONTRIBUTING.md)에 정의된 Conventional Commits 양식(`<type>(<scope>): <subject>`)을 따르고, 하나의 커밋에는 하나의 목적만 담는 원자적(Atomic) 커밋을 유지하십시오.
-7. **`main` 단독 브랜치 기반 작업**:
-   - 복잡한 브랜치 분기 없이 `main` 단독 브랜치에 직접 커밋 및 푸시하여 GitHub Pages 자동 배포가 정상 트리거되도록 하십시오.
+7. **Feature 브랜치 격리 작업 및 PR 기반 병합 의무 (`main` 직접 커밋/푸시 절대 금지)**:
+   - 어떠한 경우에도 `main` 브랜치에 직접 커밋하거나 직접 푸시하지 마십시오. 항상 작업 목적에 맞는 단기 브랜치(`feat/*`, `fix/*`, `data/*`, `docs/*` 등)를 생성하여 작업하고, PR 생성 후 `CI Quality Gate`를 통과하여 Squash Merge해야 합니다.
 8. **데이터 동기화 빌드 검증**:
    - `web/trees.json`을 수정했을 경우 반드시 `python3 tools/build_data.py`를 실행하여 브라우저 로딩용 `web/data.js`를 동기화하고, `node -c web/app.js`로 문법 검증을 완료한 후 커밋하십시오.
 9. **모든 변경에 대한 근거 문서화 의무 (`docs/` 아카이빙)**:

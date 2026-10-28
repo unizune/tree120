@@ -1,0 +1,71 @@
+name: CI Quality Gate
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality-gate:
+    name: Quality Gate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Development Dependencies
+        run: npm ci
+
+      - name: 1. Tier-1 Fast Harness (ESLint + Stylelint + verify_ui.js 39 Invariants)
+        run: npm run verify:fast
+
+      - name: 2. Verify Data Pipeline Synchronization (build_data.py drift check)
+        run: |
+          python3 tools/build_data.py
+          git diff --exit-code web/trees.json web/data.js docs/수목120-학습노트.md docs/수목120-학습자료.csv
+
+      - name: 3. Install Playwright Chromium & Dependencies
+        run: npx playwright install --with-deps chromium
+
+      - name: 4. Tier-2 Deep E2E & Accessibility Harness (Playwright + Axe)
+        run: npm run verify:e2e
+
+      - name: 5. Zero-Dependency & Clean Repository Check
+        run: |
+          # web/ 내부에 불필요한 번들/의존성 파일이 없는지 확인
+          if [ -f "web/package.json" ] || [ -d "web/node_modules" ]; then
+            echo "❌ [FAIL] web/ 내부에 package.json 또는 node_modules가 존재합니다."
+            exit 1
+          fi
+
+          # dist/ 또는 .zip 파일이 git에 추적되고 있지 않은지 확인
+          FORBIDDEN=$(git ls-files | grep -E '^(dist/|research/frames/)|\.zip$' || true)
+          if [ -n "$FORBIDDEN" ]; then
+            echo "❌ [FAIL] 금지된 대용량 파일이 Git에 추적되고 있습니다:"
+            echo "$FORBIDDEN"
+            exit 1
+          fi
+
+          echo "✅ [PASS] 모든 아키텍처 및 품질 게이트 통과!"

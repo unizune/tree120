@@ -22,6 +22,7 @@
 
 | 문서 파일 | 주제 및 내용 요약 | 최초 작성일 | 최근 수정일 |
 |---|---|---|---|
+| [branching-strategy-spec.md](branching-strategy-spec.md) | **브랜치 보호 전략 및 PR 기반 개발 워크플로우 명세** (`main` 직접 커밋/푸시 금지, PR-Gated GitHub Flow, 3중 안전망 아키텍처 및 CI Quality Gate 자동화) | 2026-10-28 | 2026-10-28 |
 | [webp-migration-spec.md](webp-migration-spec.md) | **수목 도감 사진 WebP 전면 전환 엔지니어링 명세** (181MB ➔ 126MB 초고화질 q90 + sharp_yuv 시각적 무손실 최적화, 24개 사진 EXIF 정방향 회전 Bake-in 교정, 110개 비표준 ICC sRGB 매칭, Zero-Dependency 파이프라인) | 2026-10-28 | 2026-10-28 |
 | [harness-engineering-spec.md](harness-engineering-spec.md) | **AI 에이전틱 하네스 엔지니어링 설계 명세** (`Agent = Model + Harness` 원칙, 결과물 Zero-Dependency와 개발 하네스 분리, Tier-1 정적/드리프트 센서 & Tier-2 Playwright/Axe 실제 브라우저 E2E 아키텍처, 자가 치유형 에러 프로토콜) | 2026-10-28 | 2026-10-28 |
 | [spa-usability-spec.md](spa-usability-spec.md) | **모던 SPA 6대 핵심 사용성 원칙 및 아키텍처 설계 명세** (해시 라우팅·History API 양방향 동기화, 모달 `pushState`/`replaceState` 하이브리드 전략, 활성 세션 보호 가드, 키보드 단축키 및 프리로드) | 2026-10-27 | 2026-10-27 |
